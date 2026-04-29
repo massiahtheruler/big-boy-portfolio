@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Big Boy Portfolio",
+			"path": "."
+		},
+		{
+			"name": "logos",
+			"path": "../logos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Big Boy Portfolio"
+	}
+}

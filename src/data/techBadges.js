@@ -1,0 +1,20 @@
+export const techBadges = [
+  { label: "React", category: "frontend" },
+  { label: "Vite", category: "frontend" },
+  { label: "Next.js", category: "frontend" },
+  { label: "JavaScript", category: "language" },
+  { label: "TypeScript", category: "language" },
+  { label: "CSS", category: "styling" },
+  { label: "Sass", category: "styling" },
+  { label: "Tailwind", category: "styling" },
+  { label: "Context API", category: "state" },
+  { label: "Redux", category: "state" },
+  { label: "Zustand", category: "state" },
+  { label: "SQL", category: "data" },
+  { label: "Prisma", category: "data" },
+  { label: "Stripe", category: "payments" },
+  { label: "Auth", category: "product" },
+  { label: "Dashboards", category: "product" },
+  { label: "Responsive Systems", category: "product" },
+  { label: "AI Features", category: "product" }
+];
