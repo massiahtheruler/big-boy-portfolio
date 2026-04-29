@@ -19,6 +19,12 @@ function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
       isActive: location.pathname === "/" && location.hash === "#current-work"
     },
     {
+      label: "Services",
+      to: "/services",
+      isActive:
+        location.pathname === "/services" || location.pathname === "/inquire"
+    },
+    {
       label: "About",
       to: "/#about",
       isActive: location.pathname === "/" && location.hash === "#about"
@@ -34,7 +40,7 @@ function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
           aria-label="Justin Henry home"
         >
           <img
-            src="public/assets/Bold JH logo with angular brackets.png"
+            src="/assets/Bold JH logo with angular brackets.png"
             alt="Justin Henry logo"
             className="site-header__logo"
           />

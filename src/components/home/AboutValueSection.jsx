@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { siteContent } from "../../data/siteContent";
 import Reveal from "../shared/Reveal";
 
@@ -24,6 +25,20 @@ function AboutValueSection() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal className="about-services-cta" delay={220}>
+          <p className="section-eyebrow">{siteContent.aboutCta.eyebrow}</p>
+          <h3>{siteContent.aboutCta.title}</h3>
+          <p>{siteContent.aboutCta.description}</p>
+          <div className="about-services-cta__actions">
+            <Link to="/services" className="button button--primary">
+              {siteContent.aboutCta.primaryLabel}
+            </Link>
+            <Link to="/inquire?offer=manifest-method" className="button button--ghost">
+              {siteContent.aboutCta.secondaryLabel}
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

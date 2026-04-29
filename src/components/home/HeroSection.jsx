@@ -22,13 +22,16 @@ function HeroSection({ onOpenContact }) {
     >
       <div className="shell hero-section__grid">
         <Reveal className="hero-section__content">
-          <p className="section-eyebrow">Dark-first frontend portfolio</p>
+          <p className="section-eyebrow">{siteContent.eyebrow}</p>
           <h1>{siteContent.title}</h1>
           <p className="hero-section__lede">{siteContent.intro}</p>
 
           <div className="hero-section__actions">
             <Link to="/#featured-work" className="button button--primary">
               View work
+            </Link>
+            <Link to="/services" className="button button--ghost">
+              Products + Services
             </Link>
             <button type="button" className="button button--ghost" onClick={onOpenContact}>
               Open contact

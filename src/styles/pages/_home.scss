@@ -29,6 +29,10 @@
   font-size: clamp(3.5rem, 8vw, 6.8rem);
 }
 
+.hero-section__content .section-eyebrow {
+  margin-bottom: 1.15rem;
+}
+
 .hero-section__lede {
   max-width: 40rem;
   margin-top: 1.35rem;
@@ -190,6 +194,36 @@
   font-size: 1.4rem;
 }
 
+.about-services-cta {
+  display: grid;
+  gap: 1rem;
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(198, 146, 255, 0.12),
+      rgba(105, 228, 208, 0.06)
+    ),
+    var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.about-services-cta h3 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+
+.about-services-cta p:last-of-type {
+  max-width: 40rem;
+}
+
+.about-services-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
 @keyframes stickerFloat {
   0%,
   100% {
@@ -205,6 +239,10 @@
   .hero-section__grid,
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-services-cta {
+    margin-top: 0.5rem;
   }
 }
 

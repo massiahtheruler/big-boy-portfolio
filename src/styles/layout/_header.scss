@@ -97,6 +97,7 @@ body[data-theme="light"] .site-header__logo {
 .site-header__nav {
   gap: 0.45rem;
   padding: 0.38rem;
+  flex-wrap: wrap;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   background:
@@ -118,6 +119,7 @@ body[data-theme="light"] .site-header__logo {
   justify-content: center;
   min-height: 2.8rem;
   padding: 0.7rem 1rem;
+  white-space: nowrap;
   border: 1px solid transparent;
   border-radius: 999px;
   background: transparent;
@@ -221,7 +223,7 @@ body[data-theme="light"] .site-header__logo {
   .site-header__nav {
     order: 3;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .theme-toggle__label {
