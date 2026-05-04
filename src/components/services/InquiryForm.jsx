@@ -130,6 +130,8 @@ function InquiryForm({ offer, helperCopy, questions }) {
         <a
           href={`mailto:${siteContent.email}`}
           className="button button--ghost"
+          target="_blank"
+          rel="noreferrer"
         >
           Email directly
         </a>
@@ -144,7 +146,9 @@ function InquiryForm({ offer, helperCopy, questions }) {
       {status === "error" && (
         <p className="inquiry-form__feedback inquiry-form__feedback--error">
           The form missed this one. Use{" "}
-          <a href={`mailto:${siteContent.email}`}>{siteContent.email}</a>{" "}
+          <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+            {siteContent.email}
+          </a>{" "}
           instead.
         </p>
       )}

@@ -33,14 +33,24 @@ function ProjectPage({ onOpenContact }) {
 
             <div className="case-study-hero__actions">
               {project.links.live ? (
-                <a href={project.links.live} className="button button--primary">
+                <a
+                  href={project.links.live}
+                  className="button button--primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live project
                 </a>
               ) : (
                 <span className="button button--disabled">Live link coming later</span>
               )}
               {project.links.code ? (
-                <a href={project.links.code} className="button button--ghost">
+                <a
+                  href={project.links.code}
+                  className="button button--ghost"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View code
                 </a>
               ) : (

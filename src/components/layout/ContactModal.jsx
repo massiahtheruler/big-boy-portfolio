@@ -94,7 +94,9 @@ function ContactModal({ isOpen, onClose }) {
           </p>
           <div className="contact-modal__direct">
             <span>Direct email</span>
-            <a href={`mailto:${siteContent.email}`}>{siteContent.email}</a>
+            <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+              {siteContent.email}
+            </a>
           </div>
         </section>
 
@@ -138,7 +140,10 @@ function ContactModal({ isOpen, onClose }) {
           {status === "error" && (
             <p className="contact-form__feedback contact-form__feedback--error">
               Email service missed this one. Use{" "}
-              <a href={`mailto:${siteContent.email}`}>{siteContent.email}</a> instead.
+              <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+                {siteContent.email}
+              </a>{" "}
+              instead.
             </p>
           )}
         </section>
