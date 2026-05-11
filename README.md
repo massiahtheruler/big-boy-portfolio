@@ -1,6 +1,6 @@
 # Big Boy Portfolio
 
-Big Boy Portfolio is the project I built to frame the rest of my work with more intention than a one-page landing screen ever could. I wanted the portfolio itself to prove something: not just that I can style an interface, but that I can shape presentation, route structure, case-study flow, service positioning, and contact behavior into one clean product.
+Big Boy Portfolio is the project I built to frame the rest of my work with more intention than a one-page landing screen could. I wanted the portfolio itself to prove something: not just that I can style an interface, but that I can shape presentation, route structure, case-study flow, service positioning, and contact behavior into one clean product.
 
 This repo is the hub. It holds the strongest projects in the set, gives each one a clearer role, and turns the portfolio into more than a gallery of screenshots. The site moves from brand-led homepage, to routed case studies, to services, to inquiry without feeling like separate ideas stitched together.
 
