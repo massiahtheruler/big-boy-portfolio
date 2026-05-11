@@ -58,25 +58,45 @@ The point was never to make a portfolio that tries to be about everything at onc
 
 ## Project Preview
 
-Until I add portfolio-specific screenshots, this section uses the featured project screens the home page leads into. Once the portfolio shots are ready, these can be replaced with captures of the portfolio itself.
+The preview and walkthroughs below show the portfolio itself doing the job it was built for: setting the tone fast, moving cleanly between sections and routes, and making the work feel presented instead of just listed.
 
-### GoCart
+![Big Boy Portfolio hero](./readme-assets/portfolio-hero.png)
 
-GoCart carries the heavier product-system side of the portfolio: marketplace logic, multiple roles, checkout behavior, and a premium storefront language.
+## Walkthrough GIFs
 
-![GoCart preview](./public/assets/gocart-home.png)
+### Opening Pass
 
-### Glitter
+The opening walkthrough gives a better sense of the pacing than a still image can. It shows the first impression, the way the hero lands, and how the portfolio starts moving from brand statement into the rest of the experience.
 
-Glitter shows the more original social-product side: branded interaction, account-aware UI, messaging, and a stronger sense of product identity.
+![Big Boy Portfolio opening walkthrough](./readme-assets/portfolio-opening.gif)
 
-![Glitter preview](./public/assets/twitter-glitter-home.png)
+## Feature Screens
 
-### Netflix Clone
+The screenshots below focus on the parts of the portfolio that make it feel more like a product system than a static personal site.
 
-Netflix Clone proves I can work inside an established product language, preserve what makes it recognizable, and still push behavior and polish further than the usual clone build.
+### Services View
 
-![Netflix Clone preview](./public/assets/netflix-clone-home.png)
+The services route gives the portfolio a real business layer. `Manifest Method`, the offer cards, and the darker product surface keep the page feeling consistent with the rest of the site instead of breaking into generic freelancer pricing-page energy.
+
+![Big Boy Portfolio services page](./readme-assets/portfolio-services.png)
+
+### Light Mode Hero
+
+The light mode view was worth including because it shows the portfolio still holds its hierarchy, spacing, and visual identity even after the mood changes. It is not just a color swap. The page still reads clearly and keeps the same structure.
+
+![Big Boy Portfolio light mode](./readme-assets/portfolio-light-mode.png)
+
+### Case Study Route
+
+This screen shows the routed case-study side doing real work. The portfolio is not only a homepage with cards on it. It opens into actual project pages with summary, proof, stack, and live-project framing that explain why each build belongs.
+
+![Big Boy Portfolio case study route](./readme-assets/portfolio-work.png)
+
+### Contact Modal
+
+The contact modal is one of the small details that helps the portfolio feel complete. It keeps outreach inside the same visual system, gives the contact flow a stronger surface, and makes the site feel like it was built to be used, not just viewed.
+
+![Big Boy Portfolio contact modal](./readme-assets/portfolio-modal.png)
 
 ## What I Built
 
