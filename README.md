@@ -1,24 +1,40 @@
 # Big Boy Portfolio
 
-This portfolio is a React rebuild shaped to feel like a real brand and product presentation. The goal was to create a space that shows visual direction, frontend engineering ability, service positioning, and project storytelling in one system.
+Big Boy Portfolio is the project I built to frame the rest of my work with more intention than a one-page landing screen ever could. I wanted the portfolio itself to prove something: not just that I can style an interface, but that I can shape presentation, route structure, case-study flow, service positioning, and contact behavior into one clean product.
 
-I built it to do two jobs at once. It needs to present work in a premium, memorable way and explain clearly what I actually do for clients, teams, and collaborators. That is why the repo includes routed case studies, a services section, an inquiry path, a reusable content layer, and a contact experience that feels built in.
+This repo is the hub. It holds the strongest projects in the set, gives each one a clearer role, and turns the portfolio into more than a gallery of screenshots. The site moves from brand-led homepage, to routed case studies, to services, to inquiry without feeling like separate ideas stitched together.
 
-The visual tone is dark, polished, and design-led, but the project is still grounded in structure. The pages, data files, modal behavior, theme handling, and route setup were built so the portfolio can keep growing without turning into a one-off landing page.
+I spent time making the portfolio feel curated. GoCart, Glitter, Netflix Clone, and Litty Hub are not here to fill space. Each one says something different about how I build: product depth, branding, interaction, constraint-based execution, and the ability to present work in a way that makes sense to recruiters, collaborators, and clients.
+
+## Live Site
+
+[https://big-boy-portfolio.vercel.app](https://big-boy-portfolio.vercel.app)
+
+Repository: [github.com/massiahtheruler/big-boy-portfolio](https://github.com/massiahtheruler/big-boy-portfolio)
+
+## Why This Exists
+
+I built this portfolio to do three jobs well:
+
+- present featured work like real case studies instead of homepage thumbnails
+- show that my frontend taste and product thinking belong in the same conversation
+- give the site its own conversion path through services, inquiry, and contact instead of treating outreach like an afterthought
+
+The point was never to make a portfolio that tries to be about everything. The point was to make one that feels selective, structured, and clear about why each project belongs.
 
 ## Core Features
 
-- React + Vite portfolio build with React Router and curated local content
-- Dedicated routes for home, services, inquiry, and individual project case studies
-- Dynamic project route at `projects/:slug` powered by structured case study data
-- Premium service positioning around Manifest, brand systems, audits, and rebuild work
-- Contact modal plus separate inquiry page for stronger lead flow
-- EmailJS integration for direct inquiry delivery
-- Theme toggle and body-level theme persistence
-- Scroll-triggered reveal behavior and section pacing across the site
-- SCSS architecture split into base, layout, component, and page styles
-- Lightweight test coverage for services content and route rendering
-- Current work and case-study content structured to support ongoing portfolio growth
+- React + Vite portfolio app with React Router and a reusable routed shell
+- dedicated routes for home, services, inquiry, and individual case studies
+- dynamic project detail route at `projects/:slug`
+- curated local content layer for case studies, services, current work, badges, and site copy
+- homepage sections that separate featured work from active in-progress direction
+- global contact modal with focus handling, escape support, and body locking
+- dedicated inquiry page with offer-aware query params and EmailJS delivery
+- theme toggle with local persistence and body-level theme state
+- shared reveal system for section pacing and visual rhythm
+- SCSS architecture split into base, layout, component, and page partials
+- lightweight test coverage around services content and routed rendering
 
 ## Architecture Snapshot
 
@@ -28,101 +44,116 @@ Frontend:
 - React Router 7
 - Sass / SCSS
 
-Content and Flow:
-- Structured local data for case studies, services, current work, and site copy
-- Dynamic route handling for project detail pages
-- Global contact modal plus dedicated inquiry route
+Content Layer:
+- `src/data/caseStudies.js` drives featured case studies and dynamic project pages
+- `src/data/currentWork.js` separates active direction from finished feature pieces
+- `src/data/servicesContent.js` keeps offers, inquiry prompts, and helper copy in one place
+- `src/data/siteContent.js` powers hero content, value points, stats, and shared contact info
 
-Experience Layer:
-- Theme toggle with body-level theme state
-- Scroll reveal behavior through shared hooks and wrappers
-- Reusable layout and section components across pages
+Interaction Layer:
+- `src/App.jsx` owns the routed shell, theme state, modal state, scroll reset, and body locking
+- `src/pages/ProjectPage.jsx` turns each featured build into a routed case-study view with live/code links and fallback handling
+- `src/pages/InquirePage.jsx` reads the selected offer from the URL and feeds it into the inquiry flow
+- `src/hooks/useTheme.js` persists theme choice and falls back to system preference on first load
+- `src/components/shared/Reveal.jsx` and `src/hooks/useRevealInView.js` handle the staged section reveal behavior
+
+## Project Preview
+
+The portfolio is built around featured case studies, so until I add portfolio-specific screenshots, the previews below show the project screens visitors move into from the home page rather than random filler images.
+
+### GoCart
+
+GoCart carries the heavier product-system side of the portfolio: marketplace logic, multiple roles, checkout behavior, and a premium storefront language.
+
+![GoCart preview](./public/assets/gocart-home.png)
+
+### Glitter
+
+Glitter shows the more original social-product side: branded interaction, account-aware UI, messaging, and a stronger sense of product identity.
+
+![Glitter preview](./public/assets/twitter-glitter-home.png)
+
+### Netflix Clone
+
+Netflix Clone proves I can work inside an established product language, preserve what makes it recognizable, and still push behavior and polish further than the usual clone build.
+
+![Netflix Clone preview](./public/assets/netflix-clone-home.png)
 
 ## What I Built
 
-### 1. Product-Style Portfolio Structure
+### 1. A Portfolio That Behaves Like a Product
 
-I did not want this to be a one-page placeholder with vague “about me” copy and some links at the bottom.
+I did not want a nice-looking homepage with nowhere real to go next. The site is structured like a small product on purpose:
 
-That includes:
+- a routed shell instead of a single scroll-only page
+- separate views for featured work, services, and inquiry
+- homepage hash navigation for the featured-work jump
+- route-level scroll reset so page changes feel deliberate
+- one contact system that can open from multiple entry points
 
-- a routed application structure
-- a reusable layout shell
-- clear page separation for portfolio, services, and inquiry
-- route-aware scroll reset behavior
-- a contact system that can open globally from multiple entry points
+That mattered because the portfolio itself is part of the proof. If I say I care about flow, clarity, and interaction, the portfolio has to show that before anyone clicks into the other repos.
 
-The result is a portfolio that feels intentional to move through, not just nice to look at.
+### 2. Featured Work With Clear Roles
 
-### 2. Case Study Routing and Project Storytelling
+The strongest choice here was selectivity. I kept the featured set small and made each project carry a different part of the story:
 
-The work section is built around actual project pages, not only homepage cards.
+- GoCart shows product depth, commerce behavior, and role complexity
+- Glitter shows branding, account-aware interaction, and social-product instincts
+- Netflix Clone shows restraint, polish, and the ability to work inside constraints
+- Litty Hub, in the current-work lane, points toward the bigger brand-system direction behind the portfolio
 
-That includes:
+That keeps the portfolio from sounding like it is about everything. The work is curated on purpose, and the case-study pages are there to explain why each piece belongs.
 
-- dynamic project routing with `useParams`
-- case study lookup from local data
-- live link and code link handling
-- project-specific highlights, technical proof, and build story sections
-- safe fallback state when a case study slug is not live yet
+### 3. Services and Inquiry That Feel Built In
 
-This matters because a strong portfolio should explain the work, not just tease it.
+I wanted the site to work as a portfolio and a business tool without becoming a fake all-in-one platform.
 
-### 3. Services Layer and Clear Offer Positioning
+- `ServicesPage` turns the portfolio into a clearer offer surface
+- `Manifest Method` gives the services side a flagship lane instead of a generic pricing page
+- supporting offers live in structured content, not scattered hardcoded sections
+- `InquirePage` accepts a selected offer through the URL so the form stays contextual
+- both the inquiry page and the global contact modal route through EmailJS for direct outreach
 
-This repo is also meant to sell the working relationship, not only archive finished projects.
+This mattered because I did not want the contact side to feel tacked on after the design was done. If the work lands, the next move should feel natural.
 
-That includes:
+### 4. A Content Structure That Can Grow Without a CMS
 
-- a dedicated `ServicesPage`
-- flagship offer framing around `Manifest Method`
-- entry and supporting offers in structured content
-- inquiry helpers and offer-based query params
-- positioning for audits, rebuilds, templates, consultations, and launch work
+I wanted a cleaner system for growth without pretending this project needed backend overhead it does not actually need.
 
-That made the portfolio stronger as a business tool, not just a showcase.
+- case studies, current work, services, tech badges, and shared site copy each live in their own data file
+- dynamic project pages read from structured local content instead of hand-built one-off screens
+- not-yet-live slugs fail gracefully instead of breaking the route
+- the current-work section lets the portfolio show active direction without muddying the featured case studies
 
-### 4. Inquiry Flow and Contact Experience
+That balance was important. The portfolio can grow, but it still stays curated instead of turning into a content dump.
 
-I wanted the contact side to feel built in, not pasted on at the end.
+### 5. Theme, Motion, and Presentation With Structure Underneath
 
-That includes:
+The visual direction is dark, polished, and design-led, but it is still tied to reusable behavior.
 
-- a global contact modal
-- body locking while the modal is open
-- a dedicated inquiry page
-- preselected offer support through URL params
-- EmailJS delivery configuration in `src/utils/email.js`
+- theme state persists through `localStorage`
+- the body dataset updates at the app level so the theme stays consistent across routes
+- reveal wrappers control pacing across sections instead of every page improvising its own motion
+- SCSS partials keep layout, component, and page styling from collapsing into one giant stylesheet
 
-That gives the site a real conversion path while still keeping the front end lean.
+I wanted the first impression to feel sharp, but I also wanted the repo to make sense when another developer opens it.
 
-### 5. Content-Driven Growth
+## Featured Projects and Why They Are Here
 
-The portfolio is structured so new work and new service offers can be added without rewriting the app every time.
+- `GoCart` is the proof that I can handle dense product behavior, multi-role logic, checkout flow, and polished frontend systems in one marketplace build.
+- `Glitter` is the proof that I can take a familiar product category and push it toward stronger branding, cleaner interaction, and more original product identity.
+- `Netflix Clone` is the proof that I can work inside a known visual language, respect its constraints, and still make the implementation feel thoughtful instead of surface-level.
+- `Litty Hub` extends the portfolio beyond single-project execution and points toward the broader brand, service, and ecosystem direction I am building into.
 
-That includes:
+## Technical Challenges
 
-- `src/data/caseStudies.js`
-- `src/data/currentWork.js`
-- `src/data/servicesContent.js`
-- `src/data/siteContent.js`
-- `src/data/techBadges.js`
-
-This makes the portfolio easier to maintain and keeps the content closer to the structure it powers.
-
-### 6. Theme, Motion, and Presentation
-
-The visual layer is important here, but it is tied to reusable logic instead of random effects.
-
-That includes:
-
-- theme state through `useTheme`
-- body dataset theme switching
-- scroll reveal hooks and shared reveal wrappers
-- SCSS partials for layout, pages, and components
-- consistent dark premium presentation across pages
-
-The goal was a portfolio that feels polished on first look and still makes sense when someone opens the repo.
+- Structuring the portfolio as a routed app instead of a one-off homepage without making the experience feel overbuilt for what it needed to do
+- Keeping the content layer organized enough that new case studies, current-work entries, and service offers can be added cleanly without introducing CMS complexity just for appearances
+- Making the homepage, project pages, services page, inquiry flow, and contact modal feel like one product instead of five disconnected screens
+- Passing offer context into the inquiry route with search params so the lead flow stays specific without creating separate forms for every service
+- Balancing dark premium styling, reveal timing, and motion polish with readability and restraint so the site does not tip into being overdesigned
+- Coordinating body-level theme state and body locking so the theme system and the modal system do not fight each other across route changes
+- Deciding what each featured project should prove, what belongs in current work instead, and how much to explain before the README starts overselling the portfolio
 
 ## Tech Stack
 
@@ -147,14 +178,15 @@ src/
   hooks/
   pages/
   styles/
+  test/
   utils/
 ```
 
 - `src/pages/` contains the routed page views.
-- `src/components/` holds the reusable building blocks for home, layout, services, and shared transitions.
-- `src/data/` powers the portfolio content and service positioning.
-- `src/hooks/` contains theme and reveal logic.
-- `src/styles/` is split into maintainable SCSS partials instead of one oversized stylesheet.
+- `src/components/` holds the reusable home, layout, services, and shared presentation components.
+- `src/data/` is the content system behind the portfolio.
+- `src/hooks/` contains theme and reveal behavior.
+- `src/styles/` keeps the SCSS architecture split by responsibility instead of piling everything into one file.
 
 ## Running Locally
 
@@ -165,7 +197,7 @@ npm run dev
 
 Then open [http://localhost:5173](http://localhost:5173).
 
-Build for production:
+For a production build:
 
 ```bash
 npm run build
@@ -177,34 +209,26 @@ Run tests:
 npm run test
 ```
 
+If you want the contact modal and inquiry form to send to your own inbox, update the EmailJS IDs in `src/utils/email.js`.
+
 ## Current Scope
 
 This portfolio is strongest right now in:
 
 - premium frontend presentation
-- portfolio storytelling
+- case-study framing
 - service positioning
-- inquiry flow
-- expandable content structure
+- inquiry and contact flow
+- scalable local content structure
 
-It is not pretending to be:
+It is not trying to be:
 
 - a CMS-backed portfolio platform
-- a fully automated client intake system
-- a backend-heavy app
+- a backend-heavy client portal
+- a fully automated intake system
 
-That is intentional. The value here is in the clarity of the frontend, the structure of the offers, and the way the work is presented.
-
-## Why This Project Stands Out
-
-A lot of portfolios either feel polished but empty, or technically correct with no real point of view. This one is built to hold both sides together.
-
-- real routed structure
-- reusable content-driven sections
-- clear service framing
-- premium interface direction
-- practical conversion paths through inquiry and contact
+That boundary is intentional. The value here is not pretending this is a giant platform. The value is that the portfolio itself has a point of view, a structure, and a clear reason for every major piece inside it.
 
 ## Closing
 
-Big Boy Portfolio is a build about presentation with substance behind it. It shows the kind of work I want to keep doing more of: premium UI, sharper brand systems, better product structure, and frontend experiences that feel deliberate all the way through.
+Big Boy Portfolio is the project that explains the rest of the work. I built it to feel like a real presentation system, not just a page that links out to other repos. More than anything, it shows the kind of work I want to keep doing: premium frontend, sharper product framing, better storytelling, and interfaces that feel intentional all the way through.
