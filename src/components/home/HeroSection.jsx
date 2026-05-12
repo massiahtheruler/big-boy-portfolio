@@ -1,14 +1,40 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { siteContent } from "../../data/siteContent";
 import Reveal from "../shared/Reveal";
 
 function HeroSection({ onOpenContact }) {
+  const frameRef = useRef(null);
+  const pointerRef = useRef({ x: null, y: null });
+
+  useEffect(() => {
+    return () => {
+      if (frameRef.current) {
+        window.cancelAnimationFrame(frameRef.current);
+      }
+    };
+  }, []);
+
   function handlePointerMove(event) {
     const rect = event.currentTarget.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    event.currentTarget.style.setProperty("--spotlight-x", `${x}px`);
-    event.currentTarget.style.setProperty("--spotlight-y", `${y}px`);
+    pointerRef.current = {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top
+    };
+
+    if (frameRef.current) {
+      return;
+    }
+
+    const currentTarget = event.currentTarget;
+    frameRef.current = window.requestAnimationFrame(() => {
+      const { x, y } = pointerRef.current;
+      if (x !== null && y !== null) {
+        currentTarget.style.setProperty("--spotlight-x", `${x}px`);
+        currentTarget.style.setProperty("--spotlight-y", `${y}px`);
+      }
+      frameRef.current = null;
+    });
   }
 
   return (
@@ -16,6 +42,11 @@ function HeroSection({ onOpenContact }) {
       className="hero-section"
       onPointerMove={handlePointerMove}
       onPointerLeave={(event) => {
+        if (frameRef.current) {
+          window.cancelAnimationFrame(frameRef.current);
+          frameRef.current = null;
+        }
+        pointerRef.current = { x: null, y: null };
         event.currentTarget.style.removeProperty("--spotlight-x");
         event.currentTarget.style.removeProperty("--spotlight-y");
       }}

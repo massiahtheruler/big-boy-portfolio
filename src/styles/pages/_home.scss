@@ -1,6 +1,7 @@
 .hero-section {
   position: relative;
   padding: 5rem 0 3rem;
+  isolation: isolate;
 }
 
 .hero-section::before {
@@ -9,11 +10,14 @@
   inset: 0;
   background:
     radial-gradient(
-      18rem circle at var(--spotlight-x, 50%) var(--spotlight-y, 30%),
-      rgba(198, 146, 255, 0.2),
-      transparent 55%
-    );
+      14rem circle at var(--spotlight-x, 50%) var(--spotlight-y, 30%),
+      rgba(198, 146, 255, 0.16),
+      rgba(198, 146, 255, 0.08) 30%,
+      transparent 62%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 44%);
   pointer-events: none;
+  opacity: 0.94;
 }
 
 .hero-section__grid,
