@@ -155,6 +155,8 @@ The visual direction is dark, polished, and design-led, but it is still tied to 
 - reveal wrappers control pacing across sections instead of every page improvising its own motion
 - SCSS partials keep layout, component, and page styling from collapsing into one giant stylesheet
 
+One of the more real frontend tradeoffs in this project was keeping that premium look without letting the experience start flashing or feeling unstable on more sensitive displays. I liked the glassier version, but the smoother UX mattered more. I kept the marquee, the spotlight feel, and the darker showroom direction, then pulled back the heavier live frost in the moving and sticky zones. The result is closer to matte translucent surfaces, shell-based depth, and cleaner layered styling that still feels polished without asking the browser to fight through unnecessary visual cost while the page scrolls.
+
 I wanted the first impression to feel sharp, but I also wanted the repo to make sense when another developer opens it.
 
 ## Technical Challenges
@@ -164,6 +166,7 @@ I wanted the first impression to feel sharp, but I also wanted the repo to make 
 - Making the homepage, project pages, services page, inquiry flow, and contact modal feel like one product instead of five disconnected screens
 - Passing offer context into the inquiry route with search params so the lead flow stays specific without creating separate forms for every service
 - Balancing dark premium styling, reveal timing, and motion polish with readability and restraint so the site does not tip into being overdesigned
+- Keeping the premium UI direction while reducing screen-specific flashing meant reworking some of the glassier surfaces into more matte translucent layers, especially around moving and sticky areas, so the site stayed smooth without losing its identity
 - Coordinating body-level theme state and body locking so the theme system and the modal system do not fight each other across route changes
 - Deciding what each featured project should prove, what belongs in current work instead, and how much to explain before the README starts overselling the portfolio
 
