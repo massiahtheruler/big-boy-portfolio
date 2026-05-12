@@ -104,8 +104,9 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 1rem;
-  background: rgba(9, 10, 18, 0.7);
-  backdrop-filter: blur(12px);
+  background: rgba(12, 14, 22, 0.88);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   opacity: 0;
   transform: translateY(12px);
 }
