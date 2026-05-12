@@ -74,7 +74,6 @@ function TechMarquee() {
 
   return (
     <section className="tech-marquee" aria-label="Stack and capability marquee">
-      <div className="tech-marquee__mask tech-marquee__mask--left" />
       <div className="tech-marquee__glow tech-marquee__glow--left" />
       <div className="tech-marquee__glow tech-marquee__glow--right" />
       <div ref={wrapperRef} className="tech-marquee__viewport" tabIndex={0}>
@@ -91,7 +90,6 @@ function TechMarquee() {
           ))}
         </div>
       </div>
-      <div className="tech-marquee__mask tech-marquee__mask--right" />
     </section>
   );
 }
