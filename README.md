@@ -61,7 +61,7 @@ The point was never to make a portfolio that tries to be about everything at onc
 
 ## Project Preview
 
-The preview and walkthroughs below show the portfolio itself doing the job it was built for: setting the tone fast, moving cleanly between sections and routes, and making the work feel presented instead of just listed.
+The preview and walkthroughs below show the portfolio itself setting the tone fast, moving cleanly between sections and routes, and making the work feel presented instead of just listed.
 
 ![Big Boy Portfolio hero](./readme-assets/portfolio-hero.png)
 
@@ -158,7 +158,9 @@ The visual direction is dark, polished, and design-led, but it is still tied to 
 - reveal wrappers control pacing across sections instead of every page improvising its own motion
 - SCSS partials keep layout, component, and page styling from collapsing into one giant stylesheet
 
-One of the more real frontend tradeoffs in this project was keeping that premium look without letting the experience start flashing or feeling unstable on more sensitive displays. I liked the glassier version, but the smoother UX mattered more. I kept the marquee, the spotlight feel, and the darker showroom direction, then pulled back the heavier live frost in the moving and sticky zones. The result is closer to matte translucent surfaces, shell-based depth, and cleaner layered styling that still feels polished without asking the browser to fight through unnecessary visual cost while the page scrolls.
+One of the more real frontend tradeoffs in this project was keeping that premium look without letting the experience start flashing or feeling unstable on more sensitive displays. I liked the glassier version, but the smoother UX mattered more.
+
+I kept the marquee, the spotlight feel, and the darker showroom direction, then pulled back the heavier live frost in the moving and sticky zones. The result is closer to matte translucent surfaces, shell-based depth, and cleaner layered styling that still feels polished without asking the browser to fight through unnecessary visual cost while the cursor is in motion or the page scrolls.
 
 I wanted the first impression to feel sharp, but I also wanted the repo to make sense when another developer opens it.
 
@@ -234,7 +236,7 @@ If you want the contact modal and inquiry form to send to your own inbox, update
 
 - premium frontend presentation
 - case-study framing
-- service positioning
+- offering services
 - inquiry and contact flow
 - scalable local content structure
 
