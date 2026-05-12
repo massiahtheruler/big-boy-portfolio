@@ -38,18 +38,21 @@ The point was never to make a portfolio that tries to be about everything at onc
 ## Architecture Snapshot
 
 **Frontend**
+
 - React 19
 - Vite
 - React Router 7
 - Sass / SCSS
 
 **Content Layer**
+
 - `src/data/caseStudies.js` drives featured case studies and dynamic project pages
 - `src/data/currentWork.js` separates active direction from finished feature pieces
 - `src/data/servicesContent.js` keeps offers, inquiry prompts, and helper copy in one place
 - `src/data/siteContent.js` powers hero content, value points, stats, and shared contact info
 
 **Interaction Layer**
+
 - `src/App.jsx` owns the routed shell, theme state, modal state, scroll reset, and body locking
 - `src/pages/ProjectPage.jsx` turns each featured build into a routed case-study view with live/code links and fallback handling
 - `src/pages/InquirePage.jsx` reads the selected offer from the URL and feeds it into the inquiry flow
@@ -168,7 +171,6 @@ I wanted the first impression to feel sharp, but I also wanted the repo to make 
 - Balancing dark premium styling, reveal timing, and motion polish with readability and restraint so the site does not tip into being overdesigned
 - Keeping the premium UI direction while reducing screen-specific flashing meant reworking some of the glassier surfaces into more matte translucent layers, especially around moving and sticky areas, so the site stayed smooth without losing its identity
 - Coordinating body-level theme state and body locking so the theme system and the modal system do not fight each other across route changes
-- Deciding what each featured project should prove, what belongs in current work instead, and how much to explain before the README starts overselling the portfolio
 
 ## Tech Stack
 
