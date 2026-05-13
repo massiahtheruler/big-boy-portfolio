@@ -47,7 +47,7 @@ export const siteContent = {
     },
     {
       label: "Resume",
-      href: "/resume",
+      href: "https://big-boy-portfolio.vercel.app/resume",
       available: true,
     },
   ],
