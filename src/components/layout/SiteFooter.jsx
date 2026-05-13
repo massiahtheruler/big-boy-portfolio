@@ -1,6 +1,10 @@
 import { siteContent } from "../../data/siteContent";
 
 function SiteFooter({ onOpenContact }) {
+  function shouldOpenNewTab(href) {
+    return href.startsWith("http") || href.startsWith("mailto:") || href.endsWith(".pdf");
+  }
+
   return (
     <footer className="site-footer">
       <div className="site-footer__inner">
@@ -35,8 +39,8 @@ function SiteFooter({ onOpenContact }) {
                 <a
                   key={link.label}
                   href={link.href}
-                  target={link.href.startsWith("http") ? "_blank" : undefined}
-                  rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+                  target={shouldOpenNewTab(link.href) ? "_blank" : undefined}
+                  rel={shouldOpenNewTab(link.href) ? "noreferrer" : undefined}
                 >
                   {link.label}
                 </a>

@@ -19,7 +19,7 @@ function HeroSection({ onOpenContact }) {
     const rect = event.currentTarget.getBoundingClientRect();
     pointerRef.current = {
       x: event.clientX - rect.left,
-      y: event.clientY - rect.top
+      y: event.clientY - rect.top,
     };
 
     if (frameRef.current) {
@@ -64,12 +64,27 @@ function HeroSection({ onOpenContact }) {
             <Link to="/services" className="button button--ghost">
               Products + Services
             </Link>
-            <button type="button" className="button button--ghost" onClick={onOpenContact}>
+            <a
+              href="/docs/Justin-Henry-Frontend-Engineer.pdf"
+              className="button button--ghost"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume PDF
+            </a>
+            <button
+              type="button"
+              className="button button--ghost"
+              onClick={onOpenContact}
+            >
               Open contact
             </button>
           </div>
 
-          <div className="hero-section__stats" aria-label="Quick portfolio stats">
+          <div
+            className="hero-section__stats"
+            aria-label="Quick portfolio stats"
+          >
             {siteContent.stats.map((stat) => (
               <div key={stat.label} className="hero-stat">
                 <span className="hero-stat__value">{stat.value}</span>
@@ -82,10 +97,22 @@ function HeroSection({ onOpenContact }) {
         <Reveal className="hero-section__visual" delay={120}>
           <div className="hero-orbit">
             <div className="hero-orbit__stickers" aria-hidden="true">
-              <img src="/assets/Glowing pink ring with black outline.png" alt="" />
-              <img src="/assets/Turquoise squiggle with bold outline.png" alt="" />
-              <img src="/assets/Vibrant turquoise circle with bold outline.png" alt="" />
-              <img src="/assets/Bold purple triangle with jagged border.png" alt="" />
+              <img
+                src="/assets/Glowing pink ring with black outline.png"
+                alt=""
+              />
+              <img
+                src="/assets/Turquoise squiggle with bold outline.png"
+                alt=""
+              />
+              <img
+                src="/assets/Vibrant turquoise circle with bold outline.png"
+                alt=""
+              />
+              <img
+                src="/assets/Bold purple triangle with jagged border.png"
+                alt=""
+              />
             </div>
             <div className="hero-orbit__core">
               <span>React + Vite</span>
