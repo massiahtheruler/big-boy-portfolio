@@ -3,6 +3,7 @@ import ThemeToggle from "./ThemeToggle";
 
 function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
   const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const navItems = [
     {
@@ -38,6 +39,12 @@ function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
           to="/"
           className="site-header__brand"
           aria-label="Justin Henry home"
+          onClick={(event) => {
+            if (isHomePage) {
+              event.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
         >
           <img
             src="/assets/Bold JH logo with angular brackets.png"

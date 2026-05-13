@@ -9,6 +9,7 @@ I spent real time making the portfolio feel curated. GoCart, Glitter, Netflix Cl
 ## Live Site
 
 - Live site: [big-boy-portfolio.vercel.app](https://big-boy-portfolio.vercel.app)
+- Resume page: [/resume](https://big-boy-portfolio.vercel.app/resume)
 - Resume PDF: [Justin Henry — Frontend Engineer](./public/docs/Justin-Henry-Frontend-Engineer.pdf)
 - Repository: [github.com/massiahtheruler/big-boy-portfolio](https://github.com/massiahtheruler/big-boy-portfolio)
 

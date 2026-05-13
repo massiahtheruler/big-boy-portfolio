@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ServicesPage from "./pages/ServicesPage";
 import InquirePage from "./pages/InquirePage";
+import ResumePage from "./pages/ResumePage";
 import SiteHeader from "./components/layout/SiteHeader";
 import SiteFooter from "./components/layout/SiteFooter";
 import ContactModal from "./components/layout/ContactModal";
@@ -49,6 +50,10 @@ function App() {
           />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/inquire" element={<InquirePage />} />
+          <Route
+            path="/resume"
+            element={<ResumePage onOpenContact={() => setIsContactOpen(true)} />}
+          />
         </Routes>
       </main>
       <SiteFooter onOpenContact={() => setIsContactOpen(true)} />

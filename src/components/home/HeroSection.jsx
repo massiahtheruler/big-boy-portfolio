@@ -64,14 +64,9 @@ function HeroSection({ onOpenContact }) {
             <Link to="/services" className="button button--ghost">
               Products + Services
             </Link>
-            <a
-              href="/docs/Justin-Henry-Frontend-Engineer.pdf"
-              className="button button--ghost"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume PDF
-            </a>
+            <Link to="/resume" className="button button--ghost">
+              Resume
+            </Link>
             <button
               type="button"
               className="button button--ghost"

@@ -42,12 +42,12 @@ export const siteContent = {
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/justin-h-549496285/",
+      href: "https://www.linkedin.com/in/justin-frontend/",
       available: true,
     },
     {
-      label: "Resume PDF",
-      href: "/docs/Justin-Henry-Frontend-Engineer.pdf",
+      label: "Resume",
+      href: "/resume",
       available: true,
     },
   ],
