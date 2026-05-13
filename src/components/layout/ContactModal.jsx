@@ -93,7 +93,8 @@ function ContactModal({ isOpen, onClose }) {
             work feel premium without losing clarity, reach out.
           </p>
           <div className="contact-modal__direct">
-            <span>Direct email</span>
+            <span>Direct contact</span>
+            <a href={siteContent.phoneHref}>{siteContent.phoneDisplay}</a>
             <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
               {siteContent.email}
             </a>

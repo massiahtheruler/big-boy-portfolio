@@ -1,3 +1,5 @@
+import { siteContent } from "../data/siteContent";
+
 const experience = [
   {
     title: "Frontend Engineer & Digital Brand Systems Lead",
@@ -117,7 +119,7 @@ function ResumePage({ onOpenContact }) {
 
           <div className="resume-page__actions">
             <a
-              href="/docs/Justin-Henry-Frontend-Engineer.pdf"
+              href={siteContent.resumePdfPath}
               className="button button--primary"
               target="_blank"
               rel="noreferrer"
@@ -126,7 +128,7 @@ function ResumePage({ onOpenContact }) {
               <span>Open PDF</span>
             </a>
             <a
-              href="/docs/Justin-Henry-Frontend-Engineer.pdf"
+              href={siteContent.resumePdfPath}
               className="button button--ghost"
               download="Justin-Henry-Frontend-Engineer.pdf"
             >
@@ -140,8 +142,9 @@ function ResumePage({ onOpenContact }) {
 
           <div className="resume-page__meta">
             <span>Clifton, NJ</span>
-            <a href="mailto:justin.henry0024@gmail.com" target="_blank" rel="noreferrer">
-              justin.henry0024@gmail.com
+            <a href={siteContent.phoneHref}>{siteContent.phoneDisplay}</a>
+            <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+              {siteContent.email}
             </a>
             <a
               href="https://github.com/massiahtheruler"

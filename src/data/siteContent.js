@@ -47,9 +47,12 @@ export const siteContent = {
     },
     {
       label: "Resume",
-      href: "https://big-boy-portfolio.vercel.app/resume",
+      href: "/docs/Justin-Henry-Frontend-Engineer.pdf",
       available: true,
     },
   ],
   email: "Justin.Henry0024@gmail.com",
+  phoneDisplay: "(201) 471-1253",
+  phoneHref: "tel:+12014711253",
+  resumePdfPath: "/docs/Justin-Henry-Frontend-Engineer.pdf",
 };

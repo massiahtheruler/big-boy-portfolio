@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import { siteContent } from "../../data/siteContent";
 
 function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
   const location = useLocation();
@@ -35,24 +36,31 @@ function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
   return (
     <header className="site-header">
       <div className="shell site-header__inner">
-        <Link
-          to="/"
-          className="site-header__brand"
-          aria-label="Justin Henry home"
-          onClick={(event) => {
-            if (isHomePage) {
-              event.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }
-          }}
-        >
-          <img
-            src="/assets/Bold JH logo with angular brackets.png"
-            alt="Justin Henry logo"
-            className="site-header__logo"
-          />
-          <span className="site-header__name">Justin H.</span>
-        </Link>
+        <div className="site-header__brand-group">
+          <Link
+            to="/"
+            className="site-header__brand"
+            aria-label="Justin Henry home"
+            onClick={(event) => {
+              if (isHomePage) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
+            <img
+              src="/assets/Bold JH logo with angular brackets.png"
+              alt="Justin Henry logo"
+              className="site-header__logo"
+            />
+            <span className="site-header__name">Justin H.</span>
+          </Link>
+
+          <a className="site-header__direct" href={siteContent.phoneHref}>
+            <span>Direct</span>
+            <strong>{siteContent.phoneDisplay}</strong>
+          </a>
+        </div>
 
         <nav className="site-header__nav" aria-label="Primary">
           {navItems.map((item) => (
