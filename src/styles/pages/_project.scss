@@ -149,6 +149,40 @@
   font-size: 1.75rem;
 }
 
+.demo-account-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.demo-account-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-xl) - 0.35rem);
+  background: var(--surface);
+}
+
+.demo-account-card h3 {
+  margin-bottom: 0.15rem;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.demo-account-card p {
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.demo-account-card strong {
+  color: var(--text);
+}
+
+.demo-account-card span {
+  color: var(--text-soft);
+  overflow-wrap: anywhere;
+}
+
 .case-study-story {
   display: grid;
   gap: 1rem;

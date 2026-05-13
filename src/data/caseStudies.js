@@ -34,6 +34,28 @@ const portfolioProjects = [
       live: "https://gocart-beta-one.vercel.app",
       code: "https://github.com/massiahtheruler/gocart"
     },
+    demoAccounts: [
+      {
+        label: "Customer Demo",
+        email: "kingmassiah124@gmail.com",
+        password: "random123!321"
+      },
+      {
+        label: "Seller / Admin Demo",
+        email: "justin.henry0024@gmail.com",
+        password: "random123!321"
+      },
+      {
+        label: "Admin Demo",
+        email: "massiah024@gmail.com",
+        password: "random123!321"
+      },
+      {
+        label: "Pending Seller Demo",
+        email: "justin.henry124@gmail.com",
+        password: "random123!321"
+      }
+    ],
     featureHighlights: [
       "Multi-vendor ecommerce with customer, seller, and admin surfaces inside one app",
       "Functional cart, checkout, COD flow, Stripe payments, and account-aware UI behavior",
@@ -83,6 +105,13 @@ const portfolioProjects = [
       live: "https://netflix-clone-delta-indol.vercel.app",
       code: "https://github.com/massiahtheruler/netflix-clone"
     },
+    demoAccounts: [
+      {
+        label: "Demo Account",
+        email: "massiah024@gmail.com",
+        password: "Random123!321"
+      }
+    ],
     featureHighlights: [
       "Cinematic hero with autoplay countdown, custom spinner states, and masked image-to-video transitions",
       "Firebase sign up, sign in, sign out, and protected routes so the app behaves like a real product",
@@ -133,6 +162,18 @@ const portfolioProjects = [
       live: "https://glitter-theta.vercel.app",
       code: null
     },
+    demoAccounts: [
+      {
+        label: "Primary Demo",
+        email: "massiah024@gmail.com",
+        password: "random123!321"
+      },
+      {
+        label: "Secondary Demo",
+        email: "justin.henry0024@gmail.com",
+        password: "random123!321"
+      }
+    ],
     featureHighlights: [
       "Real sign up, sign in, sign out, and authenticated session flow instead of a static social mockup",
       "Scroll-centered social layout with left navigation, central feed, and right-side discovery cards",

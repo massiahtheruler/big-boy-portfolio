@@ -115,6 +115,26 @@ function ProjectPage({ onOpenContact }) {
             </div>
           </Reveal>
 
+          {project.demoAccounts?.length ? (
+            <Reveal className="case-study-panel" delay={140}>
+              <p className="section-eyebrow">Demo access</p>
+              <h2>Test the live build</h2>
+              <div className="demo-account-list">
+                {project.demoAccounts.map((account) => (
+                  <article key={`${account.label}-${account.email}`} className="demo-account-card">
+                    <h3>{account.label}</h3>
+                    <p>
+                      <strong>Email:</strong> <span>{account.email}</span>
+                    </p>
+                    <p>
+                      <strong>Password:</strong> <span>{account.password}</span>
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </Reveal>
+          ) : null}
+
           <Reveal className="case-study-panel" delay={180}>
             <p className="section-eyebrow">Feature highlights</p>
             <ul className="detail-list">
