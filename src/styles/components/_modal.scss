@@ -146,6 +146,42 @@
   color: #ffb3c7;
 }
 
+body[data-theme="light"] .contact-modal__panel--intro {
+  background:
+    radial-gradient(circle at top left, rgba(198, 146, 255, 0.28), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent),
+    #171827;
+}
+
+body[data-theme="light"] .contact-modal__panel--form {
+  background: rgba(19, 20, 30, 0.96);
+}
+
+body[data-theme="light"] .contact-modal__panel--intro,
+body[data-theme="light"] .contact-modal__panel--form,
+body[data-theme="light"] .contact-modal__panel--intro p,
+body[data-theme="light"] .contact-modal__panel--form p,
+body[data-theme="light"] .contact-modal__panel h2,
+body[data-theme="light"] .contact-modal__direct a,
+body[data-theme="light"] .contact-modal__close,
+body[data-theme="light"] .contact-form label,
+body[data-theme="light"] .contact-form input,
+body[data-theme="light"] .contact-form textarea {
+  color: var(--surface-copy);
+}
+
+body[data-theme="light"] .contact-form input,
+body[data-theme="light"] .contact-form textarea {
+  border-color: rgba(236, 238, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+body[data-theme="light"] .contact-form input::placeholder,
+body[data-theme="light"] .contact-form textarea::placeholder,
+body[data-theme="light"] .contact-modal__direct span {
+  color: var(--surface-copy-soft);
+}
+
 @media (max-width: 768px) {
   .contact-modal__dialog {
     grid-template-columns: 1fr;

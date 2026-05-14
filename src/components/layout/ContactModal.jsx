@@ -86,12 +86,19 @@ function ContactModal({ isOpen, onClose }) {
         aria-labelledby="contact-title"
       >
         <section className="contact-modal__panel contact-modal__panel--intro">
-          <p className="contact-modal__eyebrow">Let’s build something sharp</p>
-          <h2 id="contact-title">Frontend polish, product thinking, and clean execution.</h2>
-          <p>
-            If you are hiring, building, or looking for someone who can make the
-            work feel premium without losing clarity, reach out.
-          </p>
+          <p className="contact-modal__eyebrow">
+  Let’s build something intentional
+</p>
+
+<h2 id="contact-title">
+  Frontend systems, product thinking, and polished execution.
+</h2>
+
+<p>
+  Whether you are hiring, building, or refining an existing product,
+  I care about creating interfaces that feel clear, cohesive, and
+  structurally strong under real use.
+</p>
           <div className="contact-modal__direct">
             <span>Direct contact</span>
             <a href={siteContent.phoneHref}>{siteContent.phoneDisplay}</a>

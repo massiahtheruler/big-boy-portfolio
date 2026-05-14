@@ -8,12 +8,14 @@ function CurrentWorkSection() {
       <div className="shell">
         <Reveal className="section-heading">
           <p className="section-eyebrow">Current work</p>
-          <h2>The portfolio is live, but the pipeline is still moving.</h2>
-          <p>
-            I am not treating this as a finished archive. The strongest thing a
-            portfolio can do is show what is already real and what is actively
-            gaining shape.
-          </p>
+          <h2>The portfolio is live, but the systems behind it are still evolving.</h2>
+
+<p>
+  This is not meant to be a static archive of finished work. The goal is
+  to show both what has already been built and how I continue refining
+  frontend systems, product thinking, interaction design, and connected
+  brand experiences in real time.
+</p>
         </Reveal>
 
         <div className="current-work-grid">

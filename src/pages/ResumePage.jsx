@@ -7,9 +7,9 @@ const experience = [
     org: "Litty Co. — Remote, Contract",
     bullets: [
       "Leading frontend development and digital identity systems across a multi-brand ecosystem spanning ecommerce, service, and lifestyle-focused brands.",
-      "Building and maintaining responsive web experiences, component systems, branding assets, and content infrastructure across multiple concurrent projects.",
-      "Owning end-to-end implementation across UI architecture, brand consistency, site performance, and digital presence.",
-      "Working directly with ownership in an ongoing contract capacity, covering both technical execution and digital positioning."
+      "Building responsive web experiences, component systems, branded content structures, and reusable digital assets across multiple active projects.",
+      "Owning implementation across UI architecture, brand consistency, frontend performance, and customer-facing digital presence.",
+      "Working directly with ownership as a contract partner, combining technical execution, visual systems, and strategic positioning."
     ]
   },
   {
@@ -17,9 +17,9 @@ const experience = [
     date: "2022 – 2025",
     org: "JJ's Pro Service — NJ / Remote",
     bullets: [
-      "Managed daily operations, client relationships, and field coordination across active service contracts.",
-      "Expanded into brand marketing, business development, and digital presence work as the company scaled.",
-      "Transitioned into frontend development while applying operational and customer-behavior experience to product and UX decisions."
+      "Managed daily operations, client relationships, scheduling, field coordination, and service delivery across active contracts.",
+      "Expanded into brand marketing, business development, and digital presence as the company grew.",
+      "Applied operational and customer-behavior experience directly to frontend, UX, and product decisions."
     ]
   },
   {
@@ -28,7 +28,7 @@ const experience = [
     org: "Momentum Solar · Solar Xchange — NJ / FL",
     bullets: [
       "Handled full consultative residential solar sales cycles across competitive NJ and FL markets.",
-      "Built strong instincts for persuasion, objection handling, and reading behavior in high-volume client environments."
+      "Built strong instincts for persuasion, objection handling, trust-building, and reading user behavior in high-volume client environments."
     ]
   },
   {
@@ -36,7 +36,7 @@ const experience = [
     date: "2014 – 2016",
     org: "Penske Truck Leasing — Passaic, NJ",
     bullets: [
-      "Managed branch operations including team oversight, customer service, fleet coordination, and account management."
+      "Managed branch operations across team oversight, customer service, fleet coordination, account management, and daily execution."
     ]
   }
 ];
@@ -49,9 +49,9 @@ const projects = [
     code: "https://github.com/massiahtheruler/gocart",
     stack: "Next.js · React · TypeScript · Tailwind CSS · Redux · Prisma · PostgreSQL · Stripe",
     bullets: [
-      "Built a multi-role ecommerce platform with customer, seller, and admin behavior inside one product system.",
-      "Implemented checkout, coupon flows, dashboard logic, order handling, and AI-assisted listing support.",
-      "Balanced dense product behavior with a polished storefront and custom premium UI direction."
+      "Built a multi-role ecommerce platform with customer, seller, and admin behavior inside one cohesive product system.",
+      "Implemented checkout, coupon flows, dashboard logic, order handling, media support, and AI-assisted listing workflows.",
+      "Balanced dense marketplace functionality with polished storefront presentation, role-aware routing, and scalable frontend structure."
     ]
   },
   {
@@ -61,9 +61,9 @@ const projects = [
     code: "https://github.com/massiahtheruler/glitter",
     stack: "Next.js · React · TypeScript · Tailwind CSS · Prisma · MongoDB · NextAuth",
     bullets: [
-      "Built a branded social platform with dynamic profiles, messaging, notifications, and account-aware UI.",
-      "Added product-specific extensions like Brok AI chat and Dee-EM messaging while keeping the app cohesive.",
-      "Pushed a tutorial-style foundation into a more original product with stronger identity and cleaner interaction flow."
+      "Built a branded social platform with dynamic profiles, messaging, notifications, post creation, and account-aware UI behavior.",
+      "Added product-specific extensions like Brok AI chat and Dee-EM messaging while keeping the platform visually and structurally cohesive.",
+      "Expanded a tutorial foundation into a stronger original product direction with cleaner interaction flow and branded social UX systems."
     ]
   },
   {
@@ -73,8 +73,8 @@ const projects = [
     code: "https://github.com/massiahtheruler/big-boy-portfolio",
     stack: "React · Vite · React Router · Sass · EmailJS · Vitest",
     bullets: [
-      "Built a routed portfolio system with case studies, services, inquiry flow, and contact behavior integrated into one product shell.",
-      "Structured the site around reusable local content, cleaner project framing, and premium frontend presentation."
+      "Built a routed portfolio system with case studies, services, inquiry flow, contact behavior, and project storytelling inside one product shell.",
+      "Structured the site around reusable content, stronger project framing, interaction polish, and frontend presentation built to support both recruiters and clients."
     ]
   },
   {
@@ -84,8 +84,8 @@ const projects = [
     code: "https://github.com/massiahtheruler/netflix-clone",
     stack: "React · Vite · Firebase Auth · Firestore · TMDB API · Sass",
     bullets: [
-      "Recreated a recognizable streaming product experience with auth gating, cinematic autoplay behavior, and TMDB-powered title rails.",
-      "Built motion, timing, and player-state coordination directly with React state, CSS, timers, masks, and browser APIs."
+      "Recreated a recognizable streaming product experience with auth gating, cinematic autoplay behavior, player pages, and TMDB-powered title rails.",
+      "Built motion, timing, and player-state coordination directly with React state, CSS, timers, masks, and browser APIs instead of relying on animation templates."
     ]
   }
 ];
@@ -111,10 +111,14 @@ function ResumePage({ onOpenContact }) {
       <div className="shell resume-page__grid">
         <div className="resume-page__hero">
           <p className="section-eyebrow">Resume</p>
+
           <h1>Frontend Engineer with product instincts and brand systems depth.</h1>
+
           <p className="resume-page__lede">
-            This page keeps the resume readable inside the portfolio while the PDF stays
-            ready for recruiters, clients, and hiring managers who want the standard format.
+            A readable portfolio version of my resume, focused on frontend systems,
+            product execution, and the business-facing experience behind the work.
+            The PDF is available for recruiters, clients, and hiring teams who need
+            the standard format.
           </p>
 
           <div className="resume-page__actions">

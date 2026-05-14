@@ -96,12 +96,19 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  filter: blur(1.6px) saturate(0.92);
+  transform: scale(1.02);
 }
 
 .device-panel__scrim {
   z-index: 0;
   background:
-    linear-gradient(180deg, rgba(8, 9, 16, 0.12), rgba(8, 9, 16, 0.38) 38%, rgba(8, 9, 16, 0.9) 100%);
+    linear-gradient(
+      180deg,
+      rgba(8, 9, 16, 0.18),
+      rgba(8, 9, 16, 0.48) 34%,
+      rgba(8, 9, 16, 0.92) 100%
+    );
 }
 
 .device-panel__label {
@@ -181,6 +188,22 @@
 .demo-account-card span {
   color: var(--text-soft);
   overflow-wrap: anywhere;
+}
+
+body[data-theme="light"] .device-panel__label {
+  background: var(--surface-pill-bg);
+  border: 1px solid var(--surface-pill-border);
+  color: #3d3850;
+}
+
+body[data-theme="light"] .device-panel strong,
+body[data-theme="light"] .device-panel p,
+body[data-theme="light"] .device-panel__cta {
+  color: var(--surface-copy);
+}
+
+body[data-theme="light"] .demo-account-card {
+  background: rgba(255, 255, 255, 0.88);
 }
 
 .case-study-story {

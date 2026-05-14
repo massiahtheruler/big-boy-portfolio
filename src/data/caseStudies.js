@@ -4,11 +4,11 @@ const portfolioProjects = [
     name: "GoCart",
     featured: true,
     tagline:
-      "A full-stack multi-vendor ecommerce platform with customer, seller, and admin flows wrapped in a premium custom UI system.",
+      "A full-stack multi-vendor ecommerce platform with customer, seller, and admin workflows built around a premium custom UI system.",
     summary:
-      "GoCart is a marketplace product build, not just a styled storefront. It combines customer shopping, seller tooling, admin controls, real checkout logic, coupon campaigns, reviews, AI-assisted listing support, and a custom showroom-style interface in one app.",
+      "GoCart is a multi-vendor marketplace product, not just a styled storefront. It combines customer shopping, seller tooling, admin controls, Stripe payments, coupon systems, reviews, AI-assisted listing support, and a custom showroom-inspired interface inside one cohesive application.",
     audienceSummary:
-      "This project shows I can take a commerce idea past surface styling and turn it into a deeper product with roles, rules, dashboard logic, payment flows, and stronger product thinking.",
+      "This project reflects how I approach product depth: combining frontend polish with role-aware systems, commerce logic, dashboards, payments, and scalable user flows inside a cohesive experience.",
     role: "Product designer, frontend engineer, and full-stack systems builder",
     stack: [
       "Next.js App Router",
@@ -25,9 +25,9 @@ const portfolioProjects = [
     ],
     heroMedia: {
       eyebrow: "Marketplace / Ecommerce",
-      heading: "Marketplace depth with custom premium presentation",
+      heading: "Marketplace depth built around polished product experiences",
       detail:
-        "Customer, seller, and admin experiences with store approval flow, scheduled coupons, delivered-order reviews, Stripe checkout, and AI-assisted listing support."
+        "Customer, seller, and admin experiences with store approval workflow, scheduled coupons, delivered-order reviews, Stripe checkout, and AI-assisted listing support."
     },
     previewImage: "/assets/gocart-home.png",
     links: {
@@ -60,7 +60,7 @@ const portfolioProjects = [
       "Multi-vendor ecommerce with customer, seller, and admin surfaces inside one app",
       "Functional cart, checkout, COD flow, Stripe payments, and account-aware UI behavior",
       "Public deals system with active, upcoming, and expired campaigns plus coupon validation timing",
-      "Custom glass, neumorphic, and showroom-inspired styling built directly in the app without prefab motion templates"
+      "Custom glassmorphic and showroom-inspired styling built directly into the application without relying on prefab motion templates"
     ],
     technicalProof: [
       "Built with Next.js App Router, Clerk auth, Redux Toolkit state, Prisma, and Neon Postgres-backed marketplace data.",
@@ -69,7 +69,7 @@ const portfolioProjects = [
       "Integrated ImageKit media handling, Inngest scheduling, and AI-assisted listing flows while keeping the interface polished and state-driven."
     ],
     buildStory:
-      "GoCart is where I pushed hardest on making dense product behavior feel premium instead of cluttered. The challenge was not just feature count. It was getting roles, flows, timing rules, payments, dashboards, and custom motion to all feel like one coherent product.",
+      "GoCart is where I pushed hardest on making dense product behavior feel intuitive instead of cluttered. The challenge was not just feature count, but making roles, flows, payments, dashboards, timing systems, and custom interactions feel like one cohesive product.",
     status: "Shipped concept",
     accent: "emerald"
   },
@@ -78,12 +78,12 @@ const portfolioProjects = [
     name: "Netflix Clone",
     featured: true,
     tagline:
-      "A React streaming UI that mixes cinematic motion, real auth, protected routes, and hand-built interaction design.",
+      "A React streaming interface focused on cinematic interaction design, protected user flows, and hand-built frontend motion systems.",
     summary:
-      "This build started as a Netflix-inspired interface, but the real work was in the details: autoplay trailer timing, protected user flow, live TMDB-powered rows, player pages, and motion built directly with state, CSS, timers, masks, and browser APIs.",
+      "This project started as a Netflix-inspired streaming interface, but the deeper challenge was recreating the pacing and responsiveness of a production product through autoplay timing, protected routes, live TMDB-powered content rails, player pages, and motion built directly with state, CSS, timers, masking, and browser APIs.",
     audienceSummary:
-      "This project shows my frontend taste and my ability to turn a familiar product pattern into something that still feels engineered, not just copied.",
-    role: "Frontend builder and interaction-focused UI systems designer",
+      "This build reflects my approach to interaction-heavy frontend work: combining motion, responsiveness, and layered UI behavior in a way that still feels intentional, performant, and readable under real use.",
+    role: "Frontend engineer and interaction-focused UI systems builder",
     stack: [
       "React",
       "Vite",
@@ -96,9 +96,10 @@ const portfolioProjects = [
     ],
     heroMedia: {
       eyebrow: "Entertainment UI / Motion",
-      heading: "Cinematic pacing built from state, timing, and CSS",
+      heading:
+        "Cinematic interaction systems built from timing, state, and layered frontend behavior",
       detail:
-        "Timed autoplay trailer behavior, masked hero fades, protected routes, wheel-based row interaction, and dedicated player pages for each title."
+        "Timed autoplay trailer behavior, masked hero transitions, protected routes, wheel-based content rails, and dedicated player pages for each title."
     },
     previewImage: "/assets/netflix-clone-home.png",
     links: {
@@ -113,155 +114,206 @@ const portfolioProjects = [
       }
     ],
     featureHighlights: [
-      "Cinematic hero with autoplay countdown, custom spinner states, and masked image-to-video transitions",
-      "Firebase sign up, sign in, sign out, and protected routes so the app behaves like a real product",
-      "Live TMDB-powered content rows with wheel scrolling, hover reveal, and card-to-player routing",
-      "Responsive layout tuning across desktop, tablet, and mobile instead of default stack-and-shrink behavior"
+      "Cinematic hero system with autoplay countdowns, custom loading states, and masked image-to-video transitions",
+      "Firebase authentication with protected routes and auth-aware navigation behavior",
+      "Live TMDB-powered content rails with wheel interaction, hover expansion, and player-page routing",
+      "Responsive layout tuning across desktop, tablet, and mobile instead of relying on default stack-and-shrink behavior"
     ],
     technicalProof: [
-      "Built motion directly with React state, timers, CSS transitions, transforms, overlays, and browser APIs instead of animation libraries.",
-      "Used Firebase Auth and Firestore to handle real account flow, route protection, and auth-aware redirects.",
-      "Structured live media rails and player pages around TMDB data while keeping the interface readable and intentional.",
-      "Combined Sass and Tailwind for a custom styling system with layered backgrounds, masking, blur, and responsive behavior."
+      "Built motion systems directly with React state, timers, CSS transitions, transforms, overlays, and browser APIs instead of relying on animation libraries.",
+      "Used Firebase Auth and Firestore to manage account flow, protected routes, and auth-aware redirects.",
+      "Structured live media rails and player pages around TMDB data while keeping the interface readable and visually cohesive.",
+      "Combined Sass and Tailwind into a layered styling system with masking, blur, overlays, and responsive behavior."
     ],
     buildStory:
-      "The value here was never just visual similarity. It was learning how to make a streaming interface feel cinematic and responsive through timing, layering, and interaction logic built by hand instead of leaning on motion libraries or templates.",
+      "The goal was never just visual similarity. It was understanding how cinematic interfaces create pacing, clarity, and responsiveness through timing, layering, and interaction systems built directly into the frontend instead of relying on templates or heavy animation tooling.",
     status: "Featured build",
     accent: "violet"
   },
-  {
-    slug: "twitter-glitter",
-    name: "Twitter / Glitter",
-    featured: true,
-    tagline:
-      "A full-stack social platform inspired by X/Twitter with custom branding, real account flow, and a cleaner PG-13 product direction.",
-    summary:
-      "Glitter is a social product build centered around authenticated user flow, post creation, dynamic profiles, profile editing, feed interaction, and a more approachable alternative to the usual X/Twitter tone. It started from a tutorial foundation, then got pushed into a more original branded product with added features and stronger product identity.",
-    audienceSummary:
-      "This project shows I can take a known product pattern, extend it past tutorial scope, and turn it into something that feels more like a real platform with its own direction.",
-    role: "Frontend engineer, product customizer, and social UX systems builder",
-    stack: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Prisma",
-      "MongoDB",
-      "NextAuth",
-      "Zustand",
-      "SWR"
-    ],
-    heroMedia: {
-      eyebrow: "Social Product / UX Systems",
-      heading: "A branded social platform with real account-aware behavior",
-      detail:
-        "Dynamic profiles, post creation, follow-state groundwork, editable accounts, discovery sidebars, and custom concepts like Brok AI chat and Deeems messaging."
-    },
-    previewImage: "/assets/twitter-glitter-home.png",
-    links: {
-      live: "https://glitter-theta.vercel.app",
-      code: null
-    },
-    demoAccounts: [
-      {
-        label: "Primary Demo",
-        email: "massiah024@gmail.com",
-        password: "random123!321"
-      },
-      {
-        label: "Secondary Demo",
-        email: "justin.henry0024@gmail.com",
-        password: "random123!321"
-      }
-    ],
-    featureHighlights: [
-      "Real sign up, sign in, sign out, and authenticated session flow instead of a static social mockup",
-      "Scroll-centered social layout with left navigation, central feed, and right-side discovery cards",
-      "Dynamic profile pages with profile hero, avatar, bio, joined date, follow/edit states, and ownership-aware UI",
-      "Custom branding direction with Brok AI chat, Deeems messaging, and a cleaner family-friendlier product tone"
-    ],
-    technicalProof: [
-      "Built with Next.js, TypeScript, Prisma, MongoDB, NextAuth, Zustand, and SWR for account-aware data and social interaction flow.",
-      "Wired modal-driven auth, feed fetching, post creation routes, profile editing, and route-specific user rendering into one product structure.",
-      "Handled conditional UI for signed-in vs signed-out users, self vs other profiles, and follow/edit action states.",
-      "Adapted older tutorial code to a stricter modern toolchain while expanding the app past the original walkthrough."
-    ],
-    buildStory:
-      "Glitter mattered because I did not want another tutorial clone sitting in the portfolio untouched. The real work was in pushing the branding, social behavior, profile ownership, and product structure far enough that the build feels like mine instead of just a recreated feed.",
-    status: "Featured build",
-    accent: "rose"
+ {
+  slug: "twitter-glitter",
+
+  name: "Twitter / Glitter",
+
+  featured: true,
+
+  tagline:
+    "A full-stack social platform inspired by X/Twitter with authenticated user flow, custom branding systems, and interaction-focused frontend architecture.",
+
+  summary:
+    "Glitter is a social platform centered around authenticated user flow, post creation, dynamic profiles, editable accounts, feed interaction, and branded social UX systems. What started from a tutorial foundation evolved into a more original product direction with expanded functionality, stronger interface consistency, and custom platform concepts.",
+
+  audienceSummary:
+    "This project reflects how I approach social product systems: extending familiar interaction patterns into something more structured, branded, and behavior-aware instead of stopping at surface-level replication.",
+
+  role:
+    "Frontend engineer, product systems builder, and interaction-focused social UX designer",
+
+  stack: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Prisma",
+    "MongoDB",
+    "NextAuth",
+    "Zustand",
+    "SWR"
+  ],
+
+  heroMedia: {
+    eyebrow: "Social Product / UX Systems",
+
+    heading:
+      "A branded social platform built around account-aware interaction systems",
+
+    detail:
+      "Dynamic profiles, post creation, editable accounts, discovery sidebars, authenticated session flow, and custom concepts like Brok AI chat and Deeems messaging."
   },
+
+  previewImage: "/assets/twitter-glitter-home.png",
+
+  links: {
+    live: "https://glitter-theta.vercel.app",
+    code: null
+  },
+
+  demoAccounts: [
+    {
+      label: "Primary Demo",
+      email: "massiah024@gmail.com",
+      password: "random123!321"
+    },
+    {
+      label: "Secondary Demo",
+      email: "justin.henry0024@gmail.com",
+      password: "random123!321"
+    }
+  ],
+
+  featureHighlights: [
+    "Authenticated sign up, sign in, sign out, and session-aware account flow instead of a static social interface",
+    "Scroll-centered social layout with persistent navigation, central feed systems, and discovery-focused sidebars",
+    "Dynamic profile pages with ownership-aware UI, editable accounts, follow states, avatar systems, and user-specific rendering",
+    "Custom product direction with Brok AI chat, Deeems messaging, and a more approachable branded social experience"
+  ],
+
+  technicalProof: [
+    "Built with Next.js, TypeScript, Prisma, MongoDB, NextAuth, Zustand, and SWR for account-aware social interaction systems.",
+    "Structured modal-driven authentication, feed rendering, post creation, profile editing, and route-specific user behavior inside one cohesive application flow.",
+    "Handled conditional UI states for authenticated users, signed-out visitors, self-owned profiles, and user-to-user interaction behavior.",
+    "Expanded older tutorial foundations into a more modernized product structure with stronger frontend architecture and branding consistency."
+  ],
+
+  buildStory:
+    "The value of Glitter was never just recreating a social feed. The real challenge was turning familiar interaction patterns into a more cohesive branded product with stronger account-aware behavior, cleaner UX structure, and frontend systems that feel intentional instead of tutorial-driven.",
+
+  status: "Featured build",
+
+  accent: "rose"
+},
   {
-    slug: "litty-hub",
-    name: "Litty Hub",
-    featured: false,
-    tagline:
-      "An umbrella brand build that turns four connected lanes, one visual DNA, and a service framework into one product story.",
-    summary:
-      "Litty Hub is the bigger ecosystem play behind the portfolio. It is part brand, part service offer, and part execution model: one umbrella build meant to make multiple businesses, touchpoints, and future launches feel like they belong to the same world.",
-    audienceSummary:
-      "This project shows how I think beyond a single homepage. It is about packaging identity, visuals, content direction, and web execution into something a client can actually grow inside.",
-    role: "Brand architect, frontend builder, visual systems designer, and strategic partner",
-    stack: [
-      "React",
-      "Vite",
-      "Sass",
-      "Brand systems",
-      "Content direction",
-      "Service design"
-    ],
-    heroMedia: {
-      eyebrow: "Umbrella brand / Brand ecosystem",
-      heading: "One world for four connected brands",
-      detail:
-        "A lifestyle wrapper, a shared monogram system, a seven-step Manifest Method, and a service model built around carrying ideas into real execution."
+  slug: "litty-hub",
+
+  name: "Litty Hub",
+
+  featured: false,
+
+  tagline:
+    "A connected brand ecosystem that combines frontend execution, visual systems, and product storytelling into one scalable identity framework.",
+
+  summary:
+    "Litty Hub is the broader ecosystem layer behind the portfolio: part brand system, part execution model, and part long-term product direction. The project connects multiple business lanes, visual identities, service flows, and future launches into one cohesive digital world designed to scale without losing consistency. A shared monogram system ties each brand together visually while still allowing every lane to maintain its own positioning and identity.",
+
+  audienceSummary:
+    "This project reflects how I think beyond standalone pages or isolated brands. The focus is building cohesive systems where identity, frontend execution, content direction, and product positioning reinforce each other across multiple touchpoints and long-term growth.",
+
+  role:
+    "Brand architect, frontend engineer, visual systems designer, and strategic product partner",
+
+  stack: [
+    "React",
+    "Vite",
+    "Sass",
+    "Brand systems",
+    "Content direction",
+    "Service design"
+  ],
+
+  heroMedia: {
+    eyebrow: "Umbrella Brand / Ecosystem Systems",
+
+    heading:
+      "One connected system for multiple brands, products, and experiences",
+
+    detail:
+      "A shared monogram language, a seven-step Manifest Method framework, and a scalable brand ecosystem built to carry ideas from concept through execution."
+  },
+
+  previewImage: "/assets/litty-hub-home.png",
+
+  links: {
+    live: "https://litty-hub.vercel.app",
+    code: null
+  },
+
+  featureHighlights: [
+    "Litty Co. positioned as the umbrella brand and attention engine for the larger ecosystem",
+    "Manifest Method introduced as a seven-step framework spanning identity, systems, execution, content, and long-term growth",
+    "A four-brand rollout structure designed to give each lane distinct positioning while maintaining shared visual consistency",
+    "A modular content strategy built around repurposable assets across every connected brand surface"
+  ],
+
+  technicalProof: [
+    "Structured the project as both a frontend experience and a scalable service framework instead of treating the site as a static brochure.",
+
+    "Built a repeatable visual system around shared monograms, cinematic styling, modular layouts, and reusable content structures so each connected brand feels distinct while remaining part of the same ecosystem.",
+
+    "Used React, routed storytelling, and reusable section architecture to present a larger ecosystem cleanly and coherently.",
+
+    "Defined scalable rollout logic so new brands, products, and campaigns can expand without the ecosystem feeling disconnected."
+  ],
+
+  detailSections: [
+    {
+      eyebrow: "Execution Order",
+
+      title: "How the ecosystem scales",
+
+      list: [
+        "Litty Co. launches first as the lifestyle wrapper and attention engine.",
+        "JJ Totes follows as the cleaner operational product lane.",
+        "Great Wall of Legends becomes the premium showcase experience.",
+        "JJ Pro Service remains part of the ecosystem while supporting the broader transition."
+      ]
     },
-    previewImage: "/assets/litty-hub-home.png",
-    links: {
-      live: "https://litty-hub.vercel.app",
-      code: null
+
+    {
+      eyebrow: "Service Model",
+
+      title: "What the partnership actually delivers",
+
+      body:
+        "The model goes beyond building standalone websites. It combines identity systems, frontend execution, rollout strategy, content direction, and long-term brand cohesion so businesses feel intentional across every customer-facing surface."
     },
-    featureHighlights: [
-      "Litty Co. positioned as the attention engine and umbrella brand for the larger ecosystem",
-      "Manifest Method introduced as a seven-step framework from idea to identity, system, expression, application, ecosystem, and outcome",
-      "A four-brand rollout plan that gives each lane a distinct flavor while keeping shared visual DNA",
-      "A one-shoot content strategy designed to generate usable assets across every connected brand"
-    ],
-    technicalProof: [
-      "Structured the project as both a web experience and a service offer instead of treating the site like a flat brochure.",
-      "Built a repeatable design language around shared marks, darker cinematic styling, and modular content sections.",
-      "Used React, routed storytelling, and reusable section patterns to present a larger brand system cleanly.",
-      "Defined clear execution order so the ecosystem can scale without the brands feeling random or disconnected."
-    ],
-    detailSections: [
-      {
-        eyebrow: "Execution order",
-        title: "How the ecosystem rolls out",
-        list: [
-          "Litty Co. comes first as the lifestyle wrapper and attention engine.",
-          "JJ Totes follows as the cleaner, near-finished product lane.",
-          "Great Wall of Legends is the premium showpiece build.",
-          "JJ Pro Service stays in the system, but lower priority after the pivot."
-        ]
-      },
-      {
-        eyebrow: "Service model",
-        title: "What the partnership actually is",
-        body:
-          "The offer is not just 'I can make you a site.' It is vision translation, brand shaping, integrated site and social execution, and helping a client move an idea into something that looks and feels real across more than one touchpoint."
-      },
-      {
-        eyebrow: "Content engine",
-        title: "One shoot, all brands",
-        body:
-          "Capture once, then repurpose across the ecosystem: reliability clips for JJ Pro, efficiency clips for JJ Totes, luxury ambiance for Great Wall, and lifestyle aspiration for Litty."
-      }
-    ],
-    buildStory:
-      "Litty matters because it is closer to the kind of partnership work I actually want. It is not just about making one polished site. It is about helping shape the identity, the rollout, the connected content plan, and the way separate pieces of a brand ecosystem support each other.",
-    status: "Active build",
-    accent: "amber"
-  }
+
+    {
+      eyebrow: "Content Engine",
+
+      title: "One production system across multiple brands",
+
+      body:
+        "Content is designed to scale across the ecosystem: operational reliability for JJ Pro, efficiency and utility for JJ Totes, premium ambiance for Great Wall, and lifestyle-driven storytelling for Litty Co."
+    }
+  ],
+
+  buildStory:
+    "Litty Hub represents the kind of long-term partnership and systems work I care most about. The challenge was not just building polished interfaces, but creating a connected ecosystem where visual identity, frontend execution, rollout strategy, and content direction all reinforce each other as the platform grows.",
+
+  status: "Active build",
+
+  accent: "amber"
+}
 ];
 
 export const caseStudies = portfolioProjects.filter((project) => project.featured);

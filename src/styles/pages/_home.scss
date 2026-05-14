@@ -228,6 +228,43 @@
   gap: 0.85rem;
 }
 
+body[data-theme="light"] .hero-stat {
+  background: rgba(255, 255, 255, 0.88);
+}
+
+body[data-theme="light"] .hero-orbit {
+  background:
+    radial-gradient(circle at center, rgba(198, 146, 255, 0.22), transparent 44%),
+    radial-gradient(circle at 30% 30%, rgba(105, 228, 208, 0.18), transparent 18%),
+    rgba(31, 29, 44, 0.92);
+}
+
+body[data-theme="light"] .hero-orbit__core {
+  background: rgba(15, 17, 27, 0.9);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+body[data-theme="light"] .hero-orbit__core span,
+body[data-theme="light"] .hero-orbit__core strong,
+body[data-theme="light"] .hero-orbit__ring span {
+  color: var(--surface-copy);
+}
+
+body[data-theme="light"] .hero-orbit__ring {
+  border-color: rgba(236, 238, 255, 0.22);
+}
+
+body[data-theme="light"] .value-card,
+body[data-theme="light"] .about-services-cta {
+  background:
+    linear-gradient(
+      155deg,
+      rgba(255, 255, 255, 0.9),
+      rgba(246, 243, 250, 0.82)
+    ),
+    rgba(255, 255, 255, 0.78);
+}
+
 @keyframes stickerFloat {
   0%,
   100% {

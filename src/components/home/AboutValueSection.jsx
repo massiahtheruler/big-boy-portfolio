@@ -8,13 +8,14 @@ function AboutValueSection() {
       <div className="shell about-grid">
         <Reveal className="about-intro">
           <p className="section-eyebrow">About</p>
-          <h2>Art direction matters. So does the structure underneath it.</h2>
-          <p>
-            I like interfaces that feel considered: darker, cleaner, and a little
-            surprising. But I also want the work to stand up when somebody asks
-            what it actually does, how it behaves, and whether the decisions make
-            sense.
-          </p>
+          <h2>Art direction matters. So does the system underneath it.</h2>
+
+<p>
+  I care about interfaces that feel intentional: visually refined,
+  interaction aware, and clear in how they guide people through a product.
+  But the frontend work also needs to hold up structurally — in behavior,
+  responsiveness, scalability, and the logic behind the decisions being made.
+</p>
         </Reveal>
 
         <div className="value-list">

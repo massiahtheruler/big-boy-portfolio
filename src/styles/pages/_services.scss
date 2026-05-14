@@ -137,6 +137,17 @@
   content: "->";
 }
 
+body[data-theme="light"] .services-hero__brand {
+  background: var(--surface-pill-bg);
+  border-color: var(--surface-pill-border);
+  color: #49455d;
+}
+
+body[data-theme="light"] .services-offer__price,
+body[data-theme="light"] .services-card__price {
+  color: #6f49c9;
+}
+
 @media (max-width: 980px) {
   .services-hero__grid,
   .services-flagship__grid,

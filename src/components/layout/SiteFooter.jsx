@@ -25,12 +25,13 @@ function SiteFooter({ onOpenContact }) {
 
         <div className="site-footer__bubble">
           <div className="site-footer__copy">
-            <p className="site-footer__eyebrow">
-              Built for teams, recruiters, and clients
-            </p>
-            <h2 className="site-footer__title">
-              Clean design, real product thinking, and room to go deeper.
-            </h2>
+  <p className="site-footer__eyebrow">
+    Built for product teams, founders, recruiters, and clients
+  </p>
+
+  <h2 className="site-footer__title">
+    Frontend systems, interaction design, and product thinking built to hold up under pressure.
+  </h2>
           </div>
 
           <div className="site-footer__links">

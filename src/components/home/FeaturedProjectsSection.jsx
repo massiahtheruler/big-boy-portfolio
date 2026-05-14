@@ -10,9 +10,13 @@ function FeaturedProjectsSection() {
           <p className="section-eyebrow">Featured work</p>
           <h2>Three projects that show range without losing polish.</h2>
           <p>
-            The goal here is not to throw every build on the page. It is to show
-            visual taste, product depth, and the way I structure work when the
-            interface starts carrying real responsibility.
+            The goal is not to throw every build on the page. It is to show
+
+  product thinking, frontend depth, and the way I structure systems
+
+  when interfaces need to feel intuitive, scalable, and reliable under
+
+   pressure.
           </p>
         </Reveal>
 

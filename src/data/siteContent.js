@@ -1,39 +1,68 @@
 export const siteContent = {
   name: "Justin Henry",
-  eyebrow: "Brand Architect · Frontend Engineer",
-  title: "Brand Architect building premium product experiences",
-  intro:
-    "I build dark, polished interfaces and clearer brand systems that feel memorable on first look and still hold up when the product logic gets real.",
-  valuePoints: [
-    {
-      title: "Design-led frontend",
-      description:
-        "I care about layout, motion, clarity, and the kind of visual direction that makes a brand feel established before anybody inspects the stack.",
-    },
-    {
-      title: "Brand systems with product depth",
-      description:
-        "My stronger work goes past presentation and deals with state, flows, and structure so the identity, messaging, and product behavior all feel like the same company.",
-    },
-    {
-      title: "Client and team ready",
-      description:
-        "I can explain what was built in a way that makes sense to a hiring manager, a developer, or a client looking for somebody who can shape the brand and the experience at the same time.",
-    },
-  ],
-  stats: [
-    { label: "Case studies", value: "3" },
-    { label: "Current focus", value: "Brand systems + premium UI" },
-    { label: "Best fit", value: "Teams, founders, freelance clients" },
-  ],
-  aboutCta: {
-    eyebrow: "Need more than a portfolio piece?",
-    title: "Strategy, audits, and brand realization work live here too.",
+
+eyebrow: "Brand Architect · Frontend Engineer",
+
+title:
+  "Polished product experiences through cohesive digital identity.",
+
+intro:
+  "I create memorable interfaces and interactive systems that balance visual clarity, frontend performance, and product-focused execution.",
+
+valuePoints: [
+  {
+    title: "Design-led frontend",
+
     description:
-      "If you need clearer direction, a stronger digital presence, or a real way to turn the idea into a working brand, the services side is built for that.",
-    primaryLabel: "Explore services",
-    secondaryLabel: "Inquire now",
+      "I care about layout, interaction quality, motion, and the kind of visual direction that makes a product feel intentional before anybody inspects the stack."
   },
+
+  {
+    title: "Brand systems with product depth",
+
+    description:
+      "My stronger work goes beyond presentation and into the systems underneath it: user flow, frontend structure, interaction behavior, and the logic that keeps identity and product experience aligned."
+  },
+
+  {
+    title: "Frontend execution with strategic thinking",
+
+    description:
+      "I approach products from both the user and business side, building interfaces that communicate clearly, scale cleanly, and support real goals instead of just looking polished in screenshots."
+  }
+],
+
+stats: [
+  {
+    label: "Featured builds",
+    value: "4"
+  },
+
+  {
+    label: "Current focus",
+    value: "Frontend systems + product identity"
+  },
+
+  {
+    label: "Best fit",
+    value: "Product teams, startups, and founder-led brands"
+  }
+],
+
+aboutCta: {
+  eyebrow: "Need more than a portfolio piece?",
+
+  title:
+    "Strategy, systems, and execution live here too.",
+
+  description:
+    "The work goes beyond standalone interfaces. I help shape digital identity, frontend systems, rollout direction, and scalable product experiences that feel cohesive across every touchpoint.",
+
+  primaryLabel: "Explore services",
+
+  secondaryLabel: "Start a conversation"
+}
+,
   socialLinks: [
     {
       label: "GitHub",

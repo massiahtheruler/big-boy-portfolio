@@ -236,6 +236,32 @@
   text-transform: uppercase;
 }
 
+body[data-theme="light"] .project-card__eyebrow,
+body[data-theme="light"] .project-card h3,
+body[data-theme="light"] .project-card__tagline,
+body[data-theme="light"] .project-card__overlay p,
+body[data-theme="light"] .project-card__link,
+body[data-theme="light"] .project-card__status,
+body[data-theme="light"] .work-card__metrics span {
+  color: var(--surface-copy);
+}
+
+body[data-theme="light"] .project-card__overlay {
+  background: rgba(18, 20, 31, 0.9);
+}
+
+body[data-theme="light"] .project-card__overlay li,
+body[data-theme="light"] .project-card__status,
+body[data-theme="light"] .work-card__metrics span {
+  background: var(--surface-pill-bg);
+  border: 1px solid var(--surface-pill-border);
+  color: #343140;
+}
+
+body[data-theme="light"] .work-card__header span {
+  color: #8a5be8;
+}
+
 .work-card--static {
   cursor: not-allowed;
   transition:
