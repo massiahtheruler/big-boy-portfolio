@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ServicesPage from "./pages/ServicesPage";
@@ -61,6 +62,7 @@ function App() {
         isOpen={isContactOpen}
         onClose={() => setIsContactOpen(false)}
       />
+      <Analytics />
     </div>
   );
 }
