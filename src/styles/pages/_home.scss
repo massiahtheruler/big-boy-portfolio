@@ -74,7 +74,11 @@
 
 .hero-orbit {
   position: relative;
+  width: 100%;
+  max-width: 30rem;
   min-height: 30rem;
+  aspect-ratio: 1;
+  margin-inline: auto;
   border: 1px solid var(--border);
   border-radius: 50%;
   background:
@@ -316,6 +320,16 @@ body[data-theme="light"] .about-services-cta {
     grid-template-columns: 1fr;
   }
 
+  .hero-section__visual {
+    display: grid;
+    justify-items: center;
+  }
+
+  .hero-orbit {
+    width: min(100%, 32rem);
+    min-height: auto;
+  }
+
   .about-services-cta {
     margin-top: 0.5rem;
   }
@@ -331,6 +345,7 @@ body[data-theme="light"] .about-services-cta {
   }
 
   .hero-orbit {
-    min-height: 22rem;
+    width: min(100%, 22rem);
+    min-height: auto;
   }
 }
