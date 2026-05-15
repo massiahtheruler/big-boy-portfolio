@@ -9,8 +9,8 @@ const experience = [
       "Leading frontend development and digital identity systems across a multi-brand ecosystem spanning ecommerce, service, and lifestyle-focused brands.",
       "Building responsive web experiences, component systems, branded content structures, and reusable digital assets across multiple active projects.",
       "Owning implementation across UI architecture, brand consistency, frontend performance, and customer-facing digital presence.",
-      "Working directly with ownership as a contract partner, combining technical execution, visual systems, and strategic positioning."
-    ]
+      "Working directly with ownership as a contract partner, combining technical execution, visual systems, and strategic positioning.",
+    ],
   },
   {
     title: "Operations Manager & Contract Partner",
@@ -19,8 +19,8 @@ const experience = [
     bullets: [
       "Managed daily operations, client relationships, scheduling, field coordination, and service delivery across active contracts.",
       "Expanded into brand marketing, business development, and digital presence as the company grew.",
-      "Applied operational and customer-behavior experience directly to frontend, UX, and product decisions."
-    ]
+      "Applied operational and customer-behavior experience directly to frontend, UX, and product decisions.",
+    ],
   },
   {
     title: "Solar Sales Consultant",
@@ -28,17 +28,17 @@ const experience = [
     org: "Momentum Solar · Solar Xchange — NJ / FL",
     bullets: [
       "Handled full consultative residential solar sales cycles across competitive NJ and FL markets.",
-      "Built strong instincts for persuasion, objection handling, trust-building, and reading user behavior in high-volume client environments."
-    ]
+      "Built strong instincts for persuasion, objection handling, trust-building, and reading user behavior in high-volume client environments.",
+    ],
   },
   {
     title: "Branch Manager",
     date: "2014 – 2016",
     org: "Penske Truck Leasing — Passaic, NJ",
     bullets: [
-      "Managed branch operations across team oversight, customer service, fleet coordination, account management, and daily execution."
-    ]
-  }
+      "Managed branch operations across team oversight, customer service, fleet coordination, account management, and daily execution.",
+    ],
+  },
 ];
 
 const projects = [
@@ -47,24 +47,26 @@ const projects = [
     subtitle: "Full-Stack E-Commerce Platform",
     live: "https://gocart-beta-one.vercel.app",
     code: "https://github.com/massiahtheruler/gocart",
-    stack: "Next.js · React · TypeScript · Tailwind CSS · Redux · Prisma · PostgreSQL · Stripe",
+    stack:
+      "Next.js · React · TypeScript · Tailwind CSS · Redux · Prisma · PostgreSQL · Stripe",
     bullets: [
       "Built a multi-role ecommerce platform with customer, seller, and admin behavior inside one cohesive product system.",
       "Implemented checkout, coupon flows, dashboard logic, order handling, media support, and AI-assisted listing workflows.",
-      "Balanced dense marketplace functionality with polished storefront presentation, role-aware routing, and scalable frontend structure."
-    ]
+      "Balanced dense marketplace functionality with polished storefront presentation, role-aware routing, and scalable frontend structure.",
+    ],
   },
   {
     title: "Glitter",
     subtitle: "Original Social Product",
     live: "https://glitter-theta.vercel.app",
     code: "https://github.com/massiahtheruler/glitter",
-    stack: "Next.js · React · TypeScript · Tailwind CSS · Prisma · MongoDB · NextAuth",
+    stack:
+      "Next.js · React · TypeScript · Tailwind CSS · Prisma · MongoDB · NextAuth",
     bullets: [
       "Built a branded social platform with dynamic profiles, messaging, notifications, post creation, and account-aware UI behavior.",
       "Added product-specific extensions like Brok AI chat and Dee-EM messaging while keeping the platform visually and structurally cohesive.",
-      "Expanded a tutorial foundation into a stronger original product direction with cleaner interaction flow and branded social UX systems."
-    ]
+      "Expanded a tutorial foundation into a stronger original product direction with cleaner interaction flow and branded social UX systems.",
+    ],
   },
   {
     title: "Big Boy Portfolio",
@@ -74,8 +76,8 @@ const projects = [
     stack: "React · Vite · React Router · Sass · EmailJS · Vitest",
     bullets: [
       "Built a routed portfolio system with case studies, services, inquiry flow, contact behavior, and project storytelling inside one product shell.",
-      "Structured the site around reusable content, stronger project framing, interaction polish, and frontend presentation built to support both recruiters and clients."
-    ]
+      "Structured the site around reusable content, stronger project framing, interaction polish, and frontend presentation built to support both recruiters and clients.",
+    ],
   },
   {
     title: "Netflix Clone",
@@ -85,24 +87,26 @@ const projects = [
     stack: "React · Vite · Firebase Auth · Firestore · TMDB API · Sass",
     bullets: [
       "Recreated a recognizable streaming product experience with auth gating, cinematic autoplay behavior, player pages, and TMDB-powered title rails.",
-      "Built motion, timing, and player-state coordination directly with React state, CSS, timers, masks, and browser APIs instead of relying on animation templates."
-    ]
-  }
+      "Built motion, timing, and player-state coordination directly with React state, CSS, timers, masks, and browser APIs instead of relying on animation templates.",
+    ],
+  },
 ];
 
 const skills = [
   {
     label: "Frontend",
-    items: "React, Next.js, TypeScript, JavaScript, Tailwind CSS, Sass, Redux, Vite"
+    items:
+      "React, Next.js, TypeScript, JavaScript, Tailwind CSS, Sass, Redux, Vite",
   },
   {
     label: "Backend / Data",
-    items: "Node.js, Prisma, MongoDB, PostgreSQL (Neon), Firebase, NextAuth, Clerk, REST APIs"
+    items:
+      "Node.js, Prisma, MongoDB, PostgreSQL (Neon), Firebase, NextAuth, Clerk, REST APIs",
   },
   {
     label: "Tools",
-    items: "Git, GitHub, Vercel, Stripe, Figma, Notion, VS Code"
-  }
+    items: "Git, GitHub, Vercel, Stripe, Figma, Notion, VS Code",
+  },
 ];
 
 function ResumePage({ onOpenContact }) {
@@ -110,15 +114,17 @@ function ResumePage({ onOpenContact }) {
     <section className="resume-page">
       <div className="shell resume-page__grid">
         <div className="resume-page__hero">
-          <p className="section-eyebrow">Resume</p>
+          <p className="section-eyebrow">Resumé</p>
 
-          <h1>Frontend Engineer with product instincts and brand systems depth.</h1>
+          <h1>
+            Frontend Engineer with product instincts and brand systems depth.
+          </h1>
 
           <p className="resume-page__lede">
-            A readable portfolio version of my resume, focused on frontend systems,
-            product execution, and the business-facing experience behind the work.
-            The PDF is available for recruiters, clients, and hiring teams who need
-            the standard format.
+            A readable portfolio version of my resumé, focused on frontend
+            systems, product execution, and the business-facing experience
+            behind the work. The PDF is available for recruiters, clients, and
+            hiring teams who need the standard format.
           </p>
 
           <div className="resume-page__actions">
@@ -139,7 +145,11 @@ function ResumePage({ onOpenContact }) {
               DL
               <span>Download PDF</span>
             </a>
-            <button type="button" className="button button--ghost" onClick={onOpenContact}>
+            <button
+              type="button"
+              className="button button--ghost"
+              onClick={onOpenContact}
+            >
               Contact
             </button>
           </div>
@@ -147,7 +157,11 @@ function ResumePage({ onOpenContact }) {
           <div className="resume-page__meta">
             <span>Clifton, NJ</span>
             <a href={siteContent.phoneHref}>{siteContent.phoneDisplay}</a>
-            <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+            <a
+              href={`mailto:${siteContent.email}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               {siteContent.email}
             </a>
             <a
@@ -170,10 +184,11 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__summary resume-card">
           <p className="section-eyebrow">Summary</p>
           <p>
-            Frontend-focused developer building polished, interaction-driven web products
-            with React, Next.js, TypeScript, and modern frontend tooling. Background in
-            sales, operations, and business development informs a product-oriented
-            approach to UI systems, UX flow, and customer-facing experiences.
+            Frontend-focused developer building polished, interaction-driven web
+            products with React, Next.js, TypeScript, and modern frontend
+            tooling. Background in sales, operations, and business development
+            informs a product-oriented approach to UI systems, UX flow, and
+            customer-facing experiences.
           </p>
         </div>
 
@@ -193,7 +208,10 @@ function ResumePage({ onOpenContact }) {
           <p className="section-eyebrow">Experience</p>
           <div className="resume-entry-list">
             {experience.map((entry) => (
-              <article key={`${entry.title}-${entry.date}`} className="resume-entry">
+              <article
+                key={`${entry.title}-${entry.date}`}
+                className="resume-entry"
+              >
                 <div className="resume-entry__header">
                   <div>
                     <h2>{entry.title}</h2>
@@ -220,7 +238,10 @@ function ResumePage({ onOpenContact }) {
                   <div>
                     <h2>
                       {project.title}
-                      <span className="resume-entry__subtitle"> — {project.subtitle}</span>
+                      <span className="resume-entry__subtitle">
+                        {" "}
+                        — {project.subtitle}
+                      </span>
                     </h2>
                     <p className="resume-entry__stack">{project.stack}</p>
                   </div>
@@ -255,8 +276,9 @@ function ResumePage({ onOpenContact }) {
                 <span className="resume-entry__date">2025</span>
               </div>
               <p>
-                12-week intensive covering HTML, CSS, JavaScript, React, Node.js, and
-                full-stack fundamentals with real project work and job placement support.
+                12-week intensive covering HTML, CSS, JavaScript, React,
+                Node.js, and full-stack fundamentals with real project work and
+                job placement support.
               </p>
             </article>
 

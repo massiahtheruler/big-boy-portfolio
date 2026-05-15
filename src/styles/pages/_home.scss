@@ -84,32 +84,65 @@
   box-shadow: var(--shadow);
 }
 
-.hero-orbit__stickers img {
+.hero-orbit__sticker {
   position: absolute;
+  --sticker-shift-x: 0px;
+  --sticker-shift-y: 0px;
+  transition: transform 180ms ease-out;
+  will-change: transform;
+}
+
+.hero-orbit__sticker img {
+  display: block;
   width: clamp(2.8rem, 7vw, 5rem);
   animation: stickerFloat 7s ease-in-out infinite;
 }
 
-.hero-orbit__stickers img:nth-child(1) {
+.hero-orbit__sticker:nth-child(1) {
   top: 9%;
   left: 10%;
+  transform: translate(
+      var(--sticker-shift-x),
+      var(--sticker-shift-y)
+    );
 }
 
-.hero-orbit__stickers img:nth-child(2) {
+.hero-orbit__sticker:nth-child(2) {
   top: 18%;
   right: 12%;
+  transform: translate(
+      var(--sticker-shift-x),
+      var(--sticker-shift-y)
+    );
+}
+
+.hero-orbit__sticker:nth-child(2) img {
   animation-delay: 0.4s;
 }
 
-.hero-orbit__stickers img:nth-child(3) {
+.hero-orbit__sticker:nth-child(3) {
   bottom: 12%;
   left: 14%;
+  transform: translate(
+      var(--sticker-shift-x),
+      var(--sticker-shift-y)
+    );
+}
+
+.hero-orbit__sticker:nth-child(3) img {
   animation-delay: 1s;
 }
 
-.hero-orbit__stickers img:nth-child(4) {
+.hero-orbit__sticker:nth-child(4) {
   bottom: 11%;
   right: 10%;
+  transform: translate(
+      var(--sticker-shift-x),
+      var(--sticker-shift-y)
+    );
+}
+
+.hero-orbit__sticker:nth-child(4) img {
   animation-delay: 0.75s;
 }
 
@@ -129,6 +162,7 @@
   border-radius: 50%;
   background: rgba(10, 12, 19, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: not-allowed;
 }
 
 .hero-orbit__core span,

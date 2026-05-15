@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { siteContent } from "../../data/siteContent";
 
 function SiteFooter({ onOpenContact }) {
@@ -36,7 +37,11 @@ function SiteFooter({ onOpenContact }) {
 
           <div className="site-footer__links">
             {siteContent.socialLinks.map((link) =>
-              link.available ? (
+              link.available && link.href.startsWith("/") && !link.href.endsWith(".pdf") ? (
+                <Link key={link.label} to={link.href}>
+                  {link.label}
+                </Link>
+              ) : link.available ? (
                 <a
                   key={link.label}
                   href={link.href}

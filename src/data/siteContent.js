@@ -75,8 +75,8 @@ aboutCta: {
       available: true,
     },
     {
-      label: "Resume",
-      href: "/docs/Justin-Henry-Frontend-Engineer.pdf",
+      label: "Resumé",
+      href: "/resume",
       available: true,
     },
   ],
