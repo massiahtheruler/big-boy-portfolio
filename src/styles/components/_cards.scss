@@ -61,6 +61,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  filter: blur(1.6px) saturate(0.92);
+  transform: scale(1.02);
 }
 
 .project-card__scrim {
