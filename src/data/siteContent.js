@@ -1,68 +1,65 @@
 export const siteContent = {
   name: "Justin Henry",
 
-eyebrow: "Brand Architect · Frontend Engineer",
+  eyebrow: "Brand Architect · Frontend Engineer",
 
-title:
-  "Polished product experiences through cohesive digital identity.",
+  title: "Polished product experiences through cohesive digital identity.",
 
-intro:
-  "I create memorable interfaces and interactive systems that balance visual clarity, frontend performance, and product-focused execution.",
+  intro:
+    "I create memorable interfaces and interactive systems that balance visual clarity, frontend performance, and product-focused execution.",
 
-valuePoints: [
-  {
-    title: "Design-led frontend",
+  valuePoints: [
+    {
+      title: "Frontend-first, never surface-level",
+
+      description:
+        "I care about visual hierarchy, interaction quality, motion, and the details that make an interface feel intentional. Strong design creates trust long before a user understands the technology behind it.",
+    },
+
+    {
+      title: "Where branding meets products",
+
+      description:
+        "My background in identity, positioning, and creative direction influences how I build. I think about the entire experience, not just individual screens, so products feel cohesive from first impression to daily use.",
+    },
+
+    {
+      title: "UI with business context",
+
+      description:
+        "Technical decisions don’t exist in isolation. I care about performance, maintainability, and scalability, but also about the goals behind the product and the people it’s meant to serve.",
+    },
+  ],
+
+  stats: [
+    {
+      label: "Featured builds",
+      value: "4",
+    },
+
+    {
+      label: "Current focus",
+      value: "Frontend systems + product identity",
+    },
+
+    {
+      label: "Best fit",
+      value: "Product teams, startups, and founder-led brands",
+    },
+  ],
+
+  aboutCta: {
+    eyebrow: "Need more than a portfolio piece?",
+
+    title: "Building products is only part of the process.",
 
     description:
-      "I care about layout, interaction quality, motion, and the kind of visual direction that makes a product feel intentional before anybody inspects the stack."
+      "The strongest projects are rarely solved by code alone. I enjoy helping shape direction, clarify ideas, refine positioning, and connect business goals to practical execution. Whether I’m building the interface or helping define it, I’m interested in creating things that last.",
+
+    primaryLabel: "Explore services",
+
+    secondaryLabel: "Start a conversation",
   },
-
-  {
-    title: "Brand systems with product depth",
-
-    description:
-      "My stronger work goes beyond presentation and into the systems underneath it: user flow, frontend structure, interaction behavior, and the logic that keeps identity and product experience aligned."
-  },
-
-  {
-    title: "Frontend execution with strategic thinking",
-
-    description:
-      "I approach products from both the user and business side, building interfaces that communicate clearly, scale cleanly, and support real goals instead of just looking polished in screenshots."
-  }
-],
-
-stats: [
-  {
-    label: "Featured builds",
-    value: "4"
-  },
-
-  {
-    label: "Current focus",
-    value: "Frontend systems + product identity"
-  },
-
-  {
-    label: "Best fit",
-    value: "Product teams, startups, and founder-led brands"
-  }
-],
-
-aboutCta: {
-  eyebrow: "Need more than a portfolio piece?",
-
-  title:
-    "Strategy, systems, and execution live here too.",
-
-  description:
-    "The work goes beyond standalone interfaces. I help shape digital identity, frontend systems, rollout direction, and scalable product experiences that feel cohesive across every touchpoint.",
-
-  primaryLabel: "Explore services",
-
-  secondaryLabel: "Start a conversation"
-}
-,
   socialLinks: [
     {
       label: "GitHub",

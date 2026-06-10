@@ -30,7 +30,8 @@ function ContactModal({ isOpen, onClose }) {
         return;
       }
 
-      const focusableElements = dialogRef.current.querySelectorAll(focusableSelectors);
+      const focusableElements =
+        dialogRef.current.querySelectorAll(focusableSelectors);
       const firstElement = focusableElements[0];
       const lastElement = focusableElements[focusableElements.length - 1];
 
@@ -59,7 +60,7 @@ function ContactModal({ isOpen, onClose }) {
         emailConfig.serviceId,
         emailConfig.templateId,
         formRef.current,
-        emailConfig.publicKey
+        emailConfig.publicKey,
       );
       formRef.current.reset();
       setStatus("success");
@@ -86,29 +87,31 @@ function ContactModal({ isOpen, onClose }) {
         aria-labelledby="contact-title"
       >
         <section className="contact-modal__panel contact-modal__panel--intro">
-          <p className="contact-modal__eyebrow">
-  Let’s build something intentional
-</p>
-
-<h2 id="contact-title">
-  Frontend systems, product thinking, and polished execution.
-</h2>
-
-<p>
-  Whether you are hiring, building, or refining an existing product,
-  I care about creating interfaces that feel clear, cohesive, and
-  structurally strong under real use.
-</p>
+          <p className="contact-modal__eyebrow">From Idea To Identity</p>
+          <img className="headshot" src="public/assets/pro.jpeg" alt="" />
+          <h2 id="contact-title">Justin Henry</h2>
+          <p className="secondary">
+            <b>Frontend Engineer • Product Builder</b>
+          </p>
+          <p>
+            I turn ideas into products, brands, and digital experiences that
+            feel cohesive from concept through execution.
+          </p>
           <div className="contact-modal__direct">
             <span>Direct contact</span>
             <a href={siteContent.phoneHref}>{siteContent.phoneDisplay}</a>
-            <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+            <a
+              href={`mailto:${siteContent.email}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               {siteContent.email}
             </a>
           </div>
         </section>
 
         <section className="contact-modal__panel contact-modal__panel--form">
+          <p className="contact-modal__eyebrow">Make It Real</p>
           <button
             type="button"
             className="contact-modal__close"
@@ -121,7 +124,12 @@ function ContactModal({ isOpen, onClose }) {
           <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
             <label>
               Name
-              <input ref={firstFieldRef} name="user_name" type="text" required />
+              <input
+                ref={firstFieldRef}
+                name="user_name"
+                type="text"
+                required
+              />
             </label>
 
             <label>
@@ -134,7 +142,11 @@ function ContactModal({ isOpen, onClose }) {
               <textarea name="user_message" rows="5" required />
             </label>
 
-            <button type="submit" className="button button--primary" disabled={status === "sending"}>
+            <button
+              type="submit"
+              className="button button--primary"
+              disabled={status === "sending"}
+            >
               {status === "sending" ? "Sending..." : "Send message"}
             </button>
           </form>
@@ -148,7 +160,11 @@ function ContactModal({ isOpen, onClose }) {
           {status === "error" && (
             <p className="contact-form__feedback contact-form__feedback--error">
               Email service missed this one. Use{" "}
-              <a href={`mailto:${siteContent.email}`} target="_blank" rel="noreferrer">
+              <a
+                href={`mailto:${siteContent.email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {siteContent.email}
               </a>{" "}
               instead.

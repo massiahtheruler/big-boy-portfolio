@@ -8,19 +8,24 @@ function AboutValueSection() {
       <div className="shell about-grid">
         <Reveal className="about-intro">
           <p className="section-eyebrow">About</p>
-          <h2>Art direction matters. So does the system underneath it.</h2>
+          <h2>Art direction matters. So do the systems underneath.</h2>
 
-<p>
-  I care about interfaces that feel intentional: visually refined,
-  interaction aware, and clear in how they guide people through a product.
-  But the frontend work also needs to hold up structurally — in behavior,
-  responsiveness, scalability, and the logic behind the decisions being made.
-</p>
+          <p>
+            My path into frontend engineering came through branding, creative
+            work, entrepreneurship, and client-facing business experience. That
+            background taught me that good products need more than clean
+            visuals. They need structure, clarity, and systems that hold up when
+            real people start using them.
+          </p>
         </Reveal>
 
         <div className="value-list">
           {siteContent.valuePoints.map((point, index) => (
-            <Reveal key={point.title} delay={index * 100} className="value-card">
+            <Reveal
+              key={point.title}
+              delay={index * 100}
+              className="value-card"
+            >
               <h3>{point.title}</h3>
               <p>{point.description}</p>
             </Reveal>
@@ -35,7 +40,10 @@ function AboutValueSection() {
             <Link to="/services" className="button button--primary">
               {siteContent.aboutCta.primaryLabel}
             </Link>
-            <Link to="/inquire?offer=manifest-method" className="button button--ghost">
+            <Link
+              to="/inquire?offer=manifest-method"
+              className="button button--ghost"
+            >
               {siteContent.aboutCta.secondaryLabel}
             </Link>
           </div>
