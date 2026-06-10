@@ -4,18 +4,21 @@ import Reveal from "../shared/Reveal";
 
 function CurrentWorkSection() {
   return (
-    <section id="current-work" className="content-section content-section--current">
+    <section
+      id="current-work"
+      className="content-section content-section--current"
+    >
       <div className="shell">
         <Reveal className="section-heading">
           <p className="section-eyebrow">Current work</p>
-          <h2>The portfolio is live, but the systems behind it are still evolving.</h2>
+          <h2>Still Building | Always Refining.</h2>
 
-<p>
-  This is not meant to be a static archive of finished work. The goal is
-  to show both what has already been built and how I continue refining
-  frontend systems, product thinking, interaction design, and connected
-  brand experiences in real time.
-</p>
+          <p>
+            The projects below represent the direction I'm actively investing
+            in: connected brands, scalable systems, frontend products, and
+            original ideas that continue evolving long after the first version
+            ships.
+          </p>
         </Reveal>
 
         <div className="current-work-grid">
@@ -52,7 +55,9 @@ function CurrentWorkSection() {
                         <li key={highlight}>{highlight}</li>
                       ))}
                     </ul>
-                    <span className="project-card__link">Open Litty preview</span>
+                    <span className="project-card__link">
+                      Open Litty preview
+                    </span>
                   </div>
                 </Link>
               ) : (
@@ -72,7 +77,12 @@ function CurrentWorkSection() {
                   {item.links.length > 0 && (
                     <div className="work-card__links">
                       {item.links.map((link) => (
-                        <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
+                        <a
+                          key={link.label}
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           {link.label}
                         </a>
                       ))}

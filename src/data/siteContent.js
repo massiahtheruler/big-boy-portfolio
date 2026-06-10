@@ -3,31 +3,31 @@ export const siteContent = {
 
   eyebrow: "Brand Architect · Frontend Engineer",
 
-  title: "Polished product experiences through cohesive digital identity.",
+  title: "You see it. They don’t. I close that gap.",
 
   intro:
-    "I create memorable interfaces and interactive systems that balance visual clarity, frontend performance, and product-focused execution.",
+    "I help founders, products, and brands turn ideas into clear identities, stronger experiences, and systems people actually connect with. The work lives at the intersection of frontend engineering, interaction design, and product thinking.",
 
   valuePoints: [
     {
-      title: "Frontend-first, never surface-level",
+      title: "Frontend systems, not surface polish",
 
       description:
-        "I care about visual hierarchy, interaction quality, motion, and the details that make an interface feel intentional. Strong design creates trust long before a user understands the technology behind it.",
+        "A strong interface should look intentional, but it also needs to hold up under real use. I care about structure, responsiveness, scalability, and the decisions underneath the visuals.",
     },
 
     {
-      title: "Where branding meets products",
+      title: "Where identity meets execution",
 
       description:
-        "My background in identity, positioning, and creative direction influences how I build. I think about the entire experience, not just individual screens, so products feel cohesive from first impression to daily use.",
+        "My background in branding and creative direction shapes how I build. I think about the experience as a whole so products feel cohesive from first impression to everyday use.",
     },
 
     {
-      title: "UI with business context",
+      title: "Built with business context",
 
       description:
-        "Technical decisions don’t exist in isolation. I care about performance, maintainability, and scalability, but also about the goals behind the product and the people it’s meant to serve.",
+        "The goal is not to ship features just to say they exist. Every decision should support a larger objective, whether that is growth, clarity, conversion, trust, or long-term product direction.",
     },
   ],
 
@@ -44,7 +44,7 @@ export const siteContent = {
 
     {
       label: "Best fit",
-      value: "Product teams, startups, and founder-led brands",
+      value: "Founders, startups, and growing product teams",
     },
   ],
 
@@ -54,12 +54,13 @@ export const siteContent = {
     title: "Building products is only part of the process.",
 
     description:
-      "The strongest projects are rarely solved by code alone. I enjoy helping shape direction, clarify ideas, refine positioning, and connect business goals to practical execution. Whether I’m building the interface or helping define it, I’m interested in creating things that last.",
+      "The strongest projects usually have a gap between the vision and the execution. I enjoy helping shape direction, clarify ideas, refine positioning, and connect business goals to practical systems that can actually be built.",
 
     primaryLabel: "Explore services",
 
     secondaryLabel: "Start a conversation",
   },
+
   socialLinks: [
     {
       label: "GitHub",
@@ -77,6 +78,7 @@ export const siteContent = {
       available: true,
     },
   ],
+
   email: "Justin.Henry0024@gmail.com",
   phoneDisplay: "(201) 471-1253",
   phoneHref: "tel:+12014711253",

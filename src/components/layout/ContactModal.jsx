@@ -88,7 +88,7 @@ function ContactModal({ isOpen, onClose }) {
       >
         <section className="contact-modal__panel contact-modal__panel--intro">
           <p className="contact-modal__eyebrow">From Idea To Identity</p>
-          <img className="headshot" src="public/assets/pro.jpeg" alt="" />
+          <img className="headshot" src="/pro.jpeg" alt="" />
           <h2 id="contact-title">Justin Henry</h2>
           <p className="secondary">
             <b>Frontend Engineer • Product Builder</b>

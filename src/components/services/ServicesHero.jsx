@@ -12,7 +12,9 @@ function ServicesHero() {
           <p className="section-eyebrow">{identity.eyebrow}</p>
           <span className="services-hero__brand">{identity.brand}</span>
           <h1>{identity.role}</h1>
-          <p className="services-hero__statement">{identity.statement}</p>
+          <p className="services-hero__statement secondary">
+            {identity.statement}
+          </p>
           <p>{identity.substatement}</p>
           <div className="services-hero__actions">
             <Link

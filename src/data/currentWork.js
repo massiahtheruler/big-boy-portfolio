@@ -1,95 +1,90 @@
 export const currentWork = [
   {
-  slug: "litty-hub",
+    slug: "litty-hub",
 
-  title: "Litty Hub",
+    title: "Litty Hub",
 
-  status: "Active build",
+    status: "Active build",
 
-  accent: "amber",
+    accent: "amber",
 
-  description:
-    "A connected brand ecosystem built around shared visual systems, frontend execution, and long-term product storytelling across four distinct business lanes.",
+    description:
+      "A connected brand ecosystem where identity, frontend execution, services, and product direction are designed to move as one system instead of separate pieces.",
 
-  previewImage: "/assets/litty-hub-home.png",
+    previewImage: "/assets/litty-hub-home.png",
 
-  eyebrow: "Flagship Direction / Ecosystem Systems",
+    eyebrow: "Flagship Direction / Ecosystem Design",
 
-  headline:
-    "Four connected brands built around one scalable visual system.",
+    headline: "Four brands. One system. A bigger direction.",
 
-  cardTagline:
-    "An umbrella ecosystem designed to make separate products, services, and identities feel cohesive across every touchpoint.",
+    cardTagline:
+      "Litty Hub connects separate products, services, and identities into one visual and strategic ecosystem built to scale without losing cohesion.",
 
-  previewSummary:
-    "The preview explores the shared monogram system, Manifest Method framework, rollout structure, and the frontend thinking behind turning multiple brands into one connected experience.",
+    previewSummary:
+      "The preview explores the shared monogram system, Manifest Method framework, rollout structure, and the frontend thinking behind turning multiple brands into one connected experience.",
 
-  previewHighlights: [
-    "Manifest Method framework",
-    "Shared monogram system",
-    "4-brand ecosystem"
-  ],
+    previewHighlights: [
+      "Manifest Method framework",
+      "Shared monogram language",
+      "4-brand ecosystem",
+    ],
 
-  metrics: [
-    "4 connected brands",
-    "1 scalable ecosystem",
-    "7-step framework"
-  ],
+    metrics: ["4 connected brands", "1 shared system", "7-step framework"],
 
-  tags: [
-    "brand systems",
-    "frontend systems",
-    "content direction",
-    "ecosystem design"
-  ],
+    tags: [
+      "brand architecture",
+      "frontend systems",
+      "ecosystem design",
+      "content direction",
+    ],
 
-  links: [
-    {
-      label: "Live site",
-      href: "https://litty-hub.vercel.app"
-    }
-  ],
+    links: [
+      {
+        label: "Live site",
+        href: "https://litty-hub.vercel.app",
+      },
+    ],
 
-  featured: true
-},
+    featured: true,
+  },
 
-{
-  title: "Custom build pipeline",
+  {
+    title: "Custom build pipeline",
 
-  status: "Actively evolving",
+    status: "Actively evolving",
 
-  description:
-    "Refining a frontend-first process that combines product thinking, interaction design, and scalable implementation into clearer systems for modern brands and client work.",
+    description:
+      "A working process for turning rough ideas into polished digital systems: strategy first, interface second, implementation always grounded in the product goal.",
 
-  tags: [
-    "frontend systems",
-    "product thinking",
-    "client workflows",
-    "design implementation"
-  ],
+    tags: [
+      "build systems",
+      "product strategy",
+      "client workflows",
+      "frontend execution",
+    ],
 
-  links: [],
+    links: [],
 
-  featured: false
-},
+    featured: false,
+  },
 
-{
-  title: "Original product concepts",
+  {
+    title: "Original product concepts",
 
-  status: "In development",
+    status: "In development",
 
-  description:
-    "Expanding the portfolio toward more original product systems, interaction-driven experiences, and standalone concepts built around stronger frontend architecture and identity.",
+    description:
+      "New product ideas shaped around problems I keep running into myself: creation, organization, publishing, identity, and the gap between having the vision and making it usable.",
 
-  tags: [
-    "product systems",
-    "interaction design",
-    "frontend architecture",
-    "original builds"
-  ],
+    tags: [
+      "original products",
+      "interaction design",
+      "frontend architecture",
+      "creator systems",
+    ],
 
-  links: [],
+    links: [],
 
-  featured: false
-}
+    featured: false,
+  },
 ];

@@ -116,15 +116,12 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__hero">
           <p className="section-eyebrow">Resumé</p>
 
-          <h1>
-            Frontend Engineer with product instincts and brand systems depth.
-          </h1>
+          <h1>Frontend Engineer. Product Builder. Brand Architect.</h1>
 
           <p className="resume-page__lede">
-            A readable portfolio version of my resumé, focused on frontend
-            systems, product execution, and the business-facing experience
-            behind the work. The PDF is available for recruiters, clients, and
-            hiring teams who need the standard format.
+            A web-friendly version of my resumé, built to show the experience
+            behind the PDF: frontend systems, shipped projects, client-facing
+            work, and the business context that shapes how I build.
           </p>
 
           <div className="resume-page__actions">
@@ -184,11 +181,10 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__summary resume-card">
           <p className="section-eyebrow">Summary</p>
           <p>
-            Frontend-focused developer building polished, interaction-driven web
-            products with React, Next.js, TypeScript, and modern frontend
-            tooling. Background in sales, operations, and business development
-            informs a product-oriented approach to UI systems, UX flow, and
-            customer-facing experiences.
+            Frontend engineer with a background in sales, operations, and brand
+            development. I build products that balance frontend execution,
+            interaction quality, and business context, bringing a broader
+            perspective to how digital experiences are designed and shipped.
           </p>
         </div>
 
