@@ -269,7 +269,7 @@ function ResumePage({ onOpenContact }) {
                   <h2>Frontend Simplified</h2>
                   <p className="resume-entry__org">Web Engineering Program</p>
                 </div>
-                <span className="resume-entry__date">2025</span>
+                <span className="resume-entry__date">2025 </span>
               </div>
               <p>
                 12-week intensive covering HTML, CSS, JavaScript, React,
