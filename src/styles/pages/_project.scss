@@ -2,6 +2,123 @@
   padding: 3rem 0 6rem;
 }
 
+.project-archive {
+  padding: 3rem 0 6rem;
+}
+
+.project-archive__hero {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at top right, rgba(198, 146, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 12% 20%, rgba(105, 228, 208, 0.12), transparent 24%),
+    var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.project-archive--current .project-archive__hero {
+  background:
+    radial-gradient(circle at top right, rgba(242, 184, 82, 0.18), transparent 28%),
+    radial-gradient(circle at 12% 20%, rgba(194, 54, 24, 0.14), transparent 24%),
+    var(--bg-elevated);
+}
+
+.project-archive__hero h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 7vw, 6.4rem);
+}
+
+.project-archive__hero p {
+  max-width: 48rem;
+}
+
+.project-archive__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.project-archive__group {
+  margin-top: 4.5rem;
+}
+
+.current-work-grid--page {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.project-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 6, 10, 0.72);
+}
+
+.project-modal__dialog {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1rem;
+  width: min(720px, 100%);
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+  padding: clamp(1.4rem, 4vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.project-modal__dialog h2 {
+  color: var(--text);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+.project-modal__close {
+  justify-self: end;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.project-modal__slide {
+  display: grid;
+  gap: 1rem;
+  padding: 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.project-modal__slide img {
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.project-modal__slide h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.project-modal__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .case-study-hero {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
@@ -219,7 +336,8 @@ body[data-theme="light"] .demo-account-card {
 
 @media (max-width: 980px) {
   .case-study-hero,
-  .case-study-grid {
+  .case-study-grid,
+  .current-work-grid--page {
     grid-template-columns: 1fr;
   }
 }

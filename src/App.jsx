@@ -2,7 +2,9 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
 import ProjectPage from "./pages/ProjectPage";
+import CurrentWorkPage from "./pages/CurrentWorkPage";
 import ServicesPage from "./pages/ServicesPage";
 import InquirePage from "./pages/InquirePage";
 import ResumePage from "./pages/ResumePage";
@@ -46,9 +48,14 @@ function App() {
             element={<HomePage onOpenContact={() => setIsContactOpen(true)} />}
           />
           <Route
+            path="/projects"
+            element={<ProjectsPage />}
+          />
+          <Route
             path="/projects/:slug"
             element={<ProjectPage onOpenContact={() => setIsContactOpen(true)} />}
           />
+          <Route path="/current" element={<CurrentWorkPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/inquire" element={<InquirePage />} />
           <Route

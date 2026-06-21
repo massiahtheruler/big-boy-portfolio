@@ -7,12 +7,12 @@ function getInitialTheme() {
     return "dark";
   }
 
-  const savedTheme = window.localStorage.getItem(THEME_KEY);
+  const savedTheme = window.localStorage?.getItem(THEME_KEY);
   if (savedTheme === "dark" || savedTheme === "light") {
     return savedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: light)").matches
+  return window.matchMedia?.("(prefers-color-scheme: light)")?.matches
     ? "light"
     : "dark";
 }
@@ -21,7 +21,7 @@ export function useTheme() {
   const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
-    window.localStorage.setItem(THEME_KEY, theme);
+    window.localStorage?.setItem(THEME_KEY, theme);
   }, [theme]);
 
   return {

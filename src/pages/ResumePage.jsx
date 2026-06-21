@@ -1,4 +1,5 @@
 import { siteContent } from "../data/siteContent";
+import { getResumeProjects } from "../data/projects";
 
 const experience = [
   {
@@ -41,57 +42,6 @@ const experience = [
   },
 ];
 
-const projects = [
-  {
-    title: "GoCart",
-    subtitle: "Full-Stack E-Commerce Platform",
-    live: "https://gocart-beta-one.vercel.app",
-    code: "https://github.com/massiahtheruler/gocart",
-    stack:
-      "Next.js · React · TypeScript · Tailwind CSS · Redux · Prisma · PostgreSQL · Stripe",
-    bullets: [
-      "Built a multi-role ecommerce platform with customer, seller, and admin behavior inside one cohesive product system.",
-      "Implemented checkout, coupon flows, dashboard logic, order handling, media support, and AI-assisted listing workflows.",
-      "Balanced dense marketplace functionality with polished storefront presentation, role-aware routing, and scalable frontend structure.",
-    ],
-  },
-  {
-    title: "Glitter",
-    subtitle: "Original Social Product",
-    live: "https://glitter-theta.vercel.app",
-    code: "https://github.com/massiahtheruler/glitter",
-    stack:
-      "Next.js · React · TypeScript · Tailwind CSS · Prisma · MongoDB · NextAuth",
-    bullets: [
-      "Built a branded social platform with dynamic profiles, messaging, notifications, post creation, and account-aware UI behavior.",
-      "Added product-specific extensions like Brok AI chat and Dee-EM messaging while keeping the platform visually and structurally cohesive.",
-      "Expanded a tutorial foundation into a stronger original product direction with cleaner interaction flow and branded social UX systems.",
-    ],
-  },
-  {
-    title: "Big Boy Portfolio",
-    subtitle: "Portfolio Product System",
-    live: "https://big-boy-portfolio.vercel.app",
-    code: "https://github.com/massiahtheruler/big-boy-portfolio",
-    stack: "React · Vite · React Router · Sass · EmailJS · Vitest",
-    bullets: [
-      "Built a routed portfolio system with case studies, services, inquiry flow, contact behavior, and project storytelling inside one product shell.",
-      "Structured the site around reusable content, stronger project framing, interaction polish, and frontend presentation built to support both recruiters and clients.",
-    ],
-  },
-  {
-    title: "Netflix Clone",
-    subtitle: "Streaming UI & Interaction Systems",
-    live: "https://netflix-clone-delta-indol.vercel.app/login",
-    code: "https://github.com/massiahtheruler/netflix-clone",
-    stack: "React · Vite · Firebase Auth · Firestore · TMDB API · Sass",
-    bullets: [
-      "Recreated a recognizable streaming product experience with auth gating, cinematic autoplay behavior, player pages, and TMDB-powered title rails.",
-      "Built motion, timing, and player-state coordination directly with React state, CSS, timers, masks, and browser APIs instead of relying on animation templates.",
-    ],
-  },
-];
-
 const skills = [
   {
     label: "Frontend",
@@ -110,6 +60,8 @@ const skills = [
 ];
 
 function ResumePage({ onOpenContact }) {
+  const projects = getResumeProjects();
+
   return (
     <section className="resume-page">
       <div className="shell resume-page__grid">

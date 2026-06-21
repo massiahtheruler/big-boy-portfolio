@@ -9,16 +9,15 @@ function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
   const navItems = [
     {
       label: "Work",
-      to: "/#featured-work",
+      to: "/projects",
       isActive:
         location.pathname === "/projects" ||
-        location.pathname.startsWith("/projects/") ||
-        (location.pathname === "/" && location.hash === "#featured-work"),
+        location.pathname.startsWith("/projects/"),
     },
     {
       label: "Current",
-      to: "/#current-work",
-      isActive: location.pathname === "/" && location.hash === "#current-work",
+      to: "/current",
+      isActive: location.pathname === "/current",
     },
     {
       label: "Services",

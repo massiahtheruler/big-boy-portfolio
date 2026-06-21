@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import { currentWork } from "../../data/currentWork";
+import { getCurrentProjects } from "../../data/projects";
+import ProjectCard from "../shared/ProjectCard";
 import Reveal from "../shared/Reveal";
 
 function CurrentWorkSection() {
+  const currentWork = getCurrentProjects();
+
   return (
     <section
       id="current-work"
@@ -23,49 +26,17 @@ function CurrentWorkSection() {
 
         <div className="current-work-grid">
           {currentWork.map((item, index) => (
-            <Reveal key={item.title} delay={index * 100}>
-              {item.featured ? (
-                <Link
-                  to={`/projects/${item.slug}`}
-                  className={`project-card project-card--spotlight project-card--${item.accent}`}
-                  aria-label={`Open ${item.title} preview page`}
-                >
-                  <div className="project-card__surface">
-                    <img
-                      src={item.previewImage}
-                      alt={`${item.title} homepage preview`}
-                      className="project-card__image"
-                    />
-                    <div className="project-card__scrim" />
-                    <p className="project-card__eyebrow">{item.eyebrow}</p>
-                    <div className="project-card__status">{item.status}</div>
-                    <h3>{item.title}</h3>
-                    <p className="project-card__tagline">{item.cardTagline}</p>
-                    <div className="work-card__metrics">
-                      {item.metrics.map((metric) => (
-                        <span key={metric}>{metric}</span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="project-card__overlay">
-                    <p>{item.previewSummary}</p>
-                    <ul>
-                      {item.previewHighlights.map((highlight) => (
-                        <li key={highlight}>{highlight}</li>
-                      ))}
-                    </ul>
-                    <span className="project-card__link">
-                      Open Litty preview
-                    </span>
-                  </div>
-                </Link>
+            <Reveal key={item.slug ?? item.id} delay={index * 100}>
+              {item.slug ? (
+                <ProjectCard
+                  project={item}
+                  cta="Open Litty preview"
+                  spotlight
+                />
               ) : (
-                <article
-                  className={`work-card ${item.links.length === 0 ? "work-card--static" : ""}`}
-                >
+                <article className="work-card work-card--static">
                   <div className="work-card__header">
-                    <h3>{item.title}</h3>
+                    <h3>{item.name}</h3>
                     <span>{item.status}</span>
                   </div>
                   <p>{item.description}</p>
@@ -74,25 +45,16 @@ function CurrentWorkSection() {
                       <span key={tag}>{tag}</span>
                     ))}
                   </div>
-                  {item.links.length > 0 && (
-                    <div className="work-card__links">
-                      {item.links.map((link) => (
-                        <a
-                          key={link.label}
-                          href={link.href}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          {link.label}
-                        </a>
-                      ))}
-                    </div>
-                  )}
                 </article>
               )}
             </Reveal>
           ))}
         </div>
+        <Reveal className="current-work-cta">
+          <Link to="/current" className="button button--ghost">
+            See all current work
+          </Link>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import { getCaseStudyBySlug } from "../data/caseStudies";
+import { getProjectBySlug } from "../data/projects";
 import Reveal from "../components/shared/Reveal";
 
 function ProjectPage({ onOpenContact }) {
   const { slug } = useParams();
-  const project = getCaseStudyBySlug(slug);
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     return (
@@ -12,9 +12,9 @@ function ProjectPage({ onOpenContact }) {
         <div className="shell project-page__missing">
           <p className="section-eyebrow">Project not found</p>
           <h1>This case study is not live yet.</h1>
-          <p>Go back to the home page and open one of the featured projects instead.</p>
-          <Link to="/" className="button button--primary">
-            Back home
+          <p>Go back to the project archive and open one of the live case studies instead.</p>
+          <Link to="/projects" className="button button--primary">
+            Back to projects
           </Link>
         </div>
       </section>

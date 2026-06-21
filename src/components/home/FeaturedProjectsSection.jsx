@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import { caseStudies } from "../../data/caseStudies";
+import { getFeaturedProjects } from "../../data/projects";
+import ProjectCard from "../shared/ProjectCard";
 import Reveal from "../shared/Reveal";
 
 function FeaturedProjectsSection() {
+  const featuredProjects = getFeaturedProjects().slice(0, 3);
+
   return (
     <section id="featured-work" className="content-section">
       <div className="shell">
@@ -21,39 +24,23 @@ function FeaturedProjectsSection() {
         </Reveal>
 
         <div className="project-grid">
-          {caseStudies.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <Reveal key={project.slug} delay={index * 120}>
-              <Link
-                to={`/projects/${project.slug}`}
-                className={`project-card project-card--${project.accent}`}
-                aria-label={`Open ${project.name} case study`}
-              >
-                <div className="project-card__surface">
-                  <img
-                    src={project.previewImage}
-                    alt={`${project.name} homepage preview`}
-                    className="project-card__image"
-                  />
-                  <div className="project-card__scrim" />
-                  <p className="project-card__eyebrow">{project.heroMedia.eyebrow}</p>
-                  <h3>{project.name}</h3>
-                  <p className="project-card__tagline">{project.tagline}</p>
-                </div>
-
-                <div className="project-card__overlay">
-                  <p>{project.audienceSummary}</p>
-                  <ul>
-                    {project.stack.slice(0, 4).map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                  <span className="project-card__link">
-                    Open case study
-                  </span>
-                </div>
-              </Link>
+              <ProjectCard project={project} />
             </Reveal>
           ))}
+          <Reveal delay={featuredProjects.length * 120}>
+            <Link to="/projects" className="see-more-card">
+              <span className="section-eyebrow">More work</span>
+              <h3>See the full project archive</h3>
+              <p>
+                Featured cards are the quick proof. The archive gives the
+                bigger view across completed builds, client work, and future
+                project groups as they get added.
+              </p>
+              <span className="project-card__link">Open projects</span>
+            </Link>
+          </Reveal>
         </div>
       </div>
     </section>
