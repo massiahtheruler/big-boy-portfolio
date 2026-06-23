@@ -61,6 +61,7 @@ const skills = [
 
 function ResumePage({ onOpenContact }) {
   const projects = getResumeProjects();
+  const certifications = siteContent.certifications;
 
   return (
     <section className="resume-page">
@@ -239,6 +240,37 @@ function ResumePage({ onOpenContact }) {
                 <span className="resume-entry__date">2011</span>
               </div>
             </article>
+          </div>
+        </div>
+
+        <div className="resume-page__certifications resume-card">
+          <p className="section-eyebrow">Certifications</p>
+          <div className="resume-entry-list">
+            {certifications.map((certification) => (
+              <article key={certification.title} className="resume-entry">
+                <div className="resume-entry__header">
+                  <div>
+                    <h2>
+                      {certification.title}, {certification.issuer} (
+                      {certification.year})
+                    </h2>
+                    <a
+                      className="resume-entry__credential"
+                      href={certification.credentialPath}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Open certificate
+                    </a>
+                  </div>
+                </div>
+                <ul className="detail-list">
+                  {certification.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </div>

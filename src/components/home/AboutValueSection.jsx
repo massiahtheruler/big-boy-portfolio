@@ -3,6 +3,8 @@ import { siteContent } from "../../data/siteContent";
 import Reveal from "../shared/Reveal";
 
 function AboutValueSection() {
+  const [certification] = siteContent.certifications;
+
   return (
     <section id="about" className="content-section">
       <div className="shell about-grid">
@@ -31,6 +33,31 @@ function AboutValueSection() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal className="about-training" delay={180}>
+          <div>
+            <p className="section-eyebrow">Education &amp; Training</p>
+            <h3>
+              {certification.title} - {certification.issuer} (
+              {certification.year})
+            </h3>
+            <p>{certification.summary}</p>
+          </div>
+
+          <a
+            className="about-training__certificate"
+            href={certification.credentialPath}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open ${certification.title} from ${certification.issuer}`}
+          >
+            <img
+              src={certification.credentialPath}
+              alt={`${certification.title} from ${certification.issuer}`}
+            />
+            <span>Open certificate</span>
+          </a>
+        </Reveal>
 
         <Reveal className="about-services-cta" delay={220}>
           <p className="section-eyebrow">{siteContent.aboutCta.eyebrow}</p>

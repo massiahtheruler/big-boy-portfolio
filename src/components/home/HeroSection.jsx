@@ -210,18 +210,18 @@ function HeroSection({ onOpenContact }) {
               </span>
             </div>
             <div className="hero-orbit__core">
-              <span>React + Vite</span>
               <strong>Premium frontend systems</strong>
+              <span>Justin H.</span>
             </div>
             <div className="hero-orbit__ring hero-orbit__ring--top">
-              <span>Motion</span>
-              <span>State</span>
-              <span>UI Depth</span>
+              <span>Frontend Engineering</span>
+              <span>UI / UX Design</span>
+              <span>Interaction Design</span>
             </div>
             <div className="hero-orbit__ring hero-orbit__ring--bottom">
-              <span>Commerce</span>
-              <span>Social</span>
-              <span>Client Work</span>
+              <span>Web Applications</span>
+              <span>Product Strategy</span>
+              <span>Brand Systems</span>
             </div>
           </div>
         </Reveal>

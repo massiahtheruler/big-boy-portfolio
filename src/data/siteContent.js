@@ -83,4 +83,21 @@ export const siteContent = {
   phoneDisplay: "(201) 471-1253",
   phoneHref: "tel:+12014711253",
   resumePdfPath: "/docs/Justin-Henry-Frontend-Engineer.pdf",
+  certifications: [
+    {
+      title: "Frontend Development Bootcamp Certificate",
+      issuer: "FES Institute",
+      year: "2026",
+      credentialPath:
+        "/docs/Justin-Henry-FES-Institute-Frontend-Bootcamp-Certificate-2026.png",
+      skills:
+        "HTML, CSS, JavaScript, React, Next.js, TypeScript, Redux, Node.js",
+      bullets: [
+        "HTML, CSS, JavaScript, React, Next.js, TypeScript, Redux, Node.js",
+        "Completed practical frontend internship project",
+      ],
+      summary:
+        "Completed frontend training covering modern web foundations, React systems, and practical internship-style project work.",
+    },
+  ],
 };
