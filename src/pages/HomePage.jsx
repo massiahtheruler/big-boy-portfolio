@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import HeroSection from "../components/home/HeroSection";
 import TechMarquee from "../components/home/TechMarquee";
+import ManifestFrameworkSection from "../components/home/ManifestFrameworkSection";
 import FeaturedProjectsSection from "../components/home/FeaturedProjectsSection";
 import CurrentWorkSection from "../components/home/CurrentWorkSection";
 import AboutValueSection from "../components/home/AboutValueSection";
@@ -28,6 +29,7 @@ function HomePage({ onOpenContact }) {
     <>
       <HeroSection onOpenContact={onOpenContact} />
       <TechMarquee />
+      <ManifestFrameworkSection />
       <FeaturedProjectsSection />
       <CurrentWorkSection />
       <AboutValueSection />

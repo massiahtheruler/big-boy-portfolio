@@ -1,3 +1,5 @@
+import { greatWallLiveUrl, greatWallPreviewImage } from "./manifestFramework";
+
 export const PROJECT_GROUPS = {
   featured: "featured",
   completed: "completed",
@@ -146,9 +148,8 @@ export const projects = [
       stack:
         "Next.js · React · TypeScript · Tailwind CSS · Redux · Prisma · PostgreSQL · Stripe",
       bullets: [
-        "Built a multi-role ecommerce platform with customer, seller, and admin behavior inside one cohesive product system.",
-        "Implemented checkout, coupon flows, dashboard logic, order handling, media support, and AI-assisted listing workflows.",
-        "Balanced dense marketplace functionality with polished storefront presentation, role-aware routing, and scalable frontend structure.",
+        "Built a multi-role marketplace with customer, seller, and admin workflows, role-aware routing, checkout, coupons, dashboards, and account-specific UI states inside one cohesive product.",
+        "Structured dense commerce functionality into responsive storefront and dashboard interfaces that stay clear across payment, order, product, and promotion flows.",
       ],
     },
   },
@@ -210,6 +211,18 @@ export const projects = [
     ],
     buildStory:
       "The goal was to understand the frontend behavior behind a polished streaming interface: timing, hierarchy, protected access, content rails, and player routing. Matching the look mattered, but the real value was rebuilding the interaction patterns that make the product feel responsive.",
+    resume: {
+      include: true,
+      order: 5,
+      subtitle: "Streaming UI & Interaction Systems",
+      live: "https://netflix-clone-delta-indol.vercel.app/login",
+      code: "https://github.com/massiahtheruler/netflix-clone",
+      stack: "React · Vite · Firebase Auth · Firestore · TMDB API · SCSS",
+      bullets: [
+        "Recreated a streaming product experience with auth gating, protected routes, cinematic autoplay behavior, content rails, player pages, and responsive interaction states.",
+        "Coordinated TMDB data, Firebase auth, timing, masks, hover behavior, and player state to make the interface feel product-like instead of static.",
+      ],
+    },
   },
   {
     slug: "summarist",
@@ -279,32 +292,6 @@ export const projects = [
     ],
     buildStory:
       "Summarist was about coordinating the systems behind a subscription product. Auth, payments, premium access, saved data, finished books, dynamic routes, and audio playback all needed to respond to the user's account state in a consistent way.",
-    resume: {
-      include: true,
-      order: 4,
-      subtitle: "Subscription Book Platform",
-      live: "https://summarist-rust.vercel.app",
-      code: "https://github.com/massiahtheruler/summarist",
-      stack:
-        "Next.js · React · TypeScript · Firebase Auth · Firestore · Stripe",
-      bullets: [
-        "Built a subscription-based reading platform with authentication, premium access, Stripe checkout, audio playback, and Firestore persistence.",
-        "Implemented saved books, finished books, dynamic book/player routes, settings states, search, and user-specific content behavior.",
-        "Connected auth, payment, persistence, and premium gating logic into one cohesive product flow.",
-      ],
-    },
-    resume: {
-      include: true,
-      order: 4,
-      subtitle: "Streaming UI & Interaction Systems",
-      live: "https://netflix-clone-delta-indol.vercel.app/login",
-      code: "https://github.com/massiahtheruler/netflix-clone",
-      stack: "React · Vite · Firebase Auth · Firestore · TMDB API · Sass",
-      bullets: [
-        "Recreated a recognizable streaming product experience with auth gating, cinematic autoplay behavior, player pages, and TMDB-powered title rails.",
-        "Built motion, timing, and player-state coordination directly with React state, CSS, timers, masks, and browser APIs instead of relying on animation templates.",
-      ],
-    },
   },
   {
     slug: "twitter-glitter",
@@ -377,7 +364,7 @@ export const projects = [
       "The challenge was turning a familiar social feed pattern into a product that felt more intentional. I focused on identity, account-aware behavior, interaction flow, and custom features that moved it beyond the original tutorial structure.",
     resume: {
       include: true,
-      order: 2,
+      order: 3,
       title: "Glitter",
       subtitle: "Original Social Product",
       live: "https://glitter-theta.vercel.app",
@@ -385,9 +372,8 @@ export const projects = [
       stack:
         "Next.js · React · TypeScript · Tailwind CSS · Prisma · MongoDB · NextAuth",
       bullets: [
-        "Built a branded social platform with dynamic profiles, messaging, notifications, post creation, and account-aware UI behavior.",
-        "Added product-specific extensions like Brok AI chat and Dee-EM messaging while keeping the platform visually and structurally cohesive.",
-        "Expanded a tutorial foundation into a stronger original product direction with cleaner interaction flow and branded social UX systems.",
+        "Built a branded social platform with dynamic profiles, post creation, messaging concepts, notifications, account-aware UI behavior, and consistent interaction patterns across routes.",
+        "Expanded a tutorial foundation into a more original product direction with stronger visual hierarchy, state handling, and social UX systems.",
       ],
     },
   },
@@ -498,23 +484,79 @@ export const projects = [
     },
     resume: {
       include: true,
-      order: 5,
-      subtitle: "Portfolio Product System",
+      order: 2,
+      subtitle: "Frontend Product System",
       live: "https://big-boy-portfolio.vercel.app",
       code: "https://github.com/massiahtheruler/big-boy-portfolio",
       stack: "React · Vite · React Router · Sass · EmailJS · Vitest",
       bullets: [
-        "Built a routed portfolio system with case studies, services, inquiry flow, contact behavior, and project storytelling inside one product shell.",
-        "Structured the site around reusable content, stronger project framing, interaction polish, and frontend presentation built to support both recruiters and clients.",
+        "Built a routed portfolio product with case studies, service flows, inquiry behavior, reusable content structure, responsive layout, and recruiter/client-facing project storytelling.",
+        "Centralized project data and page rendering logic so links, case-study routes, archive ordering, and resume project content can scale from one source of truth.",
       ],
     },
+  },
+  {
+    slug: "holy-grails-react",
+    name: "Holy Grails React",
+    kind: "resume-only",
+    groups: [PROJECT_GROUPS.completed],
+    archiveOrder: 7,
+    status: "Frontend rebuild",
+    accent: "amber",
+    links: {
+      live: "https://holy-grail-react.vercel.app/",
+      code: "https://github.com/massiahtheruler/holy-grails-react",
+    },
+    resume: {
+      include: true,
+      order: 4,
+      subtitle: "Frontend Architecture Conversion",
+      live: "https://holy-grail-react.vercel.app/",
+      code: "https://github.com/massiahtheruler/holy-grails-react",
+      stack: "React · Vite · Redux · CSS",
+      bullets: [
+        "Rebuilt a vanilla JS storefront into a scalable React component architecture with reusable UI patterns, route-aware interactions, and shared cart state managed cleanly across views.",
+        "Preserved visual fidelity while improving maintainability, state organization, responsive behavior, and frontend structure.",
+      ],
+    },
+  },
+  {
+    id: "great-wall",
+    name: "Great Wall",
+    kind: "external-current",
+    groups: [PROJECT_GROUPS.current, PROJECT_GROUPS.client],
+    currentOrder: 2,
+    archiveOrder: 5,
+    status: "Flagship Manifest engagement",
+    previewImage: greatWallPreviewImage,
+    description:
+      "Great Wall is a conversion-focused landing experience for a local service business, built with responsive layouts, motion details, CTA hierarchy, and an interactive SVG/3D model feature.",
+    tags: [
+      "Manifest framework",
+      "conversion UX",
+      "responsive frontend",
+      "SVG/3D feature",
+    ],
+    links: {
+      live: greatWallLiveUrl,
+    },
+    gallery: [
+      {
+        title: "Framework proof",
+        body: "The project turns the Manifest framework into a real client-facing experience: identity, presence, trust, recognition, and action arranged around a clearer path to contact.",
+      },
+      {
+        title: "Frontend execution",
+        body: "The build focuses on CTA hierarchy, responsive layout, motion details, polished sections, and an interactive visual feature that makes the service feel more credible before a customer reaches out.",
+      },
+    ],
   },
   {
     id: "custom-build-pipeline",
     name: "Custom build pipeline",
     kind: "initiative",
     groups: [PROJECT_GROUPS.current],
-    currentOrder: 2,
+    currentOrder: 3,
     status: "Actively evolving",
     description:
       "A repeatable process for turning rough ideas into polished digital systems: strategy first, interface second, and implementation grounded in the product goal.",
@@ -541,7 +583,7 @@ export const projects = [
     name: "Original product concepts",
     kind: "initiative",
     groups: [PROJECT_GROUPS.current],
-    currentOrder: 3,
+    currentOrder: 4,
     status: "In development",
     description:
       "Original product ideas shaped around repeated problems in creation, organization, publishing, identity, and turning a clear vision into something usable.",

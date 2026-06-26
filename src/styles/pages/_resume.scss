@@ -82,6 +82,8 @@
 }
 
 .resume-page__experience,
+.resume-page__professional,
+.resume-page__business,
 .resume-page__projects,
 .resume-page__education,
 .resume-page__certifications {
@@ -174,6 +176,10 @@
   font-weight: 700;
 }
 
+.resume-entry__links--inline {
+  justify-content: flex-start;
+}
+
 .resume-entry__credential {
   display: inline-flex;
   width: fit-content;
@@ -196,6 +202,8 @@
   }
 
   .resume-page__experience,
+  .resume-page__professional,
+  .resume-page__business,
   .resume-page__projects,
   .resume-page__education,
   .resume-page__certifications {

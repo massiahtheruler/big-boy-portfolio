@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { manifestFramework } from "../data/manifestFramework";
 import { getCurrentProjects } from "../data/projects";
 import ProjectCard from "../components/shared/ProjectCard";
 import ProjectGalleryModal from "../components/shared/ProjectGalleryModal";
@@ -18,10 +19,21 @@ function CurrentWorkPage() {
           <p className="section-eyebrow">Current work</p>
           <h1>Active builds, evolving systems, and what is being shaped now.</h1>
           <p>
-            This page tracks active projects, product ideas, client work, and systems that are still being shaped. Some are live, some are in progress, and some may grow into full case studies later.
+            This page tracks the work currently being shaped through Manifest:
+            brand identity, digital presence, frontend systems, and
+            conversion-focused experiences connected by one operating
+            framework.
           </p>
           <div className="project-archive__actions">
-            <Link to="/projects" className="button button--primary">
+            <a
+              href={manifestFramework.primaryCta.href}
+              className="button button--primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore Manifest
+            </a>
+            <Link to="/projects" className="button button--ghost">
               View completed work
             </Link>
             <Link to="/" className="button button--ghost">
@@ -36,7 +48,9 @@ function CurrentWorkPage() {
               <p className="section-eyebrow">Featured current project</p>
               <h2>Featured current build</h2>
               <p>
-                The highlighted project can change as the work evolves, but this space stays focused on the build currently carrying the most momentum.
+                Litty Hub is the broader ecosystem layer. Great Wall is the
+                flagship Manifest engagement proving that framework against a
+                real service-business experience.
               </p>
             </Reveal>
             <ProjectCard
@@ -60,6 +74,14 @@ function CurrentWorkPage() {
               {currentInitiatives.map((project, index) => (
                 <Reveal key={project.id} delay={index * 90}>
                   <article className="work-card">
+                    {project.previewImage ? (
+                      <div className="work-card__media">
+                        <img
+                          src={project.previewImage}
+                          alt={`${project.name} preview`}
+                        />
+                      </div>
+                    ) : null}
                     <div className="work-card__header">
                       <h3>{project.name}</h3>
                       <span>{project.status}</span>
@@ -70,6 +92,17 @@ function CurrentWorkPage() {
                         <span key={tag}>{tag}</span>
                       ))}
                     </div>
+                    {project.links?.live ? (
+                      <div className="work-card__links">
+                        <a
+                          href={project.links.live}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Visit {project.name}
+                        </a>
+                      </div>
+                    ) : null}
                     <button
                       type="button"
                       className="work-card__detail-button"

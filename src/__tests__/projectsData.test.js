@@ -21,7 +21,7 @@ describe("projects data", () => {
   it("defines the featured projects required by the home page", () => {
     expect(getFeaturedProjects().map((project) => project.slug)).toEqual([
       "gocart",
-      "netflix-clone",
+      "summarist",
       "twitter-glitter",
     ]);
 
@@ -48,6 +48,13 @@ describe("projects data", () => {
       }),
     );
 
+    expect(getCurrentProjects().map((project) => project.slug ?? project.id)).toEqual([
+      "litty-hub",
+      "great-wall",
+      "custom-build-pipeline",
+      "original-product-concepts",
+    ]);
+
     expect(getProjectBySlug("litty-hub")).toEqual(
       expect.objectContaining({
         slug: "litty-hub",
@@ -57,22 +64,26 @@ describe("projects data", () => {
   });
 
   it("supports generic category lookups and archive group rendering", () => {
-    expect(getProjectsByGroup(PROJECT_GROUPS.client).map((project) => project.slug)).toEqual([
-      "litty-hub",
-    ]);
+    expect(
+      getProjectsByGroup(PROJECT_GROUPS.client).map(
+        (project) => project.slug ?? project.id,
+      ),
+    ).toEqual(["litty-hub", "great-wall"]);
 
     expect(getArchiveGroups().map((group) => group.group)).toEqual([
       PROJECT_GROUPS.featured,
       PROJECT_GROUPS.completed,
       PROJECT_GROUPS.client,
+      PROJECT_GROUPS.internship,
     ]);
   });
 
   it("centralizes resume project content", () => {
     expect(getResumeProjects().map((project) => project.title)).toEqual([
       "GoCart",
-      "Glitter",
       "Big Boy Portfolio",
+      "Glitter",
+      "Holy Grails React",
       "Netflix Clone",
     ]);
   });

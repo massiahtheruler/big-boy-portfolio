@@ -1,43 +1,68 @@
 import { siteContent } from "../data/siteContent";
 import { getResumeProjects } from "../data/projects";
 
-const experience = [
+const currentExperience = [
   {
     title: "Frontend Engineer & Digital Brand Systems Lead",
-    date: "Mar 2025 – Present",
-    org: "Litty Co. — Remote, Contract",
+    date: "Mar 2025 - Present",
+    org: "Litty Hub - Remote",
+    links: [
+      { label: "Litty Hub", href: "https://litty-hub.vercel.app/" },
+      { label: "Manifest", href: "https://manifest-gamma-one.vercel.app/" },
+      { label: "Great Wall", href: "https://great-wall-omega.vercel.app/" },
+    ],
     bullets: [
-      "Leading frontend development and digital identity systems across a multi-brand ecosystem spanning ecommerce, service, and lifestyle-focused brands.",
-      "Building responsive web experiences, component systems, branded content structures, and reusable digital assets across multiple active projects.",
-      "Owning implementation across UI architecture, brand consistency, frontend performance, and customer-facing digital presence.",
-      "Working directly with ownership as a contract partner, combining technical execution, visual systems, and strategic positioning.",
+      "Lead frontend development and digital strategy across Litty Hub's portfolio of brands and client-facing products, building responsive interfaces, reusable component systems, and scalable digital experiences.",
+      "Founded and currently lead Manifest, a brand identity and frontend consultancy focused on helping businesses translate strategy, trust, and positioning into high-conversion digital experiences.",
+      "Currently designing and developing Great Wall, Manifest's flagship client engagement, featuring responsive layouts, interaction systems, polished UI implementation, SVG/3D experiences, a 3D model configuration estimator, and conversion-focused user journeys.",
+      "Own frontend architecture, UI implementation, performance optimization, motion systems, accessibility considerations, and brand consistency from concept through deployment.",
+    ],
+  },
+];
+
+const professionalFrontendExperience = [
+  {
+    title: "Skinstric - Frontend Engineering Assignment",
+    date: "Next.js / GSAP",
+    bullets: [
+      "Built production-ready frontend features inside an existing Next.js application, converting provided designs into responsive interfaces with GSAP animation and clean implementation patterns.",
+      "Delivered a two-week assignment in four days while preserving existing project structure, visual direction, and responsive behavior.",
     ],
   },
   {
-    title: "Operations Manager & Contract Partner",
-    date: "2022 – 2025",
-    org: "JJ's Pro Service — NJ / Remote",
+    title: "Summarist - Subscription Product Internship",
+    date: "Next.js / Stripe / Firebase",
+    links: [
+      { label: "Live", href: "https://summarist-rust.vercel.app/" },
+      { label: "Code", href: "https://github.com/massiahtheruler/summarist" },
+    ],
     bullets: [
-      "Managed daily operations, client relationships, scheduling, field coordination, and service delivery across active contracts.",
-      "Expanded into brand marketing, business development, and digital presence as the company grew.",
-      "Applied operational and customer-behavior experience directly to frontend, UX, and product decisions.",
+      "Owned auth, Stripe checkout, responsive UI, audio player behavior, premium gating, saved books, settings, and search inside an existing production-style Next.js codebase.",
     ],
   },
   {
-    title: "Solar Sales Consultant",
-    date: "2016 – 2022",
-    org: "Momentum Solar · Solar Xchange — NJ / FL",
+    title: "Ultraverse NFT Marketplace - Frontend Internship",
+    date: "React / API UI",
+    links: [
+      { label: "Live", href: "https://internship-flax-five.vercel.app/" },
+      {
+        label: "Code",
+        href: "https://github.com/massiahtheruler/justin-internship",
+      },
+    ],
     bullets: [
-      "Handled full consultative residential solar sales cycles across competitive NJ and FL markets.",
-      "Built strong instincts for persuasion, objection handling, trust-building, and reading user behavior in high-volume client environments.",
+      "Implemented React marketplace features in an existing application, including dynamic routing, API-driven item/detail pages, loading states, creator views, and UI consistency across product surfaces.",
     ],
   },
+];
+
+const businessBackground = [
   {
-    title: "Branch Manager",
-    date: "2014 – 2016",
-    org: "Penske Truck Leasing — Passaic, NJ",
+    title: "Operations, Sales, and Customer-Facing Leadership",
+    date: "2014 - 2025",
+    org: "JJ's Pro Service / Momentum Solar / Solar Xchange / Penske",
     bullets: [
-      "Managed branch operations across team oversight, customer service, fleet coordination, account management, and daily execution.",
+      "Managed operations, client relationships, sales cycles, scheduling, account support, and service delivery, building practical instincts for trust, user behavior, objections, and conversion-focused UX.",
     ],
   },
 ];
@@ -46,16 +71,16 @@ const skills = [
   {
     label: "Frontend",
     items:
-      "React, Next.js, TypeScript, JavaScript, Tailwind CSS, Sass, Redux, Vite",
+      "React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind, SCSS, Redux, Framer Motion",
   },
   {
-    label: "Backend / Data",
+    label: "Backend",
     items:
-      "Node.js, Prisma, MongoDB, PostgreSQL (Neon), Firebase, NextAuth, Clerk, REST APIs",
+      "Node, Prisma, MongoDB, PostgreSQL, Firebase, REST APIs, Authentication",
   },
   {
     label: "Tools",
-    items: "Git, GitHub, Vercel, Stripe, Figma, Notion, VS Code",
+    items: "Git, GitHub, Vercel, Figma, VS Code, Stripe, Postman",
   },
 ];
 
@@ -69,12 +94,13 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__hero">
           <p className="section-eyebrow">Resumé</p>
 
-          <h1>Frontend Engineer. Product Builder. Brand Architect.</h1>
+          <h1>Frontend Engineer. Responsive UI. Product-Minded Interfaces.</h1>
 
           <p className="resume-page__lede">
-            A web-friendly version of my resumé, built to show the experience
-            behind the PDF: frontend systems, shipped projects, client-facing
-            work, and the business context that shapes how I build.
+            A web-friendly version of my resume, built to show the experience
+            behind the PDF: frontend systems, polished UI implementation,
+            shipped products, client-facing work, and the business context that
+            shapes how I build.
           </p>
 
           <div className="resume-page__actions">
@@ -134,10 +160,13 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__summary resume-card">
           <p className="section-eyebrow">Summary</p>
           <p>
-            Frontend engineer with a background in sales, operations, and brand
-            development. I build products that balance frontend execution,
-            interaction quality, and business context, bringing a broader
-            perspective to how digital experiences are designed and shipped.
+            Frontend engineer specializing in translating design, brand
+            direction, and product goals into polished, responsive,
+            conversion-focused user experiences. I build React, Next.js, and
+            TypeScript interfaces with reusable frontend architecture,
+            interaction systems, performance-minded implementation, and clear
+            product thinking. My background in sales, operations, and branding
+            sharpens my instincts for user behavior, trust, and conversion.
           </p>
         </div>
 
@@ -154,9 +183,76 @@ function ResumePage({ onOpenContact }) {
         </div>
 
         <div className="resume-page__experience resume-card">
-          <p className="section-eyebrow">Experience</p>
+          <p className="section-eyebrow">Current Experience</p>
           <div className="resume-entry-list">
-            {experience.map((entry) => (
+            {currentExperience.map((entry) => (
+              <article
+                key={`${entry.title}-${entry.date}`}
+                className="resume-entry"
+              >
+                <div className="resume-entry__header">
+                  <div>
+                    <h2>{entry.title}</h2>
+                    <p className="resume-entry__org">{entry.org}</p>
+                  </div>
+                  <span className="resume-entry__date">{entry.date}</span>
+                </div>
+                <ul className="detail-list">
+                  {entry.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+                {entry.links && (
+                  <div className="resume-entry__links">
+                    {entry.links.map((link) => (
+                      <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="resume-page__professional resume-card">
+          <p className="section-eyebrow">Professional Frontend Experience</p>
+          <div className="resume-entry-list">
+            {professionalFrontendExperience.map((entry) => (
+              <article
+                key={`${entry.title}-${entry.date}`}
+                className="resume-entry"
+              >
+                <div className="resume-entry__header">
+                  <div>
+                    <h2>{entry.title}</h2>
+                  </div>
+                  <span className="resume-entry__date">{entry.date}</span>
+                </div>
+                {entry.links && (
+                  <div className="resume-entry__links resume-entry__links--inline">
+                    {entry.links.map((link) => (
+                      <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
+                <ul className="detail-list">
+                  {entry.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="resume-page__business resume-card">
+          <p className="section-eyebrow">Business Background</p>
+          <div className="resume-entry-list">
+            {businessBackground.map((entry) => (
               <article
                 key={`${entry.title}-${entry.date}`}
                 className="resume-entry"
@@ -189,7 +285,7 @@ function ResumePage({ onOpenContact }) {
                       {project.title}
                       <span className="resume-entry__subtitle">
                         {" "}
-                        — {project.subtitle}
+                        - {project.subtitle}
                       </span>
                     </h2>
                     <p className="resume-entry__stack">{project.stack}</p>

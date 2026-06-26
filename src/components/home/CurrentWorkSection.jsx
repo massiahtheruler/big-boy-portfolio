@@ -17,10 +17,9 @@ function CurrentWorkSection() {
           <h2>Still Building | Always Refining.</h2>
 
           <p>
-            The projects below represent the direction I'm actively investing
-            in: connected brands, scalable systems, frontend products, and
-            original ideas that continue evolving long after the first version
-            ships.
+            The work below shows the Manifest framework moving through active
+            brands, client-facing systems, frontend products, and proof that
+            identity has to become something people can recognize and act on.
           </p>
         </Reveal>
 
@@ -35,6 +34,11 @@ function CurrentWorkSection() {
                 />
               ) : (
                 <article className="work-card work-card--static">
+                  {item.previewImage ? (
+                    <div className="work-card__media">
+                      <img src={item.previewImage} alt={`${item.name} preview`} />
+                    </div>
+                  ) : null}
                   <div className="work-card__header">
                     <h3>{item.name}</h3>
                     <span>{item.status}</span>
@@ -45,6 +49,13 @@ function CurrentWorkSection() {
                       <span key={tag}>{tag}</span>
                     ))}
                   </div>
+                  {item.links?.live ? (
+                    <div className="work-card__links">
+                      <a href={item.links.live} target="_blank" rel="noreferrer">
+                        Visit {item.name}
+                      </a>
+                    </div>
+                  ) : null}
                 </article>
               )}
             </Reveal>

@@ -6,6 +6,10 @@
   padding: 2rem 0 1rem;
 }
 
+.services-manifest {
+  padding: 1rem 0 4rem;
+}
+
 .services-hero__grid,
 .services-flagship__grid {
   display: grid;
@@ -161,7 +165,12 @@ body[data-theme="light"] .services-card__price {
     padding-top: 1rem;
   }
 
+  .services-manifest {
+    padding-bottom: 3rem;
+  }
+
   .services-hero__copy,
+  .services-manifest__copy,
   .services-offer,
   .services-card {
     border-radius: var(--radius-lg);

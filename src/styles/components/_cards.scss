@@ -252,6 +252,39 @@
   overflow: hidden;
 }
 
+.work-card__media,
+.context-preview-card__media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-xl) - 0.45rem);
+  background: var(--surface);
+}
+
+.work-card__media {
+  margin-bottom: 1rem;
+  aspect-ratio: 1.45;
+}
+
+.work-card__media img,
+.context-preview-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition:
+    transform 240ms ease,
+    filter 240ms ease;
+}
+
+.work-card:hover .work-card__media img,
+.work-card:focus-within .work-card__media img,
+.context-preview-card:hover .context-preview-card__media img,
+.context-preview-card:focus-within .context-preview-card__media img {
+  transform: scale(1.035);
+  filter: saturate(1.08);
+}
+
 .work-card__header {
   display: flex;
   justify-content: space-between;
@@ -297,7 +330,7 @@ body[data-theme="light"] .work-card__header span {
 }
 
 .work-card--static {
-  cursor: not-allowed;
+  cursor: default;
   transition:
     transform 220ms ease,
     box-shadow 220ms ease,
@@ -396,6 +429,46 @@ body[data-theme="light"] .work-card__header span {
 .work-card__links a:hover::after,
 .work-card__links a:focus-visible::after {
   transform: scaleX(1);
+}
+
+.context-preview-card {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  height: 100%;
+  padding: clamp(1.45rem, 3vw, 1.85rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(242, 184, 82, 0.14),
+      transparent 32%
+    ),
+    var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.context-preview-card__media {
+  aspect-ratio: 1.42;
+  margin-bottom: 0.2rem;
+}
+
+.context-preview-card h3 {
+  color: var(--text);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+}
+
+.context-preview-card__link {
+  position: relative;
+  width: fit-content;
+  margin-top: 0.4rem;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.context-preview-card__link::after {
+  content: " ->";
 }
 
 @media (max-width: 980px) {
