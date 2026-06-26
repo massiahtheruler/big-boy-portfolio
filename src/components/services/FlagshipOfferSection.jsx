@@ -8,33 +8,33 @@ function FlagshipOfferSection() {
   return (
     <section className="services-flagship content-section">
       <div className="shell services-flagship__grid">
-        <Reveal className="services-offer services-offer--flagship">
-          <p className="section-eyebrow">Flagship offer</p>
-          <h2>{flagship.title}</h2>
-          <p className="services-offer__tagline">{flagship.tagline}</p>
-          <p>{flagship.summary}</p>
-          <span className="services-offer__price">{flagship.pricing}</span>
-          <Link
-            to={getInquiryHref(flagship.slug)}
-            className="button button--primary"
-          >
-            Inquire
-          </Link>
-        </Reveal>
+        <Link
+          to={getInquiryHref(flagship.slug)}
+          className="services-offer services-offer--flagship services-offer--link interactive-card"
+        >
+          <Reveal>
+            <p className="section-eyebrow">Flagship offer</p>
+            <h2>{flagship.title}</h2>
+            <p className="services-offer__tagline">{flagship.tagline}</p>
+            <p>{flagship.summary}</p>
+            <span className="services-offer__price">{flagship.pricing}</span>
+            <span className="button button--primary">Inquire</span>
+          </Reveal>
+        </Link>
 
-        <Reveal className="services-offer services-offer--entry" delay={90}>
-          <p className="section-eyebrow">Strategy entry</p>
-          <h2>{entryOffer.title}</h2>
-          <p className="services-offer__tagline">{entryOffer.tagline}</p>
-          <p>{entryOffer.summary}</p>
-          <span className="services-offer__price">{entryOffer.pricing}</span>
-          <Link
-            to={getInquiryHref(entryOffer.slug)}
-            className="button button--ghost"
-          >
-            Start here
-          </Link>
-        </Reveal>
+        <Link
+          to={getInquiryHref(entryOffer.slug)}
+          className="services-offer services-offer--entry services-offer--link interactive-card"
+        >
+          <Reveal delay={90}>
+            <p className="section-eyebrow">Strategy entry</p>
+            <h2>{entryOffer.title}</h2>
+            <p className="services-offer__tagline">{entryOffer.tagline}</p>
+            <p>{entryOffer.summary}</p>
+            <span className="services-offer__price">{entryOffer.pricing}</span>
+            <span className="button button--ghost">Start here</span>
+          </Reveal>
+        </Link>
       </div>
     </section>
   );

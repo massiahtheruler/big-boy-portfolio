@@ -6,7 +6,7 @@ function ProjectCard({
   spotlight = false,
   onOpen,
 }) {
-  const cardClass = `project-card ${spotlight ? "project-card--spotlight " : ""}project-card--${project.accent ?? "violet"}`;
+  const cardClass = `project-card interactive-card ${spotlight ? "project-card--spotlight " : ""}project-card--${project.accent ?? "violet"}`;
   const cardContent = (
     <>
       <div className="project-card__surface">

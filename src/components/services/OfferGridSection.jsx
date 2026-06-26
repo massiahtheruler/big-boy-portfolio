@@ -15,21 +15,18 @@ function OfferGridSection() {
 
         <div className="services-offer-grid">
           {supportingOffers.map((offer, index) => (
-            <Reveal
-              key={offer.slug}
-              delay={index * 80}
-              className="services-card"
-            >
-              <h3>{offer.title}</h3>
-              <p>{offer.summary}</p>
-              <span className="services-card__price">{offer.pricing}</span>
               <Link
+                key={offer.slug}
                 to={getInquiryHref(offer.slug)}
-                className="services-card__link"
+                className="services-card services-card--link interactive-card"
               >
-                Ask about this
+                <Reveal delay={index * 80}>
+                  <h3>{offer.title}</h3>
+                  <p>{offer.summary}</p>
+                  <span className="services-card__price">{offer.pricing}</span>
+                  <span className="services-card__link">Ask about this</span>
+                </Reveal>
               </Link>
-            </Reveal>
           ))}
         </div>
       </div>

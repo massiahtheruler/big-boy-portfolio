@@ -32,31 +32,24 @@ function CurrentWorkSection() {
                   cta="Open Litty preview"
                   spotlight
                 />
+              ) : item.links?.live ? (
+                <a
+                  className="work-card work-card--action interactive-card"
+                  href={item.links.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Visit ${item.name}`}
+                >
+                  <WorkCardContent item={item} cta={`Visit ${item.name}`} />
+                </a>
               ) : (
-                <article className="work-card work-card--static">
-                  {item.previewImage ? (
-                    <div className="work-card__media">
-                      <img src={item.previewImage} alt={`${item.name} preview`} />
-                    </div>
-                  ) : null}
-                  <div className="work-card__header">
-                    <h3>{item.name}</h3>
-                    <span>{item.status}</span>
-                  </div>
-                  <p>{item.description}</p>
-                  <div className="tag-list">
-                    {item.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                  {item.links?.live ? (
-                    <div className="work-card__links">
-                      <a href={item.links.live} target="_blank" rel="noreferrer">
-                        Visit {item.name}
-                      </a>
-                    </div>
-                  ) : null}
-                </article>
+                <Link
+                  to="/current"
+                  className="work-card work-card--action interactive-card"
+                  aria-label={`Open current work details for ${item.name}`}
+                >
+                  <WorkCardContent item={item} cta="More info" />
+                </Link>
               )}
             </Reveal>
           ))}
@@ -68,6 +61,29 @@ function CurrentWorkSection() {
         </Reveal>
       </div>
     </section>
+  );
+}
+
+function WorkCardContent({ item, cta }) {
+  return (
+    <>
+      {item.previewImage ? (
+        <div className="work-card__media">
+          <img src={item.previewImage} alt={`${item.name} preview`} />
+        </div>
+      ) : null}
+      <div className="work-card__header">
+        <h3>{item.name}</h3>
+        <span>{item.status}</span>
+      </div>
+      <p>{item.description}</p>
+      <div className="tag-list">
+        {item.tags.map((tag) => (
+          <span key={tag}>{tag}</span>
+        ))}
+      </div>
+      <span className="work-card__action">{cta}</span>
+    </>
   );
 }
 

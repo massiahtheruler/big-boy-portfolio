@@ -82,8 +82,16 @@
   border: 1px solid var(--border);
   border-radius: 50%;
   background:
-    radial-gradient(circle at center, rgba(198, 146, 255, 0.2), transparent 44%),
-    radial-gradient(circle at 30% 30%, rgba(105, 228, 208, 0.16), transparent 18%),
+    radial-gradient(
+      circle at center,
+      rgba(198, 146, 255, 0.2),
+      transparent 44%
+    ),
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(105, 228, 208, 0.16),
+      transparent 18%
+    ),
     rgba(255, 255, 255, 0.03);
   box-shadow: var(--shadow);
 }
@@ -105,19 +113,13 @@
 .hero-orbit__sticker:nth-child(1) {
   top: 9%;
   left: 10%;
-  transform: translate(
-      var(--sticker-shift-x),
-      var(--sticker-shift-y)
-    );
+  transform: translate(var(--sticker-shift-x), var(--sticker-shift-y));
 }
 
 .hero-orbit__sticker:nth-child(2) {
   top: 18%;
   right: 12%;
-  transform: translate(
-      var(--sticker-shift-x),
-      var(--sticker-shift-y)
-    );
+  transform: translate(var(--sticker-shift-x), var(--sticker-shift-y));
 }
 
 .hero-orbit__sticker:nth-child(2) img {
@@ -127,10 +129,7 @@
 .hero-orbit__sticker:nth-child(3) {
   bottom: 12%;
   left: 14%;
-  transform: translate(
-      var(--sticker-shift-x),
-      var(--sticker-shift-y)
-    );
+  transform: translate(var(--sticker-shift-x), var(--sticker-shift-y));
 }
 
 .hero-orbit__sticker:nth-child(3) img {
@@ -140,10 +139,7 @@
 .hero-orbit__sticker:nth-child(4) {
   bottom: 11%;
   right: 10%;
-  transform: translate(
-      var(--sticker-shift-x),
-      var(--sticker-shift-y)
-    );
+  transform: translate(var(--sticker-shift-x), var(--sticker-shift-y));
 }
 
 .hero-orbit__sticker:nth-child(4) img {
@@ -166,7 +162,7 @@
   border-radius: 50%;
   background: rgba(10, 12, 19, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .hero-orbit__core span,
@@ -270,7 +266,7 @@
 }
 
 .manifest-framework__logo {
-  width: min(22rem, 100%);
+  width: 100%;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius-xl) - 0.45rem);
   background: #070707;
@@ -410,8 +406,16 @@ body[data-theme="light"] .hero-stat {
 
 body[data-theme="light"] .hero-orbit {
   background:
-    radial-gradient(circle at center, rgba(198, 146, 255, 0.22), transparent 44%),
-    radial-gradient(circle at 30% 30%, rgba(105, 228, 208, 0.18), transparent 18%),
+    radial-gradient(
+      circle at center,
+      rgba(198, 146, 255, 0.22),
+      transparent 44%
+    ),
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(105, 228, 208, 0.18),
+      transparent 18%
+    ),
     rgba(31, 29, 44, 0.92);
 }
 

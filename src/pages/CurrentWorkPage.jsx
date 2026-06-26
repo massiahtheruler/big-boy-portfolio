@@ -73,44 +73,29 @@ function CurrentWorkPage() {
             <div className="current-work-grid current-work-grid--page">
               {currentInitiatives.map((project, index) => (
                 <Reveal key={project.id} delay={index * 90}>
-                  <article className="work-card">
-                    {project.previewImage ? (
-                      <div className="work-card__media">
-                        <img
-                          src={project.previewImage}
-                          alt={`${project.name} preview`}
-                        />
-                      </div>
-                    ) : null}
-                    <div className="work-card__header">
-                      <h3>{project.name}</h3>
-                      <span>{project.status}</span>
-                    </div>
-                    <p>{project.description}</p>
-                    <div className="tag-list">
-                      {project.tags.map((tag) => (
-                        <span key={tag}>{tag}</span>
-                      ))}
-                    </div>
-                    {project.links?.live ? (
-                      <div className="work-card__links">
-                        <a
-                          href={project.links.live}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Visit {project.name}
-                        </a>
-                      </div>
-                    ) : null}
+                  {project.links?.live ? (
+                    <a
+                      className="work-card work-card--action interactive-card"
+                      href={project.links.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Visit ${project.name}`}
+                    >
+                      <WorkCardContent
+                        project={project}
+                        cta={`Visit ${project.name}`}
+                      />
+                    </a>
+                  ) : (
                     <button
                       type="button"
-                      className="work-card__detail-button"
+                      className="work-card work-card--button work-card--action interactive-card"
                       onClick={() => setActiveProject(project)}
+                      aria-label={`Open ${project.name} details`}
                     >
-                      More info
+                      <WorkCardContent project={project} cta="More info" />
                     </button>
-                  </article>
+                  )}
                 </Reveal>
               ))}
             </div>
@@ -123,6 +108,29 @@ function CurrentWorkPage() {
         onClose={() => setActiveProject(null)}
       />
     </section>
+  );
+}
+
+function WorkCardContent({ project, cta }) {
+  return (
+    <>
+      {project.previewImage ? (
+        <div className="work-card__media">
+          <img src={project.previewImage} alt={`${project.name} preview`} />
+        </div>
+      ) : null}
+      <div className="work-card__header">
+        <h3>{project.name}</h3>
+        <span>{project.status}</span>
+      </div>
+      <p>{project.description}</p>
+      <div className="tag-list">
+        {project.tags.map((tag) => (
+          <span key={tag}>{tag}</span>
+        ))}
+      </div>
+      <span className="work-card__action">{cta}</span>
+    </>
   );
 }
 
