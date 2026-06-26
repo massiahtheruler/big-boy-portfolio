@@ -10,16 +10,13 @@ function FeaturedProjectsSection() {
     <section id="featured-work" className="content-section">
       <div className="shell">
         <Reveal className="section-heading">
-          <p className="section-eyebrow">Featured work</p>
-          <h2>Three projects that show range without losing polish.</h2>
+          <p className="section-eyebrow">Independent products</p>
+          <h2>Product builds that show range without losing polish.</h2>
           <p>
-            The goal is not to throw every build on the page. It is to show
-
-  product thinking, frontend depth, and the way I structure systems
-
-  when interfaces need to feel intuitive, scalable, and reliable under
-
-   pressure.
+            After the client work, this lane shows original products and
+            frontend builds that prove product thinking, technical depth, and
+            the way I structure interfaces when they need to feel intuitive,
+            scalable, and reliable under pressure.
           </p>
         </Reveal>
 
@@ -35,8 +32,8 @@ function FeaturedProjectsSection() {
               <h3>See the full project archive</h3>
               <p>
                 Featured cards are the quick proof. The archive gives the
-                bigger view across completed builds, client work, and future
-                project groups as they get added.
+                bigger view across completed builds, client engagements, and
+                product ideas as they get added.
               </p>
               <span className="project-card__link">Open projects</span>
             </Link>

@@ -25,6 +25,9 @@ function ManifestFrameworkSection() {
             />
 
             <h2>{manifestFramework.title}</h2>
+            <p className="manifest-framework__subtitle">
+              {manifestFramework.subtitle}
+            </p>
             <p>{manifestFramework.body}</p>
             <div
               className="manifest-chain"

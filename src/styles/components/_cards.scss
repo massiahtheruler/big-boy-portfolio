@@ -35,22 +35,29 @@
 .interactive-card::before {
   content: "";
   position: absolute;
-  inset: -34%;
-  z-index: 2;
+  inset: 0;
+  z-index: 0;
   background: linear-gradient(
     118deg,
-    transparent 30%,
-    rgba(255, 255, 255, 0.04) 43%,
-    rgba(255, 255, 255, 0.16) 50%,
-    rgba(255, 255, 255, 0.04) 57%,
-    transparent 70%
+    transparent 0%,
+    transparent 34%,
+    rgba(255, 255, 255, 0.035) 44%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.035) 56%,
+    transparent 66%,
+    transparent 100%
   );
   opacity: 0;
-  transform: translateX(-46%) rotate(10deg);
+  transform: translateX(-72%) skewX(-12deg);
   transition:
-    transform 360ms ease,
+    transform 520ms ease,
     opacity 220ms ease;
   pointer-events: none;
+}
+
+.interactive-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .interactive-card:hover,
@@ -68,7 +75,7 @@
 .interactive-card:focus-visible::before,
 .interactive-card:focus-within::before {
   opacity: 1;
-  transform: translateX(46%) rotate(10deg);
+  transform: translateX(72%) skewX(-12deg);
 }
 
 .project-card {
@@ -92,6 +99,7 @@
 .project-card__overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
   padding: 1.75rem;
   transition:
     opacity 260ms ease,
@@ -158,6 +166,7 @@
 }
 
 .project-card__overlay {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -337,6 +346,7 @@
 .work-card__media,
 .context-preview-card__media {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius-xl) - 0.45rem);
@@ -442,7 +452,7 @@ body[data-theme="light"] .work-card__header span {
 
 .work-card__action {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: inline-flex;
   width: fit-content;
   max-width: 100%;

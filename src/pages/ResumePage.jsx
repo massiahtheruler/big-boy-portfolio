@@ -3,19 +3,19 @@ import { getResumeProjects } from "../data/projects";
 
 const currentExperience = [
   {
-    title: "Frontend Engineer & Digital Brand Systems Lead",
+    title: "Founder & Frontend Engineer",
     date: "Mar 2025 - Present",
-    org: "Litty Hub - Remote",
+    org: "Manifest - New Jersey / NYC Metro",
     links: [
-      { label: "Litty Hub", href: "https://litty-hub.vercel.app/" },
       { label: "Manifest", href: "https://manifest-gamma-one.vercel.app/" },
+      { label: "Litty Co.", href: "https://litty-hub.vercel.app/" },
       { label: "Great Wall", href: "https://great-wall-omega.vercel.app/" },
     ],
     bullets: [
-      "Lead frontend development and digital strategy across Litty Hub's portfolio of brands and client-facing products, building responsive interfaces, reusable component systems, and scalable digital experiences.",
-      "Founded and currently lead Manifest, a brand identity and frontend consultancy focused on helping businesses translate strategy, trust, and positioning into high-conversion digital experiences.",
-      "Currently designing and developing Great Wall, Manifest's flagship client engagement, featuring responsive layouts, interaction systems, polished UI implementation, SVG/3D experiences, a 3D model configuration estimator, and conversion-focused user journeys.",
-      "Own frontend architecture, UI implementation, performance optimization, motion systems, accessibility considerations, and brand consistency from concept through deployment.",
+      "Founded Manifest, a brand identity and frontend consultancy specializing in responsive web applications, interaction systems, and conversion-focused digital experiences.",
+      "Partner with businesses to translate strategy into polished digital products through frontend architecture, UI implementation, performance optimization, and design systems.",
+      "Current client work includes Litty Co., where I lead frontend development across multiple brands and digital initiatives.",
+      "Current engagements include Great Wall, a trust-driven landing experience featuring responsive layouts, motion systems, SVG/3D interactions, a 3D model configuration estimator, and conversion-focused user journeys.",
     ],
   },
 ];
@@ -94,12 +94,12 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__hero">
           <p className="section-eyebrow">Resumé</p>
 
-          <h1>Frontend Engineer. Responsive UI. Product-Minded Interfaces.</h1>
+          <h1>Founder & Frontend Engineer. Manifest. Digital Experience.</h1>
 
           <p className="resume-page__lede">
             A web-friendly version of my resume, built to show the experience
-            behind the PDF: frontend systems, polished UI implementation,
-            shipped products, client-facing work, and the business context that
+            behind the PDF: Manifest, client-facing frontend systems, polished
+            UI implementation, shipped products, and the business context that
             shapes how I build.
           </p>
 
@@ -160,13 +160,14 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__summary resume-card">
           <p className="section-eyebrow">Summary</p>
           <p>
-            Frontend engineer specializing in translating design, brand
-            direction, and product goals into polished, responsive,
-            conversion-focused user experiences. I build React, Next.js, and
-            TypeScript interfaces with reusable frontend architecture,
-            interaction systems, performance-minded implementation, and clear
-            product thinking. My background in sales, operations, and branding
-            sharpens my instincts for user behavior, trust, and conversion.
+            Frontend engineer and founder of Manifest, a brand identity and
+            digital experience consultancy focused on responsive web
+            applications, interaction systems, and conversion-focused frontend
+            experiences. I translate strategy into polished UI, frontend
+            architecture, performance-minded implementation, and digital systems
+            that make businesses easier to trust and remember. My background in
+            sales, operations, and branding sharpens my instincts for user
+            behavior, credibility, and conversion.
           </p>
         </div>
 
@@ -275,7 +276,7 @@ function ResumePage({ onOpenContact }) {
         </div>
 
         <div className="resume-page__projects resume-card">
-          <p className="section-eyebrow">Selected Projects</p>
+          <p className="section-eyebrow">Independent Products</p>
           <div className="resume-entry-list">
             {projects.map((project) => (
               <article key={project.title} className="resume-entry">

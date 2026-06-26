@@ -6,7 +6,8 @@ export const greatWallPreviewImage = "/assets/great-wall-family-firepit.png";
 export const manifestFramework = {
   eyebrow: "Founder of:",
   title: "Manifest",
-  body: "You know what your business feels like. Your customers do not. Manifest is the framework I use to close that gap through brand identity, digital presence, frontend systems, and conversion-focused experiences that turn reputation into recognition.",
+  subtitle: "Frontend Engineering · Brand Identity · Digital Experience",
+  body: "You know what your business feels like. Your customers do not. Manifest is my consultancy for closing that gap through brand identity, digital presence, frontend systems, and conversion-focused experiences that turn reputation into recognition.",
   chain: ["Identity", "Presence", "Trust", "Recognition", "Action"],
   primaryCta: {
     label: "Explore Manifest",
@@ -18,9 +19,9 @@ export const manifestFramework = {
   },
   greatWall: {
     title: "Great Wall",
-    label: "Flagship Manifest engagement",
+    label: "Flagship client engagement",
     description:
-      "A trust-driven landing experience built around CTA hierarchy, polished frontend implementation, responsive layout, motion, and an interactive SVG/3D feature.",
+      "A trust-driven Litty Co. engagement delivered through Manifest, built around CTA hierarchy, polished frontend implementation, responsive layout, motion, and an interactive SVG/3D feature.",
     href: greatWallLiveUrl,
     ctaLabel: "Visit Great Wall",
     image: {

@@ -278,6 +278,15 @@
   font-size: clamp(3rem, 7vw, 6.2rem);
 }
 
+.manifest-framework__subtitle {
+  max-width: 42rem;
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .manifest-framework__copy p:not(.section-eyebrow),
 .services-manifest__copy p:not(.section-eyebrow) {
   max-width: 50rem;

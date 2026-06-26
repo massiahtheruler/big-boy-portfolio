@@ -13,13 +13,14 @@ function CurrentWorkSection() {
     >
       <div className="shell">
         <Reveal className="section-heading">
-          <p className="section-eyebrow">Current work</p>
-          <h2>Still Building | Always Refining.</h2>
+          <p className="section-eyebrow">Selected client work</p>
+          <h2>Manifest in practice.</h2>
 
           <p>
             The work below shows the Manifest framework moving through active
-            brands, client-facing systems, frontend products, and proof that
-            identity has to become something people can recognize and act on.
+            client engagements, brand systems, frontend products, and proof
+            that identity has to become something people can recognize and act
+            on.
           </p>
         </Reveal>
 

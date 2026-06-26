@@ -40,6 +40,9 @@ function ManifestServicesIntro() {
             />
 
             <h2>{manifestFramework.title}</h2>
+            <p className="manifest-framework__subtitle">
+              {manifestFramework.subtitle}
+            </p>
             <p>{manifestFramework.body}</p>
             <div
               className="manifest-chain"
@@ -59,7 +62,7 @@ function ManifestServicesIntro() {
           <ContextPreviewCard
             eyebrow="Framework in practice"
             title="Great Wall"
-            description="See the framework in practice through a trust-driven landing experience built for clarity, contact, and credibility."
+            description="See the framework in practice through a flagship Litty Co. client engagement built for clarity, contact, and credibility."
             image={greatWall.image}
             primaryLink={{
               href: greatWall.href,

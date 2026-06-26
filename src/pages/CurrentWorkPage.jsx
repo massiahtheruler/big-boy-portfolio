@@ -16,13 +16,13 @@ function CurrentWorkPage() {
     <section className="project-archive project-archive--current">
       <div className="shell">
         <Reveal className="project-archive__hero">
-          <p className="section-eyebrow">Current work</p>
-          <h1>Active builds, evolving systems, and what is being shaped now.</h1>
+          <p className="section-eyebrow">Current client work</p>
+          <h1>Manifest, active engagements, and what is being shaped now.</h1>
           <p>
             This page tracks the work currently being shaped through Manifest:
-            brand identity, digital presence, frontend systems, and
-            conversion-focused experiences connected by one operating
-            framework.
+            brand identity, digital presence, frontend systems, active client
+            engagements, and conversion-focused experiences connected by one
+            operating framework.
           </p>
           <div className="project-archive__actions">
             <a
@@ -45,12 +45,12 @@ function CurrentWorkPage() {
         {featuredProject ? (
           <section className="project-archive__group">
             <Reveal className="section-heading">
-              <p className="section-eyebrow">Featured current project</p>
-              <h2>Featured current build</h2>
+              <p className="section-eyebrow">Featured client engagement</p>
+              <h2>Litty Co. is the active client lane.</h2>
               <p>
-                Litty Hub is the broader ecosystem layer. Great Wall is the
-                flagship Manifest engagement proving that framework against a
-                real service-business experience.
+                Litty Co. is the broader ecosystem layer. Great Wall is the
+                flagship client engagement delivered through Manifest, proving
+                the framework against a real service-business experience.
               </p>
             </Reveal>
             <ProjectCard
@@ -65,9 +65,11 @@ function CurrentWorkPage() {
           <section className="project-archive__group">
             <Reveal className="section-heading">
               <p className="section-eyebrow">In motion</p>
-              <h2>Projects and systems in motion</h2>
+              <h2>Client systems and product ideas in motion</h2>
               <p>
-                These are active ideas, service systems, and builds that are still developing. They can stay lightweight for now and expand into full project pages when the work calls for it.
+                These are active ideas, service systems, and builds that are
+                still developing. They can stay lightweight for now and expand
+                into fuller pages when the work calls for it.
               </p>
             </Reveal>
             <div className="current-work-grid current-work-grid--page">

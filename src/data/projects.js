@@ -434,7 +434,7 @@ export const projects = [
       code: null,
     },
     featureHighlights: [
-      "Litty Co. positioned as the umbrella brand and attention engine for the larger ecosystem",
+      "Litty Co. positioned as the active client ecosystem and attention engine for the larger brand system",
       "Manifest Method introduced as a seven-step framework spanning identity, systems, execution, content, and long-term growth",
       "A four-brand rollout structure designed to give each lane distinct positioning while maintaining shared visual consistency",
       "A modular content strategy built around repurposable assets across every connected brand surface",
@@ -452,7 +452,7 @@ export const projects = [
         list: [
           "Litty Co. launches first as the lifestyle wrapper and attention engine.",
           "JJ Totes follows as the cleaner operational product lane.",
-          "Great Wall of Legends becomes the premium showcase experience.",
+          "Great Wall becomes the premium showcase experience and flagship client engagement.",
           "JJ Pro Service remains part of the ecosystem while supporting the broader transition.",
         ],
       },
@@ -527,12 +527,13 @@ export const projects = [
     groups: [PROJECT_GROUPS.current, PROJECT_GROUPS.client],
     currentOrder: 2,
     archiveOrder: 5,
-    status: "Flagship Manifest engagement",
+    status: "Flagship client engagement",
     previewImage: greatWallPreviewImage,
     description:
-      "Great Wall is a conversion-focused landing experience for a local service business, built with responsive layouts, motion details, CTA hierarchy, and an interactive SVG/3D model feature.",
+      "Great Wall is a current Litty Co. client engagement delivered through Manifest, built with responsive layouts, motion details, CTA hierarchy, and an interactive SVG/3D model feature.",
     tags: [
-      "Manifest framework",
+      "client engagement",
+      "Litty Co.",
       "conversion UX",
       "responsive frontend",
       "SVG/3D feature",
@@ -543,7 +544,7 @@ export const projects = [
     gallery: [
       {
         title: "Framework proof",
-        body: "The project turns the Manifest framework into a real client-facing experience: identity, presence, trust, recognition, and action arranged around a clearer path to contact.",
+        body: "The engagement turns the Manifest framework into a real client-facing experience: identity, presence, trust, recognition, and action arranged around a clearer path to contact.",
       },
       {
         title: "Frontend execution",
