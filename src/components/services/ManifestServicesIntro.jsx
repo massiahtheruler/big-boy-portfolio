@@ -8,7 +8,7 @@ function ManifestServicesIntro() {
   return (
     <section className="services-manifest">
       <div className="shell services-manifest__grid">
-        <Reveal className="services-manifest__copy">
+        {/* <Reveal className="services-manifest__copy">
           <p className="section-eyebrow">Operating framework</p>
           <h2>Manifest</h2>
           <p>
@@ -22,6 +22,37 @@ function ManifestServicesIntro() {
               <span key={step}>{step}</span>
             ))}
           </div>
+        </Reveal> */}
+        <Reveal>
+          <a
+            className="manifest-framework__copy manifest-framework__card interactive-card"
+            href={manifestFramework.primaryCta.href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={manifestFramework.primaryCta.label}
+          >
+            <p className="section-eyebrow">{manifestFramework.eyebrow}</p>
+
+            <img
+              src={manifestFramework.image.src}
+              alt={manifestFramework.image.alt}
+              className="manifest-framework__logo"
+            />
+
+            <h2>{manifestFramework.title}</h2>
+            <p>{manifestFramework.body}</p>
+            <div
+              className="manifest-chain"
+              aria-label="Manifest framework chain"
+            >
+              {manifestFramework.chain.map((step) => (
+                <span key={step}>{step}</span>
+              ))}
+            </div>
+            <span className="button button--primary">
+              {manifestFramework.primaryCta.label}
+            </span>
+          </a>
         </Reveal>
 
         <Reveal delay={110}>
