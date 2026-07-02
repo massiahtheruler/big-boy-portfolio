@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import { siteContent } from "../../data/siteContent";
@@ -5,6 +6,43 @@ import { siteContent } from "../../data/siteContent";
 function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const [isHidden, setIsHidden] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+    const threshold = 10;
+    const topZone = 130;
+
+    const updateHeader = () => {
+      const currentScrollY = window.scrollY;
+      const delta = currentScrollY - lastScrollY;
+
+      setIsScrolled(currentScrollY > 48);
+
+      if (currentScrollY < topZone) {
+        setIsHidden(false);
+      } else if (Math.abs(delta) >= threshold) {
+        setIsHidden(delta > 0);
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location.pathname]);
 
   const navItems = [
     {
@@ -33,7 +71,13 @@ function SiteHeader({ theme, onToggleTheme, onOpenContact }) {
   ];
 
   return (
-    <header className="site-header">
+    <header
+      className={`site-header ${isHidden ? "site-header--hidden" : ""} ${
+        isScrolled ? "site-header--scrolled" : ""
+      }`}
+      onFocus={() => setIsHidden(false)}
+      onMouseEnter={() => setIsHidden(false)}
+    >
       <div className="shell site-header__inner">
         <Link
           to="/"
