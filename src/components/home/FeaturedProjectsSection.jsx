@@ -10,13 +10,12 @@ function FeaturedProjectsSection() {
     <section id="featured-work" className="content-section">
       <div className="shell">
         <Reveal className="section-heading">
-          <p className="section-eyebrow">Independent products</p>
-          <h2>Product builds that show range without losing polish.</h2>
+          <p className="section-eyebrow">Selected work</p>
+          <h2>Three projects. Three different kinds of proof.</h2>
           <p>
-            After the client work, this lane shows original products and
-            frontend builds that prove product thinking, technical depth, and
-            the way I structure interfaces when they need to feel intuitive,
-            scalable, and reliable under pressure.
+            A business transformation, a full-stack marketplace, and a reusable
+            guided-matching system—curated to show how I move from identity and
+            strategy into product structure and frontend execution.
           </p>
         </Reveal>
 
@@ -31,9 +30,9 @@ function FeaturedProjectsSection() {
               <span className="section-eyebrow">More work</span>
               <h3>See the full project archive</h3>
               <p>
-                Featured cards are the quick proof. The archive gives the
-                bigger view across completed builds, client engagements, and
-                product ideas as they get added.
+                The homepage stays selective. The archive holds the wider record
+                of completed builds without turning every project type into a
+                separate category.
               </p>
               <span className="project-card__link">Open projects</span>
             </Link>

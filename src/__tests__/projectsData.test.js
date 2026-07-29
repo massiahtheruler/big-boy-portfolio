@@ -20,9 +20,9 @@ describe("projects data", () => {
 
   it("defines the featured projects required by the home page", () => {
     expect(getFeaturedProjects().map((project) => project.slug)).toEqual([
+      "juicy-city",
       "gocart",
-      "summarist",
-      "twitter-glitter",
+      "bodywork-network",
     ]);
 
     getFeaturedProjects().forEach((project) => {
@@ -40,19 +40,19 @@ describe("projects data", () => {
     });
   });
 
-  it("keeps Litty Hub as the featured current case study", () => {
+  it("orders current case studies by their portfolio role", () => {
     expect(getCurrentProjects()[0]).toEqual(
       expect.objectContaining({
-        slug: "litty-hub",
-        name: "Litty Hub",
+        slug: "juicy-city",
+        name: "Juicy City",
       }),
     );
 
     expect(getCurrentProjects().map((project) => project.slug ?? project.id)).toEqual([
-      "litty-hub",
+      "juicy-city",
+      "bodywork-network",
       "great-wall",
-      "custom-build-pipeline",
-      "original-product-concepts",
+      "litty-hub",
     ]);
 
     expect(getProjectBySlug("litty-hub")).toEqual(
@@ -71,10 +71,7 @@ describe("projects data", () => {
     ).toEqual(["litty-hub", "great-wall"]);
 
     expect(getArchiveGroups().map((group) => group.group)).toEqual([
-      PROJECT_GROUPS.featured,
       PROJECT_GROUPS.completed,
-      PROJECT_GROUPS.client,
-      PROJECT_GROUPS.internship,
     ]);
   });
 

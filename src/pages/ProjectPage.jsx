@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getProjectBySlug } from "../data/projects";
 import Reveal from "../components/shared/Reveal";
@@ -5,6 +6,59 @@ import Reveal from "../components/shared/Reveal";
 function ProjectPage({ onOpenContact }) {
   const { slug } = useParams();
   const project = getProjectBySlug(slug);
+
+  useEffect(() => {
+    if (!project) {
+      return undefined;
+    }
+
+    const previousTitle = document.title;
+    const description = document.querySelector('meta[name="description"]');
+    const previousDescription = description?.getAttribute("content");
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const previousCanonical = canonical?.getAttribute("href");
+    const canonicalUrl = `https://big-boy-portfolio.vercel.app/projects/${project.slug}`;
+    const metaTitle = project.meta?.title ?? `${project.name} | Justin Henry`;
+    const metaDescription = project.meta?.description ?? project.summary;
+    const metaImagePath = project.meta?.image ?? project.previewImage;
+    const metaImage = metaImagePath
+      ? new URL(metaImagePath, window.location.origin).href
+      : null;
+    const socialMeta = [
+      ['meta[property="og:title"]', metaTitle],
+      ['meta[property="og:description"]', metaDescription],
+      ['meta[name="twitter:title"]', metaTitle],
+      ['meta[name="twitter:description"]', metaDescription],
+      ['meta[property="og:image"]', metaImage],
+      ['meta[name="twitter:image"]', metaImage],
+    ].map(([selector, content]) => {
+      const element = document.querySelector(selector);
+      const previousContent = element?.getAttribute("content");
+      if (content) {
+        element?.setAttribute("content", content);
+      }
+      return { element, previousContent };
+    });
+
+    document.title = metaTitle;
+    description?.setAttribute("content", metaDescription);
+    canonical?.setAttribute("href", canonicalUrl);
+
+    return () => {
+      document.title = previousTitle;
+      if (previousDescription) {
+        description?.setAttribute("content", previousDescription);
+      }
+      if (previousCanonical) {
+        canonical?.setAttribute("href", previousCanonical);
+      }
+      socialMeta.forEach(({ element, previousContent }) => {
+        if (previousContent) {
+          element?.setAttribute("content", previousContent);
+        }
+      });
+    };
+  }, [project]);
 
   if (!project) {
     return (
@@ -30,6 +84,13 @@ function ProjectPage({ onOpenContact }) {
             <h1>{project.name}</h1>
             <p className="case-study-hero__tagline">{project.tagline}</p>
             <p>{project.summary}</p>
+
+            {project.relationship ? (
+              <div className="case-study-hero__context" aria-label="Project context">
+                {project.projectType ? <strong>{project.projectType}</strong> : null}
+                <span>{project.relationship}</span>
+              </div>
+            ) : null}
 
             <div className="case-study-hero__actions">
               {project.links.live ? (
@@ -165,6 +226,14 @@ function ProjectPage({ onOpenContact }) {
                 <p className="section-eyebrow">{section.eyebrow}</p>
                 <h2>{section.title}</h2>
                 {section.body ? <p>{section.body}</p> : null}
+                {section.media ? (
+                  <figure className="case-study-evidence">
+                    <img src={section.media.src} alt={section.media.alt} />
+                    {section.media.caption ? (
+                      <figcaption>{section.media.caption}</figcaption>
+                    ) : null}
+                  </figure>
+                ) : null}
                 {section.list ? (
                   <ul className="detail-list">
                     {section.list.map((item) => (

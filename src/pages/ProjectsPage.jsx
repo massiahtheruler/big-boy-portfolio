@@ -37,11 +37,9 @@ function ProjectsPage() {
           <p className="section-eyebrow">Project archive</p>
           <h1>Completed work, case studies, and the larger build record.</h1>
           <p>
-            This is the full project archive. The homepage highlights a select
-            group of featured projects. Here you’ll find client work,
-            internships, product builds, and experiments that reflect how I
-            approach frontend engineering, product development, and digital
-            experiences in scalable project systems.
+            The homepage carries the strongest current stories. This page keeps
+            the completed record in one place, with project labels explaining
+            the context without splitting the work into unnecessary categories.
           </p>
           <div className="project-archive__actions">
             <Link to="/current" className="button button--primary">

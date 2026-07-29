@@ -13,51 +13,204 @@ export const PROJECT_GROUPS = {
 
 export const PROJECT_ARCHIVE_GROUPS = [
   {
-    group: PROJECT_GROUPS.featured,
-    eyebrow: "Featured",
-    title: "The main three",
-    description:
-      "These are the first projects recruiters and clients should see because they show product thinking, technical depth, and the ability to make complex apps feel clear.",
-  },
-  {
     group: PROJECT_GROUPS.completed,
     eyebrow: "Completed",
-    title: "Completed case studies",
+    title: "Completed work",
     description:
-      "Finished builds with individual pages, full project framing, technical proof, and links where available.",
+      "Finished client engagements, product builds, and case studies—kept in one clear record and labeled by what each project proves.",
     routableOnly: true,
-  },
-  {
-    group: PROJECT_GROUPS.client,
-    eyebrow: "Client work",
-    title: "Client and partner work",
-    description:
-      "Projects connected to active business direction, client-facing systems, and brand execution.",
-  },
-  {
-    group: PROJECT_GROUPS.internship,
-    eyebrow: "Internships",
-    title: "Internship work",
-    description:
-      "A dedicated section is ready for internship projects once those records are added to the central data file.",
-  },
-  {
-    group: PROJECT_GROUPS.product,
-    eyebrow: "Products",
-    title: "Product builds",
-    description:
-      "Original products, tools, and platform ideas that deserve their own lane in the archive.",
-  },
-  {
-    group: PROJECT_GROUPS.experiment,
-    eyebrow: "Experiments",
-    title: "Experiments and prototypes",
-    description:
-      "Smaller explorations, technical tests, and interface ideas that show range without needing full case studies.",
   },
 ];
 
 export const projects = [
+  {
+    slug: "juicy-city",
+    name: "Juicy City",
+    kind: "case-study",
+    groups: [
+      PROJECT_GROUPS.featured,
+      PROJECT_GROUPS.current,
+      PROJECT_GROUPS.caseStudy,
+    ],
+    featuredOrder: 1,
+    currentOrder: 1,
+    status: "Independent redesign · Active build",
+    projectType: "Manifest Case Study / Brand and UX Transformation",
+    relationship:
+      "An independently developed redesign concept based on publicly available business information.",
+    accent: "citrus",
+    tagline:
+      "Bringing the identity already alive inside a neighborhood business into a clearer, more useful, and more intentional digital experience.",
+    summary:
+      "Juicy City is a public-information-only brand and UX transformation for an operating Jersey City business. The work begins with the identity already visible in its storefront, products, founders, and neighborhood presence, then translates that character into stronger messaging, information architecture, responsive design, accessibility, and a more coherent path to the existing ordering provider.",
+    audienceSummary:
+      "Juicy City is the clearest proof of how I work: I uncover what already makes a business distinct, identify why customers cannot feel it online, and translate that identity into a digital system people can recognize, trust, and use.",
+    role: "Independent brand strategist, UX designer, and frontend engineer",
+    stack: [
+      "Next.js App Router",
+      "React",
+      "TypeScript",
+      "Responsive design",
+      "Accessibility",
+      "Information architecture",
+      "Public-source research",
+      "Content systems",
+    ],
+    heroMedia: {
+      eyebrow: "Manifest Case Study / Speculative Redesign",
+      heading: "The business already had the identity. The website needed to reveal it.",
+      detail:
+        "A documented before-state, clearer customer journey, expressive visual system, and transparent handoff to the business's existing ordering partner.",
+    },
+    previewImage: "/assets/juicy-city-home.png",
+    links: {
+      live: null,
+      code: "https://github.com/massiahtheruler/juicy-city",
+    },
+    featureHighlights: [
+      "Documented the original marketing site and separate ordering experience across desktop and mobile before redesigning anything",
+      "Preserved public products, prices, names, business facts, and the existing ordering/payment boundary",
+      "Reframed the navigation and customer journey around Home, Menu, Our Story, Visit, and a clear external Order flow",
+      "Built a responsive visual direction that carries the storefront's color, energy, neighborhood roots, and product appeal into the web experience",
+    ],
+    technicalProof: [
+      "Separated structured content and menu data from page components so the concept can evolve without rewriting the interface.",
+      "Created explicit assumptions and validation boundaries instead of presenting public-source decisions as owner-approved facts.",
+      "Designed a transparent ordering-provider handoff rather than fabricating cart, checkout, payment, or order-status functionality.",
+      "Tracked accessibility, responsive behavior, performance signals, and matched before-and-after evidence as part of the case-study process.",
+    ],
+    detailSections: [
+      {
+        eyebrow: "The gap",
+        title: "A vibrant real-world identity was getting lost online",
+        body: "Juicy City's storefront, colorful products, neighborhood naming, and community story already create a recognizable personality. The original marketing site and separate ordering experience did not carry that same energy or clarity, so the redesign focuses on translating the real business—not inventing a different one.",
+        media: {
+          src: "/assets/juicy-city-before-desktop.png",
+          alt: "Original Juicy City marketing homepage shown before the independent redesign",
+          caption: "Before: the original public marketing homepage captured on July 24, 2026.",
+        },
+      },
+      {
+        eyebrow: "The disconnect",
+        title: "Marketing and ordering felt like separate products",
+        body: "Customers moved from a highly visual marketing site into a utility-first ordering interface with different structure, emphasis, and behavior. The concept improves the lead-in and makes the external handoff clear while preserving the real provider and payment flow.",
+        media: {
+          src: "/assets/juicy-city-ordering-before-desktop.png",
+          alt: "Original Juicy City ordering interface before the redesign concept",
+          caption: "Before: the existing ordering partner remains the transactional source of truth.",
+        },
+      },
+      {
+        eyebrow: "Research boundary",
+        title: "Public evidence first, owner validation later",
+        list: [
+          "No owner involvement, approval, commission, analytics, or business outcomes are implied.",
+          "Public names, prices, ingredients, sizes, address, hours, and ordering details remain preserved unless an inconsistency is explicitly logged.",
+          "Unknowns stay visible as assumptions or future owner-validation items.",
+          "Success is described through design, accessibility, clarity, and implementation evidence—not invented conversion results.",
+        ],
+      },
+      {
+        eyebrow: "Current status",
+        title: "The concept is actively being built and documented",
+        body: "The audit, public-content archive, visual direction, responsive implementation, and working case-study vault exist. Final matched comparisons, complete testing evidence, and any owner-approved production decisions remain in progress.",
+      },
+    ],
+    buildStory:
+      "This project changed how I describe my work. I am not placing a style on top of a business. I am finding the identity already present in the people, place, products, and reputation, then building the digital structure that lets customers finally feel it online.",
+    meta: {
+      title: "Juicy City Brand & UX Transformation | Justin Henry",
+      description:
+        "An independent Juicy City redesign case study translating a neighborhood business's real identity into clearer UX, responsive design, and a stronger ordering journey.",
+      image: "/assets/juicy-city-home.png",
+    },
+  },
+  {
+    slug: "bodywork-network",
+    name: "Bodywork Network",
+    kind: "case-study",
+    groups: [
+      PROJECT_GROUPS.featured,
+      PROJECT_GROUPS.current,
+      PROJECT_GROUPS.caseStudy,
+    ],
+    featuredOrder: 3,
+    currentOrder: 2,
+    status: "Guided-matching product direction",
+    projectType: "Guided Matching Experience",
+    relationship: "Independent reusable product-system concept",
+    accent: "sage",
+    tagline:
+      "A provider-neutral guided experience that helps people navigate bodywork options through their needs, preferences, constraints, and goals.",
+    summary:
+      "Bodywork Network is the strongest expression of a reusable guided-matching model I have explored across multiple industries and locations. The questions, matching factors, content, services, and provider data can change while the interaction architecture remains consistent.",
+    audienceSummary:
+      "Bodywork Network proves that I can turn a complicated choice into a calm, accessible product journey while designing the underlying content, validation, recommendation, and lead-routing systems to be reused responsibly.",
+    role: "Product strategist, UX designer, and frontend engineer",
+    stack: [
+      "Next.js App Router",
+      "React",
+      "TypeScript",
+      "Zod",
+      "React Hook Form",
+      "Framer Motion",
+      "Rule-based matching",
+      "Accessible forms",
+    ],
+    heroMedia: {
+      eyebrow: "Guided Matching Experience",
+      heading: "A reusable way to guide people through high-consideration choices",
+      detail:
+        "Structured questions, editable recommendation rules, clear suitability language, validated lead capture, and a provider-neutral foundation.",
+    },
+    previewImage: "/assets/bodywork-network-home.png",
+    links: {
+      live: null,
+      code: "https://github.com/massiahtheruler/bodywork",
+    },
+    featureHighlights: [
+      "Multi-step matching flow shaped around concerns, body areas, preferred approaches, suitability flags, and plain-English recommendation reasons",
+      "No more than three recommendations and no medical diagnosis, guaranteed match, or unsupported provider claim",
+      "Structured service and location data that can power overview pages, dynamic routes, sitemaps, and future provider records",
+      "Validated lead capture with a replaceable destination adapter for future CRM, email, SMS, or booking integrations",
+    ],
+    technicalProof: [
+      "Centralized rule definitions keep matching logic editable without coupling it to form presentation.",
+      "Client and server validation use shared schemas so submitted information is handled consistently.",
+      "Dynamic service and location routes are generated from structured data rather than duplicated page code.",
+      "Motion stays low-intensity and respects reduced-motion preferences while special multi-select choices remain immediate and understandable.",
+    ],
+    detailSections: [
+      {
+        eyebrow: "Reusable matching model",
+        title: "One interaction architecture, adapted to different decisions",
+        body: "Bodywork Network represents the pattern, not a permanent Miami-only brand. The same architecture can support different industries, locations, provider types, questions, matching criteria, content, and recommendation logic without presenting every adaptation as a separate portfolio project.",
+      },
+      {
+        eyebrow: "Related explorations",
+        title: "Metro Media Walls and GlassNow extend the same router thinking",
+        body: "Metro applies guided discovery to media-wall products and configurations. GlassNow applies structured intake to mobile glass-service needs and quote preparation. They are supporting examples of the adaptable model, not separate headline case studies.",
+      },
+      {
+        eyebrow: "Truth boundary",
+        title: "Useful guidance without pretending the prototype knows more than it does",
+        list: [
+          "No proprietary or objectively best-match algorithm is claimed.",
+          "No provider partnership, credential, review, or availability is presented without verification.",
+          "Recommendations explain their reasoning but do not diagnose conditions or guarantee outcomes.",
+          "The current build is a product direction and working prototype, not a live marketplace.",
+        ],
+      },
+    ],
+    buildStory:
+      "The larger idea is not a collection of unrelated router sites. It is a reusable way to help people make complicated choices. Bodywork Network carries that story because it has the clearest journey, the strongest accessibility foundation, and the most complete connection between questions, recommendation logic, content, and next steps.",
+    meta: {
+      title: "Bodywork Network Guided Matching Case Study | Justin Henry",
+      description:
+        "A reusable, accessible guided-matching product architecture for needs, preferences, recommendations, and provider-neutral lead routing.",
+      image: "/assets/bodywork-network-home.png",
+    },
+  },
   {
     slug: "gocart",
     name: "GoCart",
@@ -67,7 +220,7 @@ export const projects = [
       PROJECT_GROUPS.completed,
       PROJECT_GROUPS.caseStudy,
     ],
-    featuredOrder: 1,
+    featuredOrder: 2,
     archiveOrder: 1,
     status: "Shipped concept",
     accent: "emerald",
@@ -229,12 +382,10 @@ export const projects = [
     name: "Summarist",
     kind: "case-study",
     groups: [
-      PROJECT_GROUPS.featured,
       PROJECT_GROUPS.completed,
       PROJECT_GROUPS.internship,
       PROJECT_GROUPS.caseStudy,
     ],
-    featuredOrder: 2,
     archiveOrder: 2,
     status: "Internship build",
     accent: "sky",
@@ -298,11 +449,9 @@ export const projects = [
     name: "Twitter / Glitter",
     kind: "case-study",
     groups: [
-      PROJECT_GROUPS.featured,
       PROJECT_GROUPS.completed,
       PROJECT_GROUPS.caseStudy,
     ],
-    featuredOrder: 3,
     archiveOrder: 3,
     status: "Featured build",
     accent: "rose",
@@ -386,14 +535,17 @@ export const projects = [
       PROJECT_GROUPS.client,
       PROJECT_GROUPS.caseStudy,
     ],
-    currentOrder: 1,
+    currentOrder: 4,
     archiveOrder: 4,
-    status: "Active build",
+    status: "Active contracted client ecosystem",
+    projectType: "Client Engagement / Brand Ecosystem",
+    relationship:
+      "Active contract covering websites, social building, creation, and management for Litty Hub and its sub-brands.",
     accent: "amber",
     tagline:
       "A connected brand ecosystem built around frontend execution, visual systems, service structure, and long-term product direction.",
     summary:
-      "Litty Hub is the broader ecosystem layer behind the portfolio. It connects multiple business lanes, visual identities, service flows, and future launches into one organized digital system. A shared monogram language ties the brands together visually while still allowing each lane to maintain its own positioning.",
+      "Litty Hub is an active contracted client ecosystem spanning websites, social building, creation, and management across Litty and its sub-brands. The digital system connects multiple business lanes, identities, service flows, and future launches while allowing each brand to maintain its own positioning.",
     audienceSummary:
       "Litty Hub shows how I think beyond a single website: identity, frontend execution, content, positioning, and long-term growth working together instead of being treated as separate pieces.",
     role: "Frontend engineer, brand systems designer, and product strategist",
@@ -521,42 +673,86 @@ export const projects = [
     },
   },
   {
-    id: "great-wall",
+    slug: "great-wall",
     name: "Great Wall",
-    kind: "external-current",
-    groups: [PROJECT_GROUPS.current, PROJECT_GROUPS.client],
-    currentOrder: 2,
-    archiveOrder: 5,
-    status: "Flagship client engagement",
-    previewImage: greatWallPreviewImage,
-    description:
-      "Great Wall is a current Litty Co. client engagement delivered through Manifest, built with responsive layouts, motion details, CTA hierarchy, and an interactive SVG/3D model feature.",
-    tags: [
-      "client engagement",
-      "Litty Co.",
-      "conversion UX",
-      "responsive frontend",
-      "SVG/3D feature",
+    kind: "case-study",
+    groups: [
+      PROJECT_GROUPS.current,
+      PROJECT_GROUPS.client,
+      PROJECT_GROUPS.caseStudy,
     ],
+    currentOrder: 3,
+    status: "Client-approved · Live · Final refinements",
+    projectType: "Client Engagement / Interactive Product Experience",
+    relationship:
+      "Commissioned and approved work for Litty Hub and its Great Wall sub-brand.",
+    accent: "amber",
+    tagline:
+      "A live showroom and guided media-wall experience built for a contracted client engagement, with final refinements still in progress.",
+    summary:
+      "Great Wall is a commissioned, client-approved project delivered through an active contract with Litty Hub. The live Vercel experience turns a custom media-wall business into a clearer showroom, discovery system, and qualified quote journey while preserving an interactive state-connected builder rather than reducing the product to a static brochure.",
+    audienceSummary:
+      "Great Wall proves that I can translate a real service business into a polished customer-facing system while handling client direction, product discovery, responsive execution, lead capture, and a complex interactive builder.",
+    role: "Contracted brand, product, frontend, and digital-experience partner",
+    stack: [
+      "Next.js App Router",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Interactive SVG builder",
+      "Structured catalog data",
+      "EmailJS",
+      "Responsive product UX",
+    ],
+    heroMedia: {
+      eyebrow: "Commissioned Client Engagement",
+      heading: "A real service business translated into a guided showroom and quote experience",
+      detail:
+        "Client-approved, live on Vercel, and approximately 90% complete with final refinements still underway.",
+    },
+    previewImage: greatWallPreviewImage,
     links: {
       live: greatWallLiveUrl,
+      code: "https://github.com/massiahtheruler/great-wall",
     },
-    gallery: [
+    featureHighlights: [
+      "Centralized catalog with featured models, dynamic product pages, filtering, discovery, and quick-view behavior",
+      "Interactive media-wall builder connected to real selections and blueprint/model state",
+      "Qualified estimate flow that carries model, option, timeline, and project context into the inquiry",
+      "Responsive showroom presentation designed to make custom architectural work easier to understand before contact",
+    ],
+    technicalProof: [
+      "Product and configuration data live in centralized modules instead of being repeated across pages.",
+      "The builder preserves state across model, size, finish, fireplace, television, and add-on choices while updating the visual preview.",
+      "Reusable modal and quote infrastructure keeps product context connected through discovery and inquiry.",
+      "The live Vercel build is client approved; final content and refinement work remain visibly in progress rather than being described as fully complete.",
+    ],
+    detailSections: [
       {
-        title: "Framework proof",
-        body: "The engagement turns the Manifest framework into a real client-facing experience: identity, presence, trust, recognition, and action arranged around a clearer path to contact.",
+        eyebrow: "Client context",
+        title: "Part of an active Litty Hub contract",
+        body: "My work with Litty Hub covers websites, social building, creation, and ongoing management across Litty and its sub-brands. Great Wall is the strongest current proof of that relationship moving from brand direction into a live customer-facing product.",
       },
       {
-        title: "Frontend execution",
-        body: "The build focuses on CTA hierarchy, responsive layout, motion details, polished sections, and an interactive visual feature that makes the service feel more credible before a customer reaches out.",
+        eyebrow: "Interactive depth",
+        title: "The configurator remains the product—not a decorative mockup",
+        body: "The builder is a state-connected model creator that helps visitors understand and shape a media-wall direction. It stays central to the case study because it demonstrates product logic, not just visual presentation.",
       },
     ],
+    buildStory:
+      "Great Wall is where the Manifest philosophy meets a real contracted engagement. The work is about bringing the identity and ambition of the business forward, then giving that identity practical structure through discovery, configuration, trust, and a clearer path to a qualified conversation.",
+    meta: {
+      title: "Great Wall Client Experience Case Study | Justin Henry",
+      description:
+        "A commissioned and client-approved Great Wall showroom, interactive media-wall builder, and quote experience created through an active Litty Hub engagement.",
+      image: greatWallPreviewImage,
+    },
   },
   {
     id: "custom-build-pipeline",
     name: "Custom build pipeline",
     kind: "initiative",
-    groups: [PROJECT_GROUPS.current],
+    groups: [],
     currentOrder: 3,
     status: "Actively evolving",
     description:
@@ -583,7 +779,7 @@ export const projects = [
     id: "original-product-concepts",
     name: "Original product concepts",
     kind: "initiative",
-    groups: [PROJECT_GROUPS.current],
+    groups: [],
     currentOrder: 4,
     status: "In development",
     description:

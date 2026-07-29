@@ -6,7 +6,7 @@ export const siteContent = {
   title: "You see it. They don’t. I close that gap.",
 
   intro:
-    "I help founders, products, and brands turn ideas into clear identities, stronger experiences, and systems people actually connect with. The work lives at the intersection of frontend engineering, interaction design, and product thinking.",
+    "I uncover the identity already living inside a business, then translate it into a digital experience people can recognize, feel, trust, and use. The work connects brand strategy, product thinking, interaction design, and frontend engineering.",
 
   valuePoints: [
     {
@@ -20,7 +20,7 @@ export const siteContent = {
       title: "Where identity meets execution",
 
       description:
-        "My background in branding and creative direction shapes how I build. I think about the experience as a whole so products feel cohesive from first impression to everyday use.",
+        "I do not place a style on top of a business. I find the character already present in its people, products, place, and reputation, then build the digital system that brings it forward.",
     },
 
     {

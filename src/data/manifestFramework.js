@@ -19,9 +19,9 @@ export const manifestFramework = {
   },
   greatWall: {
     title: "Great Wall",
-    label: "Flagship client engagement",
+    label: "Commissioned · Approved · Live",
     description:
-      "A trust-driven Litty Co. engagement delivered through Manifest, built around CTA hierarchy, polished frontend implementation, responsive layout, motion, and an interactive SVG/3D feature.",
+      "A commissioned and client-approved Litty Hub engagement, live on Vercel with final refinements in progress. The experience combines product discovery, responsive execution, qualified inquiry, and a state-connected media-wall builder.",
     href: greatWallLiveUrl,
     ctaLabel: "Visit Great Wall",
     image: {

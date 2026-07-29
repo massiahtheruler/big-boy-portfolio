@@ -4,7 +4,9 @@ import ProjectCard from "../shared/ProjectCard";
 import Reveal from "../shared/Reveal";
 
 function CurrentWorkSection() {
-  const currentWork = getCurrentProjects();
+  const currentWork = getCurrentProjects().filter(
+    (item) => item.slug === "litty-hub",
+  );
 
   return (
     <section
@@ -13,14 +15,13 @@ function CurrentWorkSection() {
     >
       <div className="shell">
         <Reveal className="section-heading">
-          <p className="section-eyebrow">Selected client work</p>
-          <h2>Manifest in practice.</h2>
+          <p className="section-eyebrow">Active client relationship</p>
+          <h2>Building the Litty ecosystem over time.</h2>
 
           <p>
-            The work below shows the Manifest framework moving through active
-            client engagements, brand systems, frontend products, and proof
-            that identity has to become something people can recognize and act
-            on.
+            I am contracted to build, create, and manage Litty Hub's websites,
+            social presence, and connected sub-brands. This ongoing relationship
+            is the larger client system behind Great Wall and the work still in motion.
           </p>
         </Reveal>
 
@@ -30,7 +31,7 @@ function CurrentWorkSection() {
               {item.slug ? (
                 <ProjectCard
                   project={item}
-                  cta="Open Litty preview"
+                  cta="Open Litty Hub case study"
                   spotlight
                 />
               ) : item.links?.live ? (
