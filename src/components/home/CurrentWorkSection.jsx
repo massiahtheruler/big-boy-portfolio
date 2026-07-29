@@ -19,9 +19,9 @@ function CurrentWorkSection() {
           <h2>Building the Litty ecosystem over time.</h2>
 
           <p>
-            I am contracted to build, create, and manage Litty Hub's websites,
-            social presence, and connected sub-brands. This ongoing relationship
-            is the larger client system behind Great Wall and the work still in motion.
+            My contract with Litty Hub goes beyond one website. I help build and
+            manage the digital presence, social direction, and connected
+            sub-brands—including Great Wall and the work still taking shape.
           </p>
         </Reveal>
 

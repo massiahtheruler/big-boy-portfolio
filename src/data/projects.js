@@ -34,18 +34,18 @@ export const projects = [
     ],
     featuredOrder: 1,
     currentOrder: 1,
-    status: "Independent redesign · Active build",
-    projectType: "Manifest Case Study / Brand and UX Transformation",
+    status: "Client-approved · Going live",
+    projectType: "Client Engagement / Brand and UX Transformation",
     relationship:
-      "An independently developed redesign concept based on publicly available business information.",
+      "I started the redesign independently. The owner accepted and approved it, and I am now moving the new experience onto the business's existing domain.",
     accent: "citrus",
     tagline:
       "Bringing the identity already alive inside a neighborhood business into a clearer, more useful, and more intentional digital experience.",
     summary:
-      "Juicy City is a public-information-only brand and UX transformation for an operating Jersey City business. The work begins with the identity already visible in its storefront, products, founders, and neighborhood presence, then translates that character into stronger messaging, information architecture, responsive design, accessibility, and a more coherent path to the existing ordering provider.",
+      "Juicy City began as an independent redesign for a Jersey City business whose real-world energy was not coming through online. I built the direction from the storefront, products, founders, neighborhood presence, and public business information. The owner accepted and approved the work, and I am now moving the new experience onto the existing domain.",
     audienceSummary:
       "Juicy City is the clearest proof of how I work: I uncover what already makes a business distinct, identify why customers cannot feel it online, and translate that identity into a digital system people can recognize, trust, and use.",
-    role: "Independent brand strategist, UX designer, and frontend engineer",
+    role: "Brand strategist, UX designer, and frontend engineer",
     stack: [
       "Next.js App Router",
       "React",
@@ -57,14 +57,14 @@ export const projects = [
       "Content systems",
     ],
     heroMedia: {
-      eyebrow: "Manifest Case Study / Speculative Redesign",
+      eyebrow: "Client-Approved Brand & UX Transformation",
       heading: "The business already had the identity. The website needed to reveal it.",
       detail:
         "A documented before-state, clearer customer journey, expressive visual system, and transparent handoff to the business's existing ordering partner.",
     },
     previewImage: "/assets/juicy-city-home.png",
     links: {
-      live: null,
+      live: "https://juicy-city.vercel.app",
       code: "https://github.com/massiahtheruler/juicy-city",
     },
     featureHighlights: [
@@ -75,7 +75,7 @@ export const projects = [
     ],
     technicalProof: [
       "Separated structured content and menu data from page components so the concept can evolve without rewriting the interface.",
-      "Created explicit assumptions and validation boundaries instead of presenting public-source decisions as owner-approved facts.",
+      "Kept the original public-source assumptions visible, then updated the work as the owner accepted the direction and the project moved toward launch.",
       "Designed a transparent ordering-provider handoff rather than fabricating cart, checkout, payment, or order-status functionality.",
       "Tracked accessibility, responsive behavior, performance signals, and matched before-and-after evidence as part of the case-study process.",
     ],
@@ -101,27 +101,28 @@ export const projects = [
         },
       },
       {
-        eyebrow: "Research boundary",
-        title: "Public evidence first, owner validation later",
+        eyebrow: "From concept to client work",
+        title: "I built the case first. Then the owner said yes.",
         list: [
-          "No owner involvement, approval, commission, analytics, or business outcomes are implied.",
+          "The redesign began independently from public evidence before owner involvement.",
+          "The concept was later presented to the owner, accepted, and approved.",
           "Public names, prices, ingredients, sizes, address, hours, and ordering details remain preserved unless an inconsistency is explicitly logged.",
-          "Unknowns stay visible as assumptions or future owner-validation items.",
+          "Unknowns that still require production confirmation remain visible instead of being silently resolved.",
           "Success is described through design, accessibility, clarity, and implementation evidence—not invented conversion results.",
         ],
       },
       {
         eyebrow: "Current status",
-        title: "The concept is actively being built and documented",
-        body: "The audit, public-content archive, visual direction, responsive implementation, and working case-study vault exist. Final matched comparisons, complete testing evidence, and any owner-approved production decisions remain in progress.",
+        title: "The approved redesign is on its way to the real domain",
+        body: "The audit, content archive, visual direction, responsive build, owner approval, and working case-study vault are in place. I am now handling deployment and hosting on the owner's existing URL. Until that switch is verified, the Vercel link remains the live preview—not the final public launch.",
       },
     ],
     buildStory:
       "This project changed how I describe my work. I am not placing a style on top of a business. I am finding the identity already present in the people, place, products, and reputation, then building the digital structure that lets customers finally feel it online.",
     meta: {
-      title: "Juicy City Brand & UX Transformation | Justin Henry",
+      title: "Juicy City Client Brand & UX Transformation | Justin Henry",
       description:
-        "An independent Juicy City redesign case study translating a neighborhood business's real identity into clearer UX, responsive design, and a stronger ordering journey.",
+        "A client-approved Juicy City transformation translating the business's real identity into clearer UX, responsive design, and a stronger ordering journey, now moving into production.",
       image: "/assets/juicy-city-home.png",
     },
   },
@@ -159,13 +160,13 @@ export const projects = [
     ],
     heroMedia: {
       eyebrow: "Guided Matching Experience",
-      heading: "A reusable way to guide people through high-consideration choices",
+      heading: "A reusable way to make complicated choices feel clearer",
       detail:
         "Structured questions, editable recommendation rules, clear suitability language, validated lead capture, and a provider-neutral foundation.",
     },
     previewImage: "/assets/bodywork-network-home.png",
     links: {
-      live: null,
+      live: "https://bodywork-six.vercel.app/",
       code: "https://github.com/massiahtheruler/bodywork",
     },
     featureHighlights: [
@@ -193,7 +194,7 @@ export const projects = [
       },
       {
         eyebrow: "Truth boundary",
-        title: "Useful guidance without pretending the prototype knows more than it does",
+        title: "Useful guidance without pretending the product knows everything",
         list: [
           "No proprietary or objectively best-match algorithm is claimed.",
           "No provider partnership, credential, review, or availability is presented without verification.",
@@ -483,7 +484,7 @@ export const projects = [
     previewImage: "/assets/twitter-glitter-home.png",
     links: {
       live: "https://glitter-theta.vercel.app",
-      code: null,
+      code: "https://github.com/massiahtheruler/Glitter",
     },
     demoAccounts: [
       {
@@ -688,9 +689,9 @@ export const projects = [
       "Commissioned and approved work for Litty Hub and its Great Wall sub-brand.",
     accent: "amber",
     tagline:
-      "A live showroom and guided media-wall experience built for a contracted client engagement, with final refinements still in progress.",
+      "A live showroom and media-wall builder created through an active client relationship, with the final refinements still in progress.",
     summary:
-      "Great Wall is a commissioned, client-approved project delivered through an active contract with Litty Hub. The live Vercel experience turns a custom media-wall business into a clearer showroom, discovery system, and qualified quote journey while preserving an interactive state-connected builder rather than reducing the product to a static brochure.",
+      "Great Wall is a commissioned, client-approved project built through my ongoing work with Litty Hub. The live experience turns a custom media-wall business into a clearer showroom, discovery system, and quote journey while keeping the interactive builder at the center of the product.",
     audienceSummary:
       "Great Wall proves that I can translate a real service business into a polished customer-facing system while handling client direction, product discovery, responsive execution, lead capture, and a complex interactive builder.",
     role: "Contracted brand, product, frontend, and digital-experience partner",
