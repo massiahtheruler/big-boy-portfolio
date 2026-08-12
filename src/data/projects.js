@@ -65,8 +65,9 @@ export const projects = [
     previewImage: "/assets/juicy-city-home.png",
     links: {
       live: "https://juicy-city.vercel.app",
-      code: "https://github.com/massiahtheruler/juicy-city",
+      code: null,
     },
+    codeStatus: "Private client repository",
     featureHighlights: [
       "Documented the original marketing site and separate ordering experience across desktop and mobile before redesigning anything",
       "Preserved public products, prices, names, business facts, and the existing ordering/payment boundary",
@@ -586,6 +587,7 @@ export const projects = [
       live: "https://litty-hub.vercel.app",
       code: null,
     },
+    codeStatus: "Private client repository",
     featureHighlights: [
       "Litty Co. positioned as the active client ecosystem and attention engine for the larger brand system",
       "Manifest Method introduced as a seven-step framework spanning identity, systems, execution, content, and long-term growth",
@@ -714,8 +716,9 @@ export const projects = [
     previewImage: greatWallPreviewImage,
     links: {
       live: greatWallLiveUrl,
-      code: "https://github.com/massiahtheruler/great-wall",
+      code: null,
     },
+    codeStatus: "Private client repository",
     featureHighlights: [
       "Centralized catalog with featured models, dynamic product pages, filtering, discovery, and quick-view behavior",
       "Interactive media-wall builder connected to real selections and blueprint/model state",

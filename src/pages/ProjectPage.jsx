@@ -116,7 +116,7 @@ function ProjectPage({ onOpenContact }) {
                 </a>
               ) : (
                 <span className="button button--ghost button--disabled">
-                  Code link available on request
+                  {project.codeStatus ?? "Repository currently private"}
                 </span>
               )}
             </div>
