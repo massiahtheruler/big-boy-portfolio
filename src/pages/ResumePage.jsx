@@ -1,21 +1,28 @@
 import { siteContent } from "../data/siteContent";
 import { getResumeProjects } from "../data/projects";
 
-const currentExperience = [
+const manifestExperience = [
   {
     title: "Founder & Frontend Engineer",
-    date: "Mar 2025 - Present",
-    org: "Manifest - New Jersey / NYC Metro",
-    links: [
-      { label: "Manifest", href: "https://manifest-gamma-one.vercel.app/" },
-      { label: "Litty Co.", href: "https://litty-hub.vercel.app/" },
-      { label: "Great Wall", href: "https://great-wall-omega.vercel.app/" },
-    ],
+    date: "March 2025 - Present",
+    org: "Manifest · Independent Digital Experience Practice",
+    links: [{ label: "Visit Manifest", href: "https://manifest-gamma-one.vercel.app/" }],
     bullets: [
-      "Founded Manifest, a brand identity and frontend consultancy specializing in responsive web applications, interaction systems, and conversion-focused digital experiences.",
-      "Partner with businesses to translate strategy into polished digital products through frontend architecture, UI implementation, performance optimization, and design systems.",
-      "Current client work includes Litty Co., where I lead frontend development across multiple brands and digital initiatives.",
-      "Current engagements include Great Wall, a trust-driven landing experience featuring responsive layouts, motion systems, SVG/3D interactions, a 3D model configuration estimator, and conversion-focused user journeys.",
+      "Founded an independent digital experience practice helping businesses turn fragmented brands and online touchpoints into cohesive systems across identity, responsive websites, content direction, social presence, and customer journeys.",
+      "Built Manifest's client-facing site and service framework to connect brand strategy, frontend execution, service selection, and qualified inquiry within one polished experience.",
+    ],
+  },
+];
+
+const littyExperience = [
+  {
+    title: "Brand & Digital Experience Partner",
+    date: "Active Client Engagement",
+    org: "Litty Co.",
+    links: [{ label: "View Litty Co.", href: "https://litty-hub.vercel.app/" }],
+    bullets: [
+      "Partner across an evolving multi-brand ecosystem, creating a shared digital foundation while helping connected businesses maintain distinct identities, positioning, and customer-facing experiences.",
+      "Engagement scope spans visual identity, responsive websites, frontend systems, reusable social content direction, and rollout planning as Litty and its sub-brands continue to develop.",
     ],
   },
 ];
@@ -69,20 +76,63 @@ const businessBackground = [
 
 const skills = [
   {
-    label: "Frontend",
-    items:
-      "React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind, SCSS, Redux, Framer Motion",
+    label: "Frontend Engineering",
+    items: [
+      "React, Next.js, TypeScript",
+      "JavaScript, HTML, CSS",
+      "Tailwind, SCSS, Redux, Framer Motion",
+    ],
   },
   {
-    label: "Backend",
-    items:
-      "Node, Prisma, MongoDB, PostgreSQL, Firebase, REST APIs, Authentication",
+    label: "Product & Brand",
+    items: [
+      "Responsive UI, accessibility",
+      "Interaction and design systems",
+      "Visual identity, content, conversion UX",
+    ],
   },
   {
-    label: "Tools",
-    items: "Git, GitHub, Vercel, Figma, VS Code, Stripe, Postman",
+    label: "Backend & Tools",
+    items: [
+      "Node.js, Prisma, PostgreSQL",
+      "MongoDB, Firebase, REST APIs",
+      "Stripe, GitHub, Vercel, Figma",
+    ],
   },
 ];
+
+function ExperienceCard({ eyebrow, entries, className }) {
+  return (
+    <div className={`${className} resume-card`}>
+      <p className="section-eyebrow">{eyebrow}</p>
+      <div className="resume-entry-list">
+        {entries.map((entry) => (
+          <article key={`${entry.title}-${entry.date}`} className="resume-entry">
+            <div className="resume-entry__header">
+              <div>
+                <h2>{entry.title}</h2>
+                {entry.org && <p className="resume-entry__org">{entry.org}</p>}
+              </div>
+              <span className="resume-entry__date">{entry.date}</span>
+            </div>
+            <ul className="detail-list">
+              {entry.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+            </ul>
+            {entry.links && (
+              <div className="resume-entry__links resume-entry__links--inline">
+                {entry.links.map((link) => (
+                  <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function ResumePage({ onOpenContact }) {
   const projects = getResumeProjects();
@@ -160,14 +210,12 @@ function ResumePage({ onOpenContact }) {
         <div className="resume-page__summary resume-card">
           <p className="section-eyebrow">Summary</p>
           <p>
-            Frontend engineer and founder of Manifest, a brand identity and
-            digital experience consultancy focused on responsive web
-            applications, interaction systems, and conversion-focused frontend
-            experiences. I translate strategy into polished UI, frontend
-            architecture, performance-minded implementation, and digital systems
-            that make businesses easier to trust and remember. My background in
-            sales, operations, and branding sharpens my instincts for user
-            behavior, credibility, and conversion.
+            Frontend engineer and founder of Manifest, building responsive
+            digital products and complete brand experiences across identity,
+            websites, interaction systems, content structure, and conversion
+            journeys. My customer-focused background in operations and sales
+            helps me translate business context into interfaces people can
+            understand, trust, and use.
           </p>
         </div>
 
@@ -177,45 +225,15 @@ function ResumePage({ onOpenContact }) {
             {skills.map((group) => (
               <article key={group.label} className="resume-skill-group">
                 <h2>{group.label}</h2>
-                <p>{group.items}</p>
+                {group.items.map((item) => <p key={item}>{item}</p>)}
               </article>
             ))}
           </div>
         </div>
 
-        <div className="resume-page__experience resume-card">
-          <p className="section-eyebrow">Current Experience</p>
-          <div className="resume-entry-list">
-            {currentExperience.map((entry) => (
-              <article
-                key={`${entry.title}-${entry.date}`}
-                className="resume-entry"
-              >
-                <div className="resume-entry__header">
-                  <div>
-                    <h2>{entry.title}</h2>
-                    <p className="resume-entry__org">{entry.org}</p>
-                  </div>
-                  <span className="resume-entry__date">{entry.date}</span>
-                </div>
-                <ul className="detail-list">
-                  {entry.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-                {entry.links && (
-                  <div className="resume-entry__links">
-                    {entry.links.map((link) => (
-                      <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
-                        {link.label}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </article>
-            ))}
-          </div>
-        </div>
+        <ExperienceCard eyebrow="Manifest" entries={manifestExperience} className="resume-page__experience" />
+
+        <ExperienceCard eyebrow="Litty Co." entries={littyExperience} className="resume-page__litty" />
 
         <div className="resume-page__professional resume-card">
           <p className="section-eyebrow">Professional Frontend Experience</p>
@@ -250,33 +268,8 @@ function ResumePage({ onOpenContact }) {
           </div>
         </div>
 
-        <div className="resume-page__business resume-card">
-          <p className="section-eyebrow">Business Background</p>
-          <div className="resume-entry-list">
-            {businessBackground.map((entry) => (
-              <article
-                key={`${entry.title}-${entry.date}`}
-                className="resume-entry"
-              >
-                <div className="resume-entry__header">
-                  <div>
-                    <h2>{entry.title}</h2>
-                    <p className="resume-entry__org">{entry.org}</p>
-                  </div>
-                  <span className="resume-entry__date">{entry.date}</span>
-                </div>
-                <ul className="detail-list">
-                  {entry.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-        </div>
-
         <div className="resume-page__projects resume-card">
-          <p className="section-eyebrow">Independent Products</p>
+          <p className="section-eyebrow">Selected Client & Product Work</p>
           <div className="resume-entry-list">
             {projects.map((project) => (
               <article key={project.title} className="resume-entry">
@@ -292,12 +285,16 @@ function ResumePage({ onOpenContact }) {
                     <p className="resume-entry__stack">{project.stack}</p>
                   </div>
                   <div className="resume-entry__links">
-                    <a href={project.live} target="_blank" rel="noreferrer">
-                      Live
-                    </a>
-                    <a href={project.code} target="_blank" rel="noreferrer">
-                      Code
-                    </a>
+                    {project.live && (
+                      <a href={project.live} target="_blank" rel="noreferrer">
+                        Live
+                      </a>
+                    )}
+                    {project.code && (
+                      <a href={project.code} target="_blank" rel="noreferrer">
+                        Code
+                      </a>
+                    )}
                   </div>
                 </div>
                 <ul className="detail-list">
@@ -310,64 +307,53 @@ function ResumePage({ onOpenContact }) {
           </div>
         </div>
 
-        <div className="resume-page__education resume-card">
-          <p className="section-eyebrow">Education</p>
+        <div className="resume-page__business resume-card">
+          <p className="section-eyebrow">Business Background</p>
           <div className="resume-entry-list">
-            <article className="resume-entry">
-              <div className="resume-entry__header">
-                <div>
-                  <h2>Frontend Simplified</h2>
-                  <p className="resume-entry__org">Web Engineering Program</p>
-                </div>
-                <span className="resume-entry__date">2025 </span>
-              </div>
-              <p>
-                12-week intensive covering HTML, CSS, JavaScript, React,
-                Node.js, and full-stack fundamentals with real project work and
-                job placement support.
-              </p>
-            </article>
-
-            <article className="resume-entry">
-              <div className="resume-entry__header">
-                <div>
-                  <h2>Clifton High School</h2>
-                  <p className="resume-entry__org">Clifton, NJ</p>
-                </div>
-                <span className="resume-entry__date">2011</span>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div className="resume-page__certifications resume-card">
-          <p className="section-eyebrow">Certifications</p>
-          <div className="resume-entry-list">
-            {certifications.map((certification) => (
-              <article key={certification.title} className="resume-entry">
+            {businessBackground.map((entry) => (
+              <article key={`${entry.title}-${entry.date}`} className="resume-entry">
                 <div className="resume-entry__header">
                   <div>
-                    <h2>
-                      {certification.title}, {certification.issuer} (
-                      {certification.year})
-                    </h2>
-                    <a
-                      className="resume-entry__credential"
-                      href={certification.credentialPath}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Open certificate
-                    </a>
+                    <h2>{entry.title}</h2>
+                    <p className="resume-entry__org">{entry.org}</p>
                   </div>
+                  <span className="resume-entry__date">{entry.date}</span>
                 </div>
                 <ul className="detail-list">
-                  {certification.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
+                  {entry.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
                 </ul>
               </article>
             ))}
+          </div>
+        </div>
+
+        <div className="resume-page__education resume-card">
+          <p className="section-eyebrow">Education & Certification</p>
+          <div className="resume-entry-list">
+            <article className="resume-entry">
+              <div className="resume-entry__header">
+                <div>
+                  <h2>Frontend Simplified / FES Institute</h2>
+                  <p className="resume-entry__org">
+                    Web Engineering Program and Frontend Development Bootcamp Certificate
+                  </p>
+                </div>
+                <span className="resume-entry__date">2025 - 2026</span>
+              </div>
+              <p>
+                Practical frontend training covering HTML, CSS, JavaScript,
+                React, Next.js, TypeScript, Redux, Node.js, and internship-style
+                project work.
+              </p>
+              <a
+                className="resume-entry__credential"
+                href={certifications[0].credentialPath}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open certificate
+              </a>
+            </article>
           </div>
         </div>
       </div>

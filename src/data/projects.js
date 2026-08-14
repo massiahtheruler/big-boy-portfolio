@@ -120,6 +120,19 @@ export const projects = [
     ],
     buildStory:
       "This project changed how I describe my work. I am not placing a style on top of a business. I am finding the identity already present in the people, place, products, and reputation, then building the digital structure that lets customers finally feel it online.",
+    resume: {
+      include: true,
+      order: 2,
+      subtitle: "Existing-Business Brand & UX Transformation",
+      live: "https://juicy-city.vercel.app",
+      code: null,
+      stack:
+        "Next.js · React · TypeScript · Accessibility · Information Architecture · Content Systems",
+      bullets: [
+        "Audited and redesigned the public experience for an established Jersey City business, translating its storefront energy, products, neighborhood identity, and ordering journey into a clearer responsive system.",
+        "Built the direction from public-business research, preserved real transactional details, earned owner approval, and moved the work toward the business's existing domain.",
+      ],
+    },
     meta: {
       title: "Juicy City Client Brand & UX Transformation | Justin Henry",
       description:
@@ -206,6 +219,19 @@ export const projects = [
     ],
     buildStory:
       "The larger idea is not a collection of unrelated router sites. It is a reusable way to help people make complicated choices. Bodywork Network carries that story because it has the clearest journey, the strongest accessibility foundation, and the most complete connection between questions, recommendation logic, content, and next steps.",
+    resume: {
+      include: true,
+      order: 3,
+      subtitle: "Guided Matching Platform",
+      live: "https://bodywork-six.vercel.app/",
+      code: "https://github.com/massiahtheruler/bodywork",
+      stack:
+        "Next.js · React · TypeScript · Zod · React Hook Form · Framer Motion",
+      bullets: [
+        "Built a provider-neutral platform that turns complex preferences and constraints into a calm guided journey through validated forms, reusable matching logic, and accessible interactions.",
+        "Centralized service, provider, and recommendation data so dynamic content and lead-routing systems can expand without coupling product logic to the interface.",
+      ],
+    },
     meta: {
       title: "Bodywork Network Guided Matching Case Study | Justin Henry",
       description:
@@ -296,7 +322,7 @@ export const projects = [
       "GoCart was about making a dense marketplace feel usable. The challenge was connecting customers, sellers, admins, payments, deals, reviews, and fulfillment workflows so the product felt unified instead of stitched together.",
     resume: {
       include: true,
-      order: 1,
+      order: 4,
       subtitle: "Full-Stack E-Commerce Platform",
       live: "https://gocart-beta-one.vercel.app",
       code: "https://github.com/massiahtheruler/gocart",
@@ -367,7 +393,7 @@ export const projects = [
     buildStory:
       "The goal was to understand the frontend behavior behind a polished streaming interface: timing, hierarchy, protected access, content rails, and player routing. Matching the look mattered, but the real value was rebuilding the interaction patterns that make the product feel responsive.",
     resume: {
-      include: true,
+      include: false,
       order: 5,
       subtitle: "Streaming UI & Interaction Systems",
       live: "https://netflix-clone-delta-indol.vercel.app/login",
@@ -514,7 +540,7 @@ export const projects = [
     buildStory:
       "The challenge was turning a familiar social feed pattern into a product that felt more intentional. I focused on identity, account-aware behavior, interaction flow, and custom features that moved it beyond the original tutorial structure.",
     resume: {
-      include: true,
+      include: false,
       order: 3,
       title: "Glitter",
       subtitle: "Original Social Product",
@@ -638,7 +664,7 @@ export const projects = [
       code: "https://github.com/massiahtheruler/big-boy-portfolio",
     },
     resume: {
-      include: true,
+      include: false,
       order: 2,
       subtitle: "Frontend Product System",
       live: "https://big-boy-portfolio.vercel.app",
@@ -663,7 +689,7 @@ export const projects = [
       code: "https://github.com/massiahtheruler/holy-grails-react",
     },
     resume: {
-      include: true,
+      include: false,
       order: 4,
       subtitle: "Frontend Architecture Conversion",
       live: "https://holy-grail-react.vercel.app/",
@@ -745,6 +771,19 @@ export const projects = [
     ],
     buildStory:
       "Great Wall is where the Manifest philosophy meets a real contracted engagement. The work is about bringing the identity and ambition of the business forward, then giving that identity practical structure through discovery, configuration, trust, and a clearer path to a qualified conversation.",
+    resume: {
+      include: true,
+      order: 1,
+      subtitle: "Interactive Product Showroom & Configurator",
+      live: greatWallLiveUrl,
+      code: null,
+      stack:
+        "Next.js · React · TypeScript · Structured Catalog Data · Interactive Configurator · Responsive UX",
+      bullets: [
+        "Designed and developed a live, client-approved product experience combining a structured catalog, responsive showroom, and interactive configurator for a custom media-wall business.",
+        "Connected product discovery and configuration state to a context-aware estimate journey; the experience is live with final refinements still in progress.",
+      ],
+    },
     meta: {
       title: "Great Wall Client Experience Case Study | Justin Henry",
       description:
