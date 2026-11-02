@@ -121,7 +121,7 @@ export const projects = [
     buildStory:
       "This project changed how I describe my work. I am not placing a style on top of a business. I am finding the identity already present in the people, place, products, and reputation, then building the digital structure that lets customers finally feel it online.",
     resume: {
-      include: true,
+      include: false,
       order: 2,
       subtitle: "Existing-Business Brand & UX Transformation",
       live: "https://juicy-city.vercel.app",
@@ -222,14 +222,13 @@ export const projects = [
     resume: {
       include: true,
       order: 3,
-      subtitle: "Guided Matching Platform",
+      subtitle: "Guided Service-Discovery Prototype",
       live: "https://bodywork-six.vercel.app/",
       code: "https://github.com/massiahtheruler/bodywork",
       stack:
         "Next.js · React · TypeScript · Zod · React Hook Form · Framer Motion",
       bullets: [
-        "Built a provider-neutral platform that turns complex preferences and constraints into a calm guided journey through validated forms, reusable matching logic, and accessible interactions.",
-        "Centralized service, provider, and recommendation data so dynamic content and lead-routing systems can expand without coupling product logic to the interface.",
+        "Built a guided intake and matching experience intended to make service discovery calmer and more relevant, translating preferences into recommendations through validated forms, reusable matching rules, and dynamic provider content.",
       ],
     },
     meta: {
@@ -322,15 +321,16 @@ export const projects = [
       "GoCart was about making a dense marketplace feel usable. The challenge was connecting customers, sellers, admins, payments, deals, reviews, and fulfillment workflows so the product felt unified instead of stitched together.",
     resume: {
       include: true,
-      order: 4,
-      subtitle: "Full-Stack E-Commerce Platform",
+      order: 1,
+      subtitle: "Ecommerce Platform Developed Toward Launch",
       live: "https://gocart-beta-one.vercel.app",
       code: "https://github.com/massiahtheruler/gocart",
       stack:
-        "Next.js · React · TypeScript · Tailwind CSS · Redux · Prisma · PostgreSQL · Stripe",
+        "Functional prototype · Next.js · React · Redux · Clerk · Prisma · PostgreSQL · Stripe · Recharts",
       bullets: [
-        "Built a multi-role marketplace with customer, seller, and admin workflows, role-aware routing, checkout, coupons, dashboards, and account-specific UI states inside one cohesive product.",
-        "Structured dense commerce functionality into responsive storefront and dashboard interfaces that stay clear across payment, order, product, and promotion flows.",
+        "Developed a potential multi-vendor platform connecting shopping, seller operations, and administration through distinct customer, seller, and admin workflows.",
+        "Implemented protected routes, product and promotion tools, checkout, coupons, and dashboards; connected Stripe payments and signature-verified webhooks to order records.",
+        "Built responsive order-activity charts and account-specific states to make dense commerce workflows easier to navigate.",
       ],
     },
   },
@@ -540,17 +540,17 @@ export const projects = [
     buildStory:
       "The challenge was turning a familiar social feed pattern into a product that felt more intentional. I focused on identity, account-aware behavior, interaction flow, and custom features that moved it beyond the original tutorial structure.",
     resume: {
-      include: false,
-      order: 3,
+      include: true,
+      order: 2,
       title: "Glitter",
-      subtitle: "Original Social Product",
+      subtitle: "Social Product Exploration",
       live: "https://glitter-theta.vercel.app",
       code: "https://github.com/massiahtheruler/glitter",
       stack:
-        "Next.js · React · TypeScript · Tailwind CSS · Prisma · MongoDB · NextAuth",
+        "Working prototype · Next.js · React · TypeScript · NextAuth · Prisma · MongoDB",
       bullets: [
-        "Built a branded social platform with dynamic profiles, post creation, messaging concepts, notifications, account-aware UI behavior, and consistent interaction patterns across routes.",
-        "Expanded a tutorial foundation into a more original product direction with stronger visual hierarchy, state handling, and social UX systems.",
+        "Developed a branded social experience connecting profiles, a feed, messaging, and notifications through consistent visual identity and account-aware interactions.",
+        "Expanded a tutorial foundation with private messaging, conversation views, and unread state, working toward seamless movement between reading, posting, and conversation.",
       ],
     },
   },
@@ -772,7 +772,7 @@ export const projects = [
     buildStory:
       "Great Wall is where the Manifest philosophy meets a real contracted engagement. The work is about bringing the identity and ambition of the business forward, then giving that identity practical structure through discovery, configuration, trust, and a clearer path to a qualified conversation.",
     resume: {
-      include: true,
+      include: false,
       order: 1,
       subtitle: "Interactive Product Showroom & Configurator",
       live: greatWallLiveUrl,

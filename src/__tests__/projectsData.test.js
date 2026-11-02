@@ -77,10 +77,9 @@ describe("projects data", () => {
 
   it("centralizes resume project content", () => {
     expect(getResumeProjects().map((project) => project.title)).toEqual([
-      "Great Wall",
-      "Juicy City",
-      "Bodywork Network",
       "GoCart",
+      "Glitter",
+      "Bodywork Network",
     ]);
   });
 });
